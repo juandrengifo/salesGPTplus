@@ -1,0 +1,534 @@
+salesgpt.logger 2024-01-11 10:01:34,570 - INFO - Running from_llm: --- 9.036064147949219e-05 seconds ---
+salesgpt.logger 2024-01-11 10:01:34,570 - INFO - Running from_llm: --- 0.0001938343048095703 seconds ---
+langchain.text_splitter 2024-01-11 10:01:34,571 - WARNING - Created a chunk of size 940, which is longer than the specified 10
+langchain.text_splitter 2024-01-11 10:01:34,571 - WARNING - Created a chunk of size 844, which is longer than the specified 10
+langchain.text_splitter 2024-01-11 10:01:34,571 - WARNING - Created a chunk of size 837, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-11 10:01:34,865 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-11 10:01:35,949 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 10:01:36,073 - INFO - Running from_llm: --- 1.5031425952911377 seconds ---
+salesgpt.logger 2024-01-11 10:01:36,073 - INFO - Running seed_agent: --- 1.0728836059570312e-05 seconds ---
+httpx 2024-01-11 10:01:37,213 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 10:01:37,218 - INFO - Running determine_conversation_stage: --- 1.1447339057922363 seconds ---
+httpx 2024-01-11 10:01:39,159 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 10:01:39,164 - INFO - Running step: --- 1.945876121520996 seconds ---
+httpx 2024-01-11 11:46:09,875 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 11:46:09,880 - INFO - Running determine_conversation_stage: --- 1.1363985538482666 seconds ---
+httpx 2024-01-11 11:46:11,408 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 11:46:11,413 - INFO - Running step: --- 1.532716989517212 seconds ---
+salesgpt.logger 2024-01-11 11:47:05,103 - INFO - Running from_llm: --- 9.226799011230469e-05 seconds ---
+salesgpt.logger 2024-01-11 11:47:05,104 - INFO - Running from_llm: --- 0.0002884864807128906 seconds ---
+langchain.text_splitter 2024-01-11 11:47:05,104 - WARNING - Created a chunk of size 940, which is longer than the specified 10
+langchain.text_splitter 2024-01-11 11:47:05,104 - WARNING - Created a chunk of size 844, which is longer than the specified 10
+langchain.text_splitter 2024-01-11 11:47:05,104 - WARNING - Created a chunk of size 837, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-11 11:47:05,382 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-11 11:47:06,191 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 11:47:06,324 - INFO - Running from_llm: --- 1.2203710079193115 seconds ---
+salesgpt.logger 2024-01-11 11:47:06,324 - INFO - Running seed_agent: --- 1.2159347534179688e-05 seconds ---
+httpx 2024-01-11 11:47:07,930 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 11:47:07,935 - INFO - Running determine_conversation_stage: --- 1.6105976104736328 seconds ---
+httpx 2024-01-11 11:47:09,773 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 11:47:09,783 - INFO - Running step: --- 1.8482024669647217 seconds ---
+httpx 2024-01-11 11:47:19,400 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 11:47:19,411 - INFO - Running determine_conversation_stage: --- 0.35852646827697754 seconds ---
+httpx 2024-01-11 11:47:21,046 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 11:47:21,051 - INFO - Running step: --- 1.6395809650421143 seconds ---
+httpx 2024-01-11 11:47:29,945 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 11:47:29,950 - INFO - Running determine_conversation_stage: --- 1.9217314720153809 seconds ---
+httpx 2024-01-11 11:47:31,481 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 11:47:31,486 - INFO - Running step: --- 1.5353689193725586 seconds ---
+salesgpt.logger 2024-01-11 17:26:27,019 - INFO - Running from_llm: --- 9.322166442871094e-05 seconds ---
+salesgpt.logger 2024-01-11 17:26:27,019 - INFO - Running from_llm: --- 0.00024700164794921875 seconds ---
+langchain.text_splitter 2024-01-11 17:26:27,019 - WARNING - Created a chunk of size 940, which is longer than the specified 10
+langchain.text_splitter 2024-01-11 17:26:27,019 - WARNING - Created a chunk of size 844, which is longer than the specified 10
+langchain.text_splitter 2024-01-11 17:26:27,019 - WARNING - Created a chunk of size 837, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-11 17:26:27,304 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-11 17:26:30,244 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:26:30,368 - INFO - Running from_llm: --- 3.349857807159424 seconds ---
+salesgpt.logger 2024-01-11 17:26:30,369 - INFO - Running seed_agent: --- 1.6689300537109375e-05 seconds ---
+httpx 2024-01-11 17:26:31,380 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:26:31,389 - INFO - Running determine_conversation_stage: --- 1.0207204818725586 seconds ---
+httpx 2024-01-11 17:26:33,376 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:26:33,383 - INFO - Running step: --- 1.9930055141448975 seconds ---
+httpx 2024-01-11 17:26:47,205 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:26:47,211 - INFO - Running determine_conversation_stage: --- 1.1053285598754883 seconds ---
+httpx 2024-01-11 17:26:48,840 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:26:48,845 - INFO - Running step: --- 1.633284568786621 seconds ---
+httpx 2024-01-11 17:26:58,878 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:26:58,882 - INFO - Running determine_conversation_stage: --- 1.2008061408996582 seconds ---
+httpx 2024-01-11 17:27:00,209 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:27:00,213 - INFO - Running step: --- 1.3310604095458984 seconds ---
+salesgpt.logger 2024-01-11 17:27:59,545 - INFO - Running from_llm: --- 9.131431579589844e-05 seconds ---
+salesgpt.logger 2024-01-11 17:27:59,545 - INFO - Running from_llm: --- 0.0003197193145751953 seconds ---
+langchain.text_splitter 2024-01-11 17:27:59,546 - WARNING - Created a chunk of size 940, which is longer than the specified 10
+langchain.text_splitter 2024-01-11 17:27:59,546 - WARNING - Created a chunk of size 844, which is longer than the specified 10
+langchain.text_splitter 2024-01-11 17:27:59,546 - WARNING - Created a chunk of size 837, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-11 17:27:59,812 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-11 17:28:00,429 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:28:00,518 - INFO - Running from_llm: --- 0.9727768898010254 seconds ---
+salesgpt.logger 2024-01-11 17:28:00,518 - INFO - Running seed_agent: --- 2.4557113647460938e-05 seconds ---
+httpx 2024-01-11 17:28:01,249 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:28:01,254 - INFO - Running determine_conversation_stage: --- 0.7359495162963867 seconds ---
+httpx 2024-01-11 17:28:02,476 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:28:02,481 - INFO - Running step: --- 1.226444959640503 seconds ---
+httpx 2024-01-11 17:28:05,547 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:28:05,550 - INFO - Running determine_conversation_stage: --- 0.6726670265197754 seconds ---
+httpx 2024-01-11 17:28:06,674 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:28:06,679 - INFO - Running step: --- 1.128453016281128 seconds ---
+salesgpt.logger 2024-01-11 17:29:21,376 - INFO - Running from_llm: --- 9.131431579589844e-05 seconds ---
+salesgpt.logger 2024-01-11 17:29:21,377 - INFO - Running from_llm: --- 0.00028252601623535156 seconds ---
+langchain.text_splitter 2024-01-11 17:29:21,377 - WARNING - Created a chunk of size 940, which is longer than the specified 10
+langchain.text_splitter 2024-01-11 17:29:21,377 - WARNING - Created a chunk of size 844, which is longer than the specified 10
+langchain.text_splitter 2024-01-11 17:29:21,377 - WARNING - Created a chunk of size 837, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-11 17:29:21,645 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-11 17:29:22,300 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:29:22,459 - INFO - Running from_llm: --- 1.0826079845428467 seconds ---
+salesgpt.logger 2024-01-11 17:29:22,459 - INFO - Running seed_agent: --- 2.0265579223632812e-05 seconds ---
+httpx 2024-01-11 17:29:23,255 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:29:23,260 - INFO - Running determine_conversation_stage: --- 0.8000831604003906 seconds ---
+httpx 2024-01-11 17:29:25,086 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:29:25,090 - INFO - Running step: --- 1.830428123474121 seconds ---
+httpx 2024-01-11 17:29:29,635 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:29:29,647 - INFO - Running determine_conversation_stage: --- 0.46703505516052246 seconds ---
+httpx 2024-01-11 17:29:30,858 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:29:30,863 - INFO - Running step: --- 1.2164156436920166 seconds ---
+httpx 2024-01-11 17:29:37,002 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:29:37,007 - INFO - Running determine_conversation_stage: --- 0.7353360652923584 seconds ---
+httpx 2024-01-11 17:29:39,143 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-11 17:29:39,148 - INFO - Running step: --- 2.141420364379883 seconds ---
+salesgpt.logger 2024-01-12 09:35:26,331 - INFO - Running from_llm: --- 9.179115295410156e-05 seconds ---
+salesgpt.logger 2024-01-12 09:35:26,332 - INFO - Running from_llm: --- 0.00030922889709472656 seconds ---
+langchain.text_splitter 2024-01-12 09:35:26,332 - WARNING - Created a chunk of size 940, which is longer than the specified 10
+langchain.text_splitter 2024-01-12 09:35:26,332 - WARNING - Created a chunk of size 844, which is longer than the specified 10
+langchain.text_splitter 2024-01-12 09:35:26,332 - WARNING - Created a chunk of size 837, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 09:35:26,604 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 09:35:27,237 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 09:35:27,250 - INFO - Running from_llm: --- 0.9191274642944336 seconds ---
+salesgpt.logger 2024-01-12 09:35:27,250 - INFO - Running seed_agent: --- 1.239776611328125e-05 seconds ---
+httpx 2024-01-12 09:35:27,677 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 09:35:27,686 - INFO - Running determine_conversation_stage: --- 0.4350423812866211 seconds ---
+httpx 2024-01-12 09:35:29,269 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 09:35:29,279 - INFO - Running step: --- 1.593029260635376 seconds ---
+httpx 2024-01-12 09:35:39,728 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 09:35:39,733 - INFO - Running determine_conversation_stage: --- 0.7124667167663574 seconds ---
+httpx 2024-01-12 09:35:41,366 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 09:35:41,371 - INFO - Running step: --- 1.637979507446289 seconds ---
+httpx 2024-01-12 09:35:57,583 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 09:35:57,592 - INFO - Running determine_conversation_stage: --- 0.6832897663116455 seconds ---
+httpx 2024-01-12 09:35:59,185 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 09:35:59,190 - INFO - Running step: --- 1.598134994506836 seconds ---
+httpx 2024-01-12 09:36:19,153 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 09:36:19,157 - INFO - Running determine_conversation_stage: --- 0.5361170768737793 seconds ---
+httpx 2024-01-12 09:36:20,996 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 09:36:21,001 - INFO - Running step: --- 1.8433303833007812 seconds ---
+httpx 2024-01-12 09:36:41,067 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 09:36:41,072 - INFO - Running determine_conversation_stage: --- 1.026256799697876 seconds ---
+httpx 2024-01-12 09:36:42,910 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 09:36:42,915 - INFO - Running step: --- 1.8431954383850098 seconds ---
+httpx 2024-01-12 09:36:52,643 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 09:36:52,648 - INFO - Running determine_conversation_stage: --- 0.7102401256561279 seconds ---
+httpx 2024-01-12 09:36:54,365 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 09:36:54,369 - INFO - Running step: --- 1.7209925651550293 seconds ---
+salesgpt.logger 2024-01-12 10:58:14,906 - INFO - Running from_llm: --- 9.107589721679688e-05 seconds ---
+salesgpt.logger 2024-01-12 10:58:14,907 - INFO - Running from_llm: --- 0.0002696514129638672 seconds ---
+langchain.text_splitter 2024-01-12 10:58:14,907 - WARNING - Created a chunk of size 940, which is longer than the specified 10
+langchain.text_splitter 2024-01-12 10:58:14,907 - WARNING - Created a chunk of size 844, which is longer than the specified 10
+langchain.text_splitter 2024-01-12 10:58:14,907 - WARNING - Created a chunk of size 837, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 10:58:15,175 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 10:58:15,661 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 10:58:15,779 - INFO - Running from_llm: --- 0.8724987506866455 seconds ---
+salesgpt.logger 2024-01-12 10:58:15,779 - INFO - Running seed_agent: --- 1.6927719116210938e-05 seconds ---
+httpx 2024-01-12 10:58:16,777 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 10:58:16,782 - INFO - Running determine_conversation_stage: --- 1.002535343170166 seconds ---
+httpx 2024-01-12 10:58:21,339 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 10:58:21,349 - INFO - Running step: --- 4.567585706710815 seconds ---
+httpx 2024-01-12 10:58:38,464 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 10:58:38,466 - INFO - Running determine_conversation_stage: --- 1.5863986015319824 seconds ---
+httpx 2024-01-12 10:58:41,644 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 10:58:41,649 - INFO - Running step: --- 3.182851552963257 seconds ---
+httpx 2024-01-12 10:58:53,334 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 10:58:53,339 - INFO - Running determine_conversation_stage: --- 1.1104295253753662 seconds ---
+httpx 2024-01-12 10:58:58,229 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 10:58:58,234 - INFO - Running step: --- 4.895232677459717 seconds ---
+httpx 2024-01-12 10:59:06,749 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 10:59:06,754 - INFO - Running determine_conversation_stage: --- 1.057417869567871 seconds ---
+httpx 2024-01-12 10:59:17,514 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 10:59:17,519 - INFO - Running step: --- 10.764922618865967 seconds ---
+salesgpt.logger 2024-01-12 14:28:24,559 - INFO - Running from_llm: --- 9.72747802734375e-05 seconds ---
+salesgpt.logger 2024-01-12 14:28:24,560 - INFO - Running from_llm: --- 0.00032138824462890625 seconds ---
+salesgpt.logger 2024-01-12 14:28:40,204 - INFO - Running from_llm: --- 8.821487426757812e-05 seconds ---
+salesgpt.logger 2024-01-12 14:28:40,204 - INFO - Running from_llm: --- 0.000270843505859375 seconds ---
+langchain.text_splitter 2024-01-12 14:28:40,208 - WARNING - Created a chunk of size 404026, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 14:28:40,470 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 14:28:51,227 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:28:51,623 - INFO - Running from_llm: --- 11.419089317321777 seconds ---
+salesgpt.logger 2024-01-12 14:28:51,623 - INFO - Running seed_agent: --- 1.3113021850585938e-05 seconds ---
+httpx 2024-01-12 14:28:53,475 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:28:53,481 - INFO - Running determine_conversation_stage: --- 1.8574094772338867 seconds ---
+httpx 2024-01-12 14:28:56,547 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:28:56,552 - INFO - Running step: --- 3.071688652038574 seconds ---
+httpx 2024-01-12 14:29:08,177 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:29:08,182 - INFO - Running determine_conversation_stage: --- 0.7250881195068359 seconds ---
+httpx 2024-01-12 14:29:13,648 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:29:13,654 - INFO - Running step: --- 5.471120595932007 seconds ---
+httpx 2024-01-12 14:29:25,754 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:29:25,759 - INFO - Running determine_conversation_stage: --- 0.6959357261657715 seconds ---
+httpx 2024-01-12 14:29:34,537 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:29:34,541 - INFO - Running step: --- 8.780949354171753 seconds ---
+httpx 2024-01-12 14:29:52,969 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:29:52,977 - INFO - Running determine_conversation_stage: --- 0.8676691055297852 seconds ---
+httpx 2024-01-12 14:29:57,835 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:29:57,838 - INFO - Running step: --- 4.860707521438599 seconds ---
+httpx 2024-01-12 14:29:58,654 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:29:58,660 - INFO - Running determine_conversation_stage: --- 0.8211579322814941 seconds ---
+httpx 2024-01-12 14:30:03,518 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:30:03,523 - INFO - Running step: --- 4.863388538360596 seconds ---
+httpx 2024-01-12 14:30:31,984 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:30:31,989 - INFO - Running determine_conversation_stage: --- 1.4963295459747314 seconds ---
+httpx 2024-01-12 14:30:34,648 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:30:34,653 - INFO - Running step: --- 2.6639719009399414 seconds ---
+httpx 2024-01-12 14:31:49,301 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:31:49,305 - INFO - Running determine_conversation_stage: --- 1.4556632041931152 seconds ---
+httpx 2024-01-12 14:31:51,346 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 14:31:51,653 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 14:31:51,662 - WARNING - Number of requested results 4 is greater than number of elements in index 2, updating n_results = 2
+httpx 2024-01-12 14:31:52,507 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 404 Not Found"
+salesgpt.logger 2024-01-12 14:36:01,743 - INFO - Running from_llm: --- 9.274482727050781e-05 seconds ---
+salesgpt.logger 2024-01-12 14:36:01,743 - INFO - Running from_llm: --- 0.00032401084899902344 seconds ---
+langchain.text_splitter 2024-01-12 14:36:01,747 - WARNING - Created a chunk of size 404026, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 14:36:02,013 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 14:36:12,881 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:36:13,237 - INFO - Running from_llm: --- 11.494560480117798 seconds ---
+salesgpt.logger 2024-01-12 14:36:13,237 - INFO - Running seed_agent: --- 1.33514404296875e-05 seconds ---
+httpx 2024-01-12 14:36:13,903 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:36:13,909 - INFO - Running determine_conversation_stage: --- 0.6710882186889648 seconds ---
+httpx 2024-01-12 14:36:16,873 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:36:16,878 - INFO - Running step: --- 2.969700574874878 seconds ---
+httpx 2024-01-12 14:36:24,246 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:36:24,251 - INFO - Running determine_conversation_stage: --- 0.72743821144104 seconds ---
+httpx 2024-01-12 14:36:27,830 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:36:27,835 - INFO - Running step: --- 3.5813536643981934 seconds ---
+httpx 2024-01-12 14:36:34,691 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:36:34,696 - INFO - Running determine_conversation_stage: --- 0.7541553974151611 seconds ---
+httpx 2024-01-12 14:36:42,062 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:36:42,069 - INFO - Running step: --- 7.3727943897247314 seconds ---
+httpx 2024-01-12 14:37:01,180 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:37:01,185 - INFO - Running determine_conversation_stage: --- 0.5293149948120117 seconds ---
+httpx 2024-01-12 14:37:06,360 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:37:06,365 - INFO - Running step: --- 5.180055618286133 seconds ---
+httpx 2024-01-12 14:37:42,276 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:37:42,282 - INFO - Running determine_conversation_stage: --- 1.1629111766815186 seconds ---
+httpx 2024-01-12 14:37:44,529 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 14:37:44,861 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 14:37:44,867 - WARNING - Number of requested results 4 is greater than number of elements in index 2, updating n_results = 2
+httpx 2024-01-12 14:37:45,860 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 404 Not Found"
+salesgpt.logger 2024-01-12 14:41:05,330 - INFO - Running from_llm: --- 8.7738037109375e-05 seconds ---
+salesgpt.logger 2024-01-12 14:41:05,330 - INFO - Running from_llm: --- 0.0004146099090576172 seconds ---
+langchain.text_splitter 2024-01-12 14:41:05,334 - WARNING - Created a chunk of size 404026, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 14:41:05,609 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 14:41:17,218 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:41:17,614 - INFO - Running from_llm: --- 12.283965349197388 seconds ---
+salesgpt.logger 2024-01-12 14:41:17,614 - INFO - Running seed_agent: --- 1.0013580322265625e-05 seconds ---
+httpx 2024-01-12 14:41:18,547 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:41:18,552 - INFO - Running determine_conversation_stage: --- 0.9380671977996826 seconds ---
+httpx 2024-01-12 14:41:22,664 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:41:22,669 - INFO - Running step: --- 4.116853475570679 seconds ---
+httpx 2024-01-12 14:41:33,907 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:41:33,913 - INFO - Running determine_conversation_stage: --- 1.1921627521514893 seconds ---
+httpx 2024-01-12 14:41:38,516 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:41:38,520 - INFO - Running step: --- 4.607315540313721 seconds ---
+httpx 2024-01-12 14:41:49,215 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 14:41:49,225 - INFO - Running determine_conversation_stage: --- 0.9080979824066162 seconds ---
+httpx 2024-01-12 14:41:53,976 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 14:41:55,104 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 14:41:55,110 - WARNING - Number of requested results 4 is greater than number of elements in index 2, updating n_results = 2
+httpx 2024-01-12 14:41:56,026 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 404 Not Found"
+salesgpt.logger 2024-01-12 15:00:26,980 - INFO - Running from_llm: --- 0.0001475811004638672 seconds ---
+salesgpt.logger 2024-01-12 15:00:26,981 - INFO - Running from_llm: --- 0.0004363059997558594 seconds ---
+langchain.text_splitter 2024-01-12 15:00:26,985 - WARNING - Created a chunk of size 404026, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 15:00:27,254 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 15:00:39,134 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 15:00:39,506 - INFO - Running from_llm: --- 12.525224685668945 seconds ---
+salesgpt.logger 2024-01-12 15:00:39,506 - INFO - Running seed_agent: --- 8.58306884765625e-06 seconds ---
+httpx 2024-01-12 15:00:40,048 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 15:00:40,058 - INFO - Running determine_conversation_stage: --- 0.5523684024810791 seconds ---
+httpx 2024-01-12 15:00:43,141 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 15:00:43,145 - INFO - Running step: --- 3.0866200923919678 seconds ---
+httpx 2024-01-12 15:00:54,829 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 15:00:54,841 - INFO - Running determine_conversation_stage: --- 0.7260799407958984 seconds ---
+httpx 2024-01-12 15:00:57,593 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 15:00:58,105 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 15:00:58,109 - WARNING - Number of requested results 4 is greater than number of elements in index 2, updating n_results = 2
+httpx 2024-01-12 15:00:59,423 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 404 Not Found"
+salesgpt.logger 2024-01-12 15:33:06,307 - INFO - Running from_llm: --- 9.012222290039062e-05 seconds ---
+salesgpt.logger 2024-01-12 15:33:06,308 - INFO - Running from_llm: --- 0.00018358230590820312 seconds ---
+langchain.text_splitter 2024-01-12 15:33:06,312 - WARNING - Created a chunk of size 404026, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 15:33:06,579 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 15:33:18,517 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 15:33:18,992 - INFO - Running from_llm: --- 12.684506893157959 seconds ---
+salesgpt.logger 2024-01-12 15:33:18,992 - INFO - Running seed_agent: --- 1.1682510375976562e-05 seconds ---
+httpx 2024-01-12 15:33:19,665 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 15:33:19,671 - INFO - Running determine_conversation_stage: --- 0.6783058643341064 seconds ---
+httpx 2024-01-12 15:33:24,974 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 15:33:24,984 - INFO - Running step: --- 5.313708543777466 seconds ---
+httpx 2024-01-12 15:33:55,799 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 15:33:55,804 - INFO - Running determine_conversation_stage: --- 0.7295935153961182 seconds ---
+httpx 2024-01-12 15:33:58,100 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 15:33:58,546 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 15:33:58,550 - WARNING - Number of requested results 4 is greater than number of elements in index 2, updating n_results = 2
+httpx 2024-01-12 15:34:00,186 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 404 Not Found"
+salesgpt.logger 2024-01-12 15:47:13,378 - INFO - Running from_llm: --- 8.821487426757812e-05 seconds ---
+salesgpt.logger 2024-01-12 15:47:13,378 - INFO - Running from_llm: --- 0.00015616416931152344 seconds ---
+langchain.text_splitter 2024-01-12 15:47:13,382 - WARNING - Created a chunk of size 404026, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 15:47:13,649 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 15:47:25,385 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 15:47:25,723 - INFO - Running from_llm: --- 12.345353841781616 seconds ---
+salesgpt.logger 2024-01-12 15:47:25,724 - INFO - Running seed_agent: --- 2.9802322387695312e-05 seconds ---
+httpx 2024-01-12 15:47:26,250 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 15:47:26,260 - INFO - Running determine_conversation_stage: --- 0.5363943576812744 seconds ---
+httpx 2024-01-12 15:47:30,175 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 15:47:30,180 - INFO - Running step: --- 3.919750928878784 seconds ---
+httpx 2024-01-12 15:47:42,280 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 15:47:42,286 - INFO - Running determine_conversation_stage: --- 0.9673910140991211 seconds ---
+httpx 2024-01-12 15:47:45,557 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 15:47:45,853 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 15:47:45,870 - WARNING - Number of requested results 4 is greater than number of elements in index 2, updating n_results = 2
+httpx 2024-01-12 15:47:46,786 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 404 Not Found"
+salesgpt.logger 2024-01-12 16:30:36,064 - INFO - Running from_llm: --- 0.00010132789611816406 seconds ---
+salesgpt.logger 2024-01-12 16:30:36,065 - INFO - Running from_llm: --- 0.00014162063598632812 seconds ---
+langchain.text_splitter 2024-01-12 16:30:36,069 - WARNING - Created a chunk of size 404026, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 16:30:36,481 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 16:30:48,716 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:30:49,123 - INFO - Running from_llm: --- 13.05890965461731 seconds ---
+salesgpt.logger 2024-01-12 16:30:49,123 - INFO - Running seed_agent: --- 2.7179718017578125e-05 seconds ---
+httpx 2024-01-12 16:30:49,861 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:30:49,864 - INFO - Running determine_conversation_stage: --- 0.7406270503997803 seconds ---
+httpx 2024-01-12 16:30:52,483 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:30:52,486 - INFO - Running step: --- 2.621471405029297 seconds ---
+httpx 2024-01-12 16:31:05,075 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:31:05,085 - INFO - Running determine_conversation_stage: --- 0.638808012008667 seconds ---
+httpx 2024-01-12 16:31:07,552 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:31:07,794 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 16:31:07,795 - WARNING - Number of requested results 4 is greater than number of elements in index 2, updating n_results = 2
+httpx 2024-01-12 16:31:09,158 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 404 Not Found"
+salesgpt.logger 2024-01-12 16:46:29,013 - INFO - Running from_llm: --- 0.0001652240753173828 seconds ---
+salesgpt.logger 2024-01-12 16:46:29,013 - INFO - Running from_llm: --- 0.00019979476928710938 seconds ---
+langchain.text_splitter 2024-01-12 16:46:29,019 - WARNING - Created a chunk of size 404026, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 16:46:29,590 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 16:46:42,242 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:46:42,607 - INFO - Running from_llm: --- 13.594670295715332 seconds ---
+salesgpt.logger 2024-01-12 16:46:42,608 - INFO - Running seed_agent: --- 2.765655517578125e-05 seconds ---
+httpx 2024-01-12 16:46:43,078 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:46:43,082 - INFO - Running determine_conversation_stage: --- 0.4741330146789551 seconds ---
+httpx 2024-01-12 16:46:44,081 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:46:44,083 - INFO - Running step: --- 1.0010981559753418 seconds ---
+httpx 2024-01-12 16:47:03,265 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:47:03,267 - INFO - Running determine_conversation_stage: --- 1.506662368774414 seconds ---
+httpx 2024-01-12 16:47:04,971 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:47:05,894 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:47:07,736 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:47:07,738 - INFO - Running step: --- 4.470452785491943 seconds ---
+httpx 2024-01-12 16:48:10,870 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:48:10,878 - INFO - Running determine_conversation_stage: --- 0.41745734214782715 seconds ---
+httpx 2024-01-12 16:48:11,605 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:48:11,942 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 16:48:11,948 - WARNING - Number of requested results 4 is greater than number of elements in index 2, updating n_results = 2
+httpx 2024-01-12 16:48:13,343 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 400 Bad Request"
+salesgpt.logger 2024-01-12 16:49:39,886 - INFO - Running from_llm: --- 9.584426879882812e-05 seconds ---
+salesgpt.logger 2024-01-12 16:49:39,886 - INFO - Running from_llm: --- 0.00023317337036132812 seconds ---
+langchain.text_splitter 2024-01-12 16:49:39,890 - WARNING - Created a chunk of size 404026, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 16:49:40,233 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 16:49:51,887 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:49:52,264 - INFO - Running from_llm: --- 12.378771781921387 seconds ---
+salesgpt.logger 2024-01-12 16:49:52,265 - INFO - Running seed_agent: --- 2.0742416381835938e-05 seconds ---
+httpx 2024-01-12 16:49:52,680 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:49:52,684 - INFO - Running determine_conversation_stage: --- 0.41910600662231445 seconds ---
+httpx 2024-01-12 16:49:53,831 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:49:53,835 - INFO - Running step: --- 1.1507434844970703 seconds ---
+httpx 2024-01-12 16:50:12,980 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:50:12,983 - INFO - Running determine_conversation_stage: --- 5.563337802886963 seconds ---
+httpx 2024-01-12 16:50:14,720 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:50:15,745 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:50:16,871 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:50:16,876 - INFO - Running step: --- 3.892310380935669 seconds ---
+httpx 2024-01-12 16:50:34,586 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:50:34,596 - INFO - Running determine_conversation_stage: --- 0.44419336318969727 seconds ---
+httpx 2024-01-12 16:50:35,613 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:50:36,839 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:50:36,844 - INFO - Running step: --- 2.247652053833008 seconds ---
+httpx 2024-01-12 16:50:48,001 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:50:48,010 - INFO - Running determine_conversation_stage: --- 0.32594943046569824 seconds ---
+httpx 2024-01-12 16:50:48,922 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:50:49,229 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 16:50:49,235 - WARNING - Number of requested results 4 is greater than number of elements in index 2, updating n_results = 2
+httpx 2024-01-12 16:50:50,254 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 400 Bad Request"
+salesgpt.logger 2024-01-12 16:51:56,015 - INFO - Running from_llm: --- 0.00011754035949707031 seconds ---
+salesgpt.logger 2024-01-12 16:51:56,015 - INFO - Running from_llm: --- 0.00022125244140625 seconds ---
+chromadb.telemetry.product.posthog 2024-01-12 16:51:56,282 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 16:51:56,816 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:51:56,849 - INFO - Running from_llm: --- 0.8338038921356201 seconds ---
+salesgpt.logger 2024-01-12 16:51:56,849 - INFO - Running seed_agent: --- 1.8596649169921875e-05 seconds ---
+httpx 2024-01-12 16:51:57,347 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:51:57,350 - INFO - Running determine_conversation_stage: --- 0.5013213157653809 seconds ---
+httpx 2024-01-12 16:51:58,374 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:51:58,378 - INFO - Running step: --- 1.027658462524414 seconds ---
+httpx 2024-01-12 16:52:07,873 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:52:07,885 - INFO - Running determine_conversation_stage: --- 0.3689579963684082 seconds ---
+httpx 2024-01-12 16:52:08,537 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:52:08,837 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 16:52:08,840 - WARNING - Number of requested results 4 is greater than number of elements in index 1, updating n_results = 1
+httpx 2024-01-12 16:52:09,356 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:52:10,929 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:52:10,933 - INFO - Running step: --- 3.0472328662872314 seconds ---
+httpx 2024-01-12 16:52:31,053 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:52:31,055 - INFO - Running determine_conversation_stage: --- 0.351529598236084 seconds ---
+httpx 2024-01-12 16:52:32,040 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:52:33,678 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:52:33,682 - INFO - Running step: --- 2.626835584640503 seconds ---
+httpx 2024-01-12 16:52:48,321 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:52:48,332 - INFO - Running determine_conversation_stage: --- 0.4276747703552246 seconds ---
+httpx 2024-01-12 16:52:49,243 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:52:50,887 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:52:50,892 - INFO - Running step: --- 2.5597305297851562 seconds ---
+httpx 2024-01-12 16:53:24,101 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:53:24,104 - INFO - Running determine_conversation_stage: --- 0.3764047622680664 seconds ---
+httpx 2024-01-12 16:53:25,127 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:53:26,304 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:53:26,308 - INFO - Running step: --- 2.2039124965667725 seconds ---
+httpx 2024-01-12 16:53:38,352 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:53:38,357 - INFO - Running determine_conversation_stage: --- 0.46915221214294434 seconds ---
+httpx 2024-01-12 16:53:39,300 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:53:40,751 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:53:40,754 - INFO - Running step: --- 2.397188901901245 seconds ---
+httpx 2024-01-12 16:53:45,051 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:53:45,055 - INFO - Running determine_conversation_stage: --- 0.5994067192077637 seconds ---
+httpx 2024-01-12 16:53:45,870 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:53:46,177 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 16:53:46,182 - WARNING - Number of requested results 4 is greater than number of elements in index 1, updating n_results = 1
+httpx 2024-01-12 16:53:46,587 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:53:48,018 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:53:48,022 - INFO - Running step: --- 2.966912269592285 seconds ---
+httpx 2024-01-12 16:54:00,366 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:54:00,370 - INFO - Running determine_conversation_stage: --- 0.518563985824585 seconds ---
+httpx 2024-01-12 16:54:01,084 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:54:01,436 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 16:54:01,442 - WARNING - Number of requested results 4 is greater than number of elements in index 1, updating n_results = 1
+httpx 2024-01-12 16:54:01,845 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:54:03,304 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:54:03,307 - INFO - Running step: --- 2.934229850769043 seconds ---
+httpx 2024-01-12 16:54:27,955 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:54:27,960 - INFO - Running determine_conversation_stage: --- 0.7958509922027588 seconds ---
+httpx 2024-01-12 16:54:28,677 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:54:28,981 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 16:54:28,999 - WARNING - Number of requested results 4 is greater than number of elements in index 1, updating n_results = 1
+httpx 2024-01-12 16:54:29,493 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:54:30,824 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:54:30,829 - INFO - Running step: --- 2.868628740310669 seconds ---
+salesgpt.logger 2024-01-12 16:56:19,860 - INFO - Running from_llm: --- 8.845329284667969e-05 seconds ---
+salesgpt.logger 2024-01-12 16:56:19,860 - INFO - Running from_llm: --- 0.00019073486328125 seconds ---
+chromadb.telemetry.product.posthog 2024-01-12 16:56:20,132 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 16:56:20,702 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:56:20,735 - INFO - Running from_llm: --- 0.8750429153442383 seconds ---
+salesgpt.logger 2024-01-12 16:56:20,735 - INFO - Running seed_agent: --- 2.86102294921875e-05 seconds ---
+httpx 2024-01-12 16:56:21,419 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:56:21,436 - INFO - Running determine_conversation_stage: --- 0.700045108795166 seconds ---
+httpx 2024-01-12 16:56:23,670 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:56:23,675 - INFO - Running step: --- 2.2394113540649414 seconds ---
+httpx 2024-01-12 16:56:39,735 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:56:39,740 - INFO - Running determine_conversation_stage: --- 0.7127299308776855 seconds ---
+httpx 2024-01-12 16:56:47,041 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:56:47,047 - INFO - Running step: --- 7.306907653808594 seconds ---
+httpx 2024-01-12 16:57:08,929 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:57:08,933 - INFO - Running determine_conversation_stage: --- 0.9338476657867432 seconds ---
+httpx 2024-01-12 16:57:11,389 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:57:11,680 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 16:57:11,717 - WARNING - Number of requested results 4 is greater than number of elements in index 1, updating n_results = 1
+httpx 2024-01-12 16:57:12,077 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 16:57:17,049 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 16:57:17,060 - INFO - Running step: --- 8.126699447631836 seconds ---
+salesgpt.logger 2024-01-12 17:12:37,137 - INFO - Running from_llm: --- 9.012222290039062e-05 seconds ---
+salesgpt.logger 2024-01-12 17:12:37,137 - INFO - Running from_llm: --- 0.0002086162567138672 seconds ---
+langchain.text_splitter 2024-01-12 17:12:37,141 - WARNING - Created a chunk of size 404026, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 17:12:37,409 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 17:12:49,482 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:12:49,879 - INFO - Running from_llm: --- 12.742021560668945 seconds ---
+salesgpt.logger 2024-01-12 17:12:49,879 - INFO - Running seed_agent: --- 1.1444091796875e-05 seconds ---
+httpx 2024-01-12 17:12:50,607 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:12:50,612 - INFO - Running determine_conversation_stage: --- 0.7329576015472412 seconds ---
+httpx 2024-01-12 17:12:54,498 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:12:54,503 - INFO - Running step: --- 3.8910419940948486 seconds ---
+httpx 2024-01-12 17:13:07,279 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:13:07,284 - INFO - Running determine_conversation_stage: --- 1.1505563259124756 seconds ---
+httpx 2024-01-12 17:13:12,009 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:13:12,014 - INFO - Running step: --- 4.72998309135437 seconds ---
+salesgpt.logger 2024-01-12 17:13:23,275 - INFO - Running from_llm: --- 9.202957153320312e-05 seconds ---
+salesgpt.logger 2024-01-12 17:13:23,275 - INFO - Running from_llm: --- 0.00021076202392578125 seconds ---
+langchain.text_splitter 2024-01-12 17:13:23,279 - WARNING - Created a chunk of size 404026, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 17:13:23,547 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 17:13:34,625 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:13:34,979 - INFO - Running from_llm: --- 11.70439863204956 seconds ---
+salesgpt.logger 2024-01-12 17:13:34,979 - INFO - Running seed_agent: --- 1.2159347534179688e-05 seconds ---
+httpx 2024-01-12 17:13:36,380 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:13:36,386 - INFO - Running determine_conversation_stage: --- 1.4068171977996826 seconds ---
+httpx 2024-01-12 17:13:40,476 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:13:40,481 - INFO - Running step: --- 4.094598293304443 seconds ---
+salesgpt.logger 2024-01-12 17:14:15,250 - INFO - Running from_llm: --- 8.845329284667969e-05 seconds ---
+salesgpt.logger 2024-01-12 17:14:15,250 - INFO - Running from_llm: --- 0.00020623207092285156 seconds ---
+langchain.text_splitter 2024-01-12 17:14:15,254 - WARNING - Created a chunk of size 404026, which is longer than the specified 10
+chromadb.telemetry.product.posthog 2024-01-12 17:14:15,520 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 17:14:28,094 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:14:28,561 - INFO - Running from_llm: --- 13.311062574386597 seconds ---
+salesgpt.logger 2024-01-12 17:14:28,561 - INFO - Running seed_agent: --- 2.09808349609375e-05 seconds ---
+httpx 2024-01-12 17:14:29,214 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:14:29,219 - INFO - Running determine_conversation_stage: --- 0.6581127643585205 seconds ---
+httpx 2024-01-12 17:14:31,419 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:14:31,424 - INFO - Running step: --- 2.2043397426605225 seconds ---
+httpx 2024-01-12 17:15:11,920 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:15:11,925 - INFO - Running determine_conversation_stage: --- 1.468172311782837 seconds ---
+httpx 2024-01-12 17:15:14,206 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 17:15:14,501 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 17:15:14,507 - WARNING - Number of requested results 4 is greater than number of elements in index 2, updating n_results = 2
+httpx 2024-01-12 17:15:15,896 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 400 Bad Request"
+salesgpt.logger 2024-01-12 17:15:29,848 - INFO - Running from_llm: --- 8.821487426757812e-05 seconds ---
+salesgpt.logger 2024-01-12 17:15:29,848 - INFO - Running from_llm: --- 0.00017642974853515625 seconds ---
+chromadb.telemetry.product.posthog 2024-01-12 17:15:30,115 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 17:15:30,681 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:15:30,713 - INFO - Running from_llm: --- 0.8648660182952881 seconds ---
+salesgpt.logger 2024-01-12 17:15:30,713 - INFO - Running seed_agent: --- 1.6927719116210938e-05 seconds ---
+httpx 2024-01-12 17:15:31,268 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:15:31,273 - INFO - Running determine_conversation_stage: --- 0.5596864223480225 seconds ---
+httpx 2024-01-12 17:15:35,370 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:15:35,375 - INFO - Running step: --- 4.102473735809326 seconds ---
+httpx 2024-01-12 17:15:51,447 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:15:51,452 - INFO - Running determine_conversation_stage: --- 0.59047532081604 seconds ---
+httpx 2024-01-12 17:15:53,802 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 17:15:54,075 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 17:15:54,089 - WARNING - Number of requested results 4 is greater than number of elements in index 1, updating n_results = 1
+httpx 2024-01-12 17:15:55,440 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 17:16:01,175 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 17:16:01,186 - INFO - Running step: --- 9.733731746673584 seconds ---
+salesgpt.logger 2024-01-12 22:01:54,260 - INFO - Running from_llm: --- 8.940696716308594e-05 seconds ---
+salesgpt.logger 2024-01-12 22:01:54,261 - INFO - Running from_llm: --- 0.00014543533325195312 seconds ---
+chromadb.telemetry.product.posthog 2024-01-12 22:01:54,551 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+httpx 2024-01-12 22:01:55,389 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 22:01:55,398 - INFO - Running from_llm: --- 1.1379809379577637 seconds ---
+salesgpt.logger 2024-01-12 22:01:55,398 - INFO - Running seed_agent: --- 2.7179718017578125e-05 seconds ---
+httpx 2024-01-12 22:01:56,240 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 22:01:56,245 - INFO - Running determine_conversation_stage: --- 0.8465344905853271 seconds ---
+httpx 2024-01-12 22:01:59,741 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 22:01:59,746 - INFO - Running step: --- 3.5007593631744385 seconds ---
+httpx 2024-01-12 22:08:47,083 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 22:08:47,087 - INFO - Running determine_conversation_stage: --- 5.077138423919678 seconds ---
+httpx 2024-01-12 22:08:49,745 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 22:08:50,257 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 22:08:50,260 - WARNING - Number of requested results 4 is greater than number of elements in index 1, updating n_results = 1
+httpx 2024-01-12 22:08:51,087 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 22:08:57,528 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 22:08:57,533 - INFO - Running step: --- 10.445361137390137 seconds ---
+httpx 2024-01-12 22:09:42,202 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 22:09:42,207 - INFO - Running determine_conversation_stage: --- 0.9412391185760498 seconds ---
+httpx 2024-01-12 22:09:44,221 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 22:09:45,045 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+chromadb.segment.impl.vector.local_hnsw 2024-01-12 22:09:45,050 - WARNING - Number of requested results 4 is greater than number of elements in index 1, updating n_results = 1
+httpx 2024-01-12 22:09:46,072 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+httpx 2024-01-12 22:09:50,371 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-12 22:09:50,376 - INFO - Running step: --- 8.169528484344482 seconds ---
