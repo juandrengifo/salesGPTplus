@@ -24,6 +24,8 @@ class SalesConvoOutputParser(AgentOutputParser):
             )
         regex = r"Action: (.*?)[\n]*Action Input: (.*)"
         match = re.search(regex, text)
+        print("->>>>>>>>>>>>", text)
+        print(regex)
         if not match:
             ## TODO - this is not entirely reliable, sometimes results in an error.
             return AgentFinish(
