@@ -1322,3 +1322,923 @@ salesgpt.logger 2024-01-15 22:15:05,196 - INFO - Running from_llm: --- 0.0097928
 salesgpt.logger 2024-01-15 22:15:05,196 - INFO - Running seed_agent: --- 1.0251998901367188e-05 seconds ---
 httpx 2024-01-15 22:15:09,867 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 salesgpt.logger 2024-01-15 22:15:09,873 - INFO - Running step: --- 4.676739454269409 seconds ---
+werkzeug 2024-01-15 23:33:48,952 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-15 23:33:48,953 - INFO - [33mPress CTRL+C to quit[0m
+werkzeug 2024-01-15 23:37:37,912 - INFO - 127.0.0.1 - - [15/Jan/2024 23:37:37] "[33mGET / HTTP/1.1[0m" 404 -
+werkzeug 2024-01-15 23:37:38,379 - INFO - 127.0.0.1 - - [15/Jan/2024 23:37:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+werkzeug 2024-01-15 23:37:46,028 - INFO - 127.0.0.1 - - [15/Jan/2024 23:37:46] "[31m[1mGET /bot HTTP/1.1[0m" 405 -
+werkzeug 2024-01-15 23:43:26,697 - INFO - 127.0.0.1 - - [15/Jan/2024 23:43:26] "[33mPOST / HTTP/1.1[0m" 404 -
+werkzeug 2024-01-15 23:43:51,952 - INFO - 127.0.0.1 - - [15/Jan/2024 23:43:51] "[33mPOST / HTTP/1.1[0m" 404 -
+salesgpt.logger 2024-01-15 23:44:35,031 - INFO - Running from_llm: --- 0.00032830238342285156 seconds ---
+salesgpt.logger 2024-01-15 23:44:35,031 - INFO - Running from_llm: --- 0.00037360191345214844 seconds ---
+salesgpt.logger 2024-01-15 23:44:35,046 - INFO - Running from_llm: --- 0.015289545059204102 seconds ---
+salesgpt.logger 2024-01-15 23:44:35,046 - INFO - Running seed_agent: --- 1.1682510375976562e-05 seconds ---
+httpx 2024-01-15 23:44:35,580 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+app 2024-01-15 23:44:35,593 - ERROR - Exception on /bot [POST]
+Traceback (most recent call last):
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 596, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 572, in completion
+    response = openai_chat_completions.completion(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 252, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 247, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 221, in completion
+    response = openai_client.chat.completions.create(**data) # type: ignore
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_utils/_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 643, in create
+    return self._post(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 1112, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 859, in request
+    return self._request(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 949, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0zQSJ***************************************k69i. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/juanrengifo/Desktop/salesGPTplus/app.py", line 22, in bot
+    name, reply = sales_api.do(conversation_history, incoming_msg)
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/salesgptapi.py", line 56, in do
+    sales_agent.step()
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/logger.py", line 34, in wrapper
+    result = func(*args, **kwargs)  # Function execution
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/agents.py", line 112, in step
+    self._call(inputs={})
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/agents.py", line 236, in _call
+    ai_message = self.sales_agent_executor.run(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 512, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 312, in __call__
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 306, in __call__
+    self._call(inputs, run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1312, in _call
+    next_step_output = self._take_next_step(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1038, in _take_next_step
+    [
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1038, in <listcomp>
+    [
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1066, in _iter_next_step
+    output = self.agent.plan(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 531, in plan
+    output = self.llm_chain.run(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 512, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 312, in __call__
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 306, in __call__
+    self._call(inputs, run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/llm.py", line 103, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/llm.py", line 115, in generate
+    return self.llm.generate_prompt(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 481, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 370, in generate
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 360, in generate
+    self._generate_with_cache(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 514, in _generate_with_cache
+    return self._generate(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 307, in _generate
+    response = self.completion_with_retry(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 240, in completion_with_retry
+    return _completion_with_retry(**kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 314, in iter
+    return fut.result()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 238, in _completion_with_retry
+    return self.client.completion(**kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 1369, in wrapper
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 1298, in wrapper
+    result = original_function(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 1424, in completion
+    raise exception_type(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 4634, in exception_type
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 3738, in exception_type
+    raise AuthenticationError(
+litellm.exceptions.AuthenticationError: OpenAIException - Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0zQSJ***************************************k69i. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+werkzeug 2024-01-15 23:44:35,610 - INFO - 127.0.0.1 - - [15/Jan/2024 23:44:35] "[35m[1mPOST /bot HTTP/1.1[0m" 500 -
+werkzeug 2024-01-15 23:46:47,557 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-15 23:46:47,557 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-15 23:48:55,239 - INFO - Running from_llm: --- 0.0002677440643310547 seconds ---
+salesgpt.logger 2024-01-15 23:48:55,240 - INFO - Running from_llm: --- 0.00024819374084472656 seconds ---
+salesgpt.logger 2024-01-15 23:48:55,254 - INFO - Running from_llm: --- 0.015034675598144531 seconds ---
+salesgpt.logger 2024-01-15 23:48:55,254 - INFO - Running seed_agent: --- 1.3828277587890625e-05 seconds ---
+httpx 2024-01-15 23:48:55,724 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+app 2024-01-15 23:48:55,736 - ERROR - Exception on /bot [POST]
+Traceback (most recent call last):
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 596, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 572, in completion
+    response = openai_chat_completions.completion(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 252, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 247, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 221, in completion
+    response = openai_client.chat.completions.create(**data) # type: ignore
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_utils/_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 643, in create
+    return self._post(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 1112, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 859, in request
+    return self._request(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 949, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0zQSJ***************************************k69i. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/juanrengifo/Desktop/salesGPTplus/app.py", line 24, in bot
+    name, reply = sales_api.do(conversation_history, incoming_msg)
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/salesgptapi.py", line 56, in do
+    sales_agent.step()
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/logger.py", line 34, in wrapper
+    result = func(*args, **kwargs)  # Function execution
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/agents.py", line 112, in step
+    self._call(inputs={})
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/agents.py", line 236, in _call
+    ai_message = self.sales_agent_executor.run(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 512, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 312, in __call__
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 306, in __call__
+    self._call(inputs, run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1312, in _call
+    next_step_output = self._take_next_step(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1038, in _take_next_step
+    [
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1038, in <listcomp>
+    [
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1066, in _iter_next_step
+    output = self.agent.plan(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 531, in plan
+    output = self.llm_chain.run(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 512, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 312, in __call__
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 306, in __call__
+    self._call(inputs, run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/llm.py", line 103, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/llm.py", line 115, in generate
+    return self.llm.generate_prompt(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 481, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 370, in generate
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 360, in generate
+    self._generate_with_cache(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 514, in _generate_with_cache
+    return self._generate(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 307, in _generate
+    response = self.completion_with_retry(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 240, in completion_with_retry
+    return _completion_with_retry(**kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 314, in iter
+    return fut.result()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 238, in _completion_with_retry
+    return self.client.completion(**kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 1369, in wrapper
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 1298, in wrapper
+    result = original_function(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 1424, in completion
+    raise exception_type(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 4634, in exception_type
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 3738, in exception_type
+    raise AuthenticationError(
+litellm.exceptions.AuthenticationError: OpenAIException - Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0zQSJ***************************************k69i. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+werkzeug 2024-01-15 23:48:55,754 - INFO - 127.0.0.1 - - [15/Jan/2024 23:48:55] "[35m[1mPOST /bot HTTP/1.1[0m" 500 -
+werkzeug 2024-01-15 23:50:06,564 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-15 23:50:06,564 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-15 23:50:56,727 - INFO - Running from_llm: --- 0.0002357959747314453 seconds ---
+salesgpt.logger 2024-01-15 23:50:56,727 - INFO - Running from_llm: --- 0.00021004676818847656 seconds ---
+salesgpt.logger 2024-01-15 23:50:56,741 - INFO - Running from_llm: --- 0.014197111129760742 seconds ---
+salesgpt.logger 2024-01-15 23:50:56,741 - INFO - Running seed_agent: --- 1.4543533325195312e-05 seconds ---
+httpx 2024-01-15 23:50:57,202 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+app 2024-01-15 23:50:57,214 - ERROR - Exception on /bot [POST]
+Traceback (most recent call last):
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 596, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 572, in completion
+    response = openai_chat_completions.completion(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 252, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 247, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 221, in completion
+    response = openai_client.chat.completions.create(**data) # type: ignore
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_utils/_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 643, in create
+    return self._post(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 1112, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 859, in request
+    return self._request(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 949, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0zQSJ***************************************k69i. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/juanrengifo/Desktop/salesGPTplus/app.py", line 24, in bot
+    name, reply = sales_api.do(conversation_history, incoming_msg)
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/salesgptapi.py", line 56, in do
+    sales_agent.step()
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/logger.py", line 34, in wrapper
+    result = func(*args, **kwargs)  # Function execution
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/agents.py", line 112, in step
+    self._call(inputs={})
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/agents.py", line 236, in _call
+    ai_message = self.sales_agent_executor.run(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 512, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 312, in __call__
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 306, in __call__
+    self._call(inputs, run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1312, in _call
+    next_step_output = self._take_next_step(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1038, in _take_next_step
+    [
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1038, in <listcomp>
+    [
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1066, in _iter_next_step
+    output = self.agent.plan(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 531, in plan
+    output = self.llm_chain.run(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 512, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 312, in __call__
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 306, in __call__
+    self._call(inputs, run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/llm.py", line 103, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/llm.py", line 115, in generate
+    return self.llm.generate_prompt(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 481, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 370, in generate
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 360, in generate
+    self._generate_with_cache(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 514, in _generate_with_cache
+    return self._generate(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 307, in _generate
+    response = self.completion_with_retry(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 240, in completion_with_retry
+    return _completion_with_retry(**kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 314, in iter
+    return fut.result()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 238, in _completion_with_retry
+    return self.client.completion(**kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 1369, in wrapper
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 1298, in wrapper
+    result = original_function(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 1424, in completion
+    raise exception_type(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 4634, in exception_type
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 3738, in exception_type
+    raise AuthenticationError(
+litellm.exceptions.AuthenticationError: OpenAIException - Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0zQSJ***************************************k69i. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+werkzeug 2024-01-15 23:50:57,228 - INFO - 127.0.0.1 - - [15/Jan/2024 23:50:57] "[35m[1mPOST /bot HTTP/1.1[0m" 500 -
+werkzeug 2024-01-15 23:52:37,687 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-15 23:52:37,687 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-15 23:53:47,312 - INFO - Running from_llm: --- 0.0001163482666015625 seconds ---
+salesgpt.logger 2024-01-15 23:53:47,313 - INFO - Running from_llm: --- 0.00016260147094726562 seconds ---
+salesgpt.logger 2024-01-15 23:53:47,322 - INFO - Running from_llm: --- 0.01003122329711914 seconds ---
+salesgpt.logger 2024-01-15 23:53:47,323 - INFO - Running seed_agent: --- 5.91278076171875e-05 seconds ---
+httpx 2024-01-15 23:53:47,828 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+app 2024-01-15 23:53:47,845 - ERROR - Exception on /bot [POST]
+Traceback (most recent call last):
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 596, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 572, in completion
+    response = openai_chat_completions.completion(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 252, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 247, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 221, in completion
+    response = openai_client.chat.completions.create(**data) # type: ignore
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_utils/_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 643, in create
+    return self._post(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 1112, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 859, in request
+    return self._request(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 949, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0zQSJ***************************************k69i. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/juanrengifo/Desktop/salesGPTplus/app.py", line 24, in bot
+    name, reply = sales_api.do(conversation_history, incoming_msg)
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/salesgptapi.py", line 56, in do
+    sales_agent.step()
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/logger.py", line 34, in wrapper
+    result = func(*args, **kwargs)  # Function execution
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/agents.py", line 112, in step
+    self._call(inputs={})
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/agents.py", line 236, in _call
+    ai_message = self.sales_agent_executor.run(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 512, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 312, in __call__
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 306, in __call__
+    self._call(inputs, run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1312, in _call
+    next_step_output = self._take_next_step(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1038, in _take_next_step
+    [
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1038, in <listcomp>
+    [
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1066, in _iter_next_step
+    output = self.agent.plan(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 531, in plan
+    output = self.llm_chain.run(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 512, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 312, in __call__
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 306, in __call__
+    self._call(inputs, run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/llm.py", line 103, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/llm.py", line 115, in generate
+    return self.llm.generate_prompt(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 481, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 370, in generate
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 360, in generate
+    self._generate_with_cache(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 514, in _generate_with_cache
+    return self._generate(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 307, in _generate
+    response = self.completion_with_retry(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 240, in completion_with_retry
+    return _completion_with_retry(**kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 314, in iter
+    return fut.result()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 238, in _completion_with_retry
+    return self.client.completion(**kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 1369, in wrapper
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 1298, in wrapper
+    result = original_function(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 1424, in completion
+    raise exception_type(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 4634, in exception_type
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 3738, in exception_type
+    raise AuthenticationError(
+litellm.exceptions.AuthenticationError: OpenAIException - Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0zQSJ***************************************k69i. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+werkzeug 2024-01-15 23:53:47,862 - INFO - 127.0.0.1 - - [15/Jan/2024 23:53:47] "[35m[1mPOST /bot HTTP/1.1[0m" 500 -
+werkzeug 2024-01-15 23:57:33,946 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-15 23:57:33,946 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-15 23:57:43,140 - INFO - Running from_llm: --- 0.00012731552124023438 seconds ---
+salesgpt.logger 2024-01-15 23:57:43,140 - INFO - Running from_llm: --- 0.00011587142944335938 seconds ---
+salesgpt.logger 2024-01-15 23:57:43,150 - INFO - Running from_llm: --- 0.010350465774536133 seconds ---
+salesgpt.logger 2024-01-15 23:57:43,151 - INFO - Running seed_agent: --- 1.3589859008789062e-05 seconds ---
+httpx 2024-01-15 23:57:43,569 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+app 2024-01-15 23:57:43,581 - ERROR - Exception on /bot [POST]
+Traceback (most recent call last):
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 596, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 572, in completion
+    response = openai_chat_completions.completion(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 252, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 247, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 221, in completion
+    response = openai_client.chat.completions.create(**data) # type: ignore
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_utils/_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 643, in create
+    return self._post(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 1112, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 859, in request
+    return self._request(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 949, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0zQSJ***************************************k69i. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/juanrengifo/Desktop/salesGPTplus/app.py", line 24, in bot
+    name, reply = sales_api.do(conversation_history, incoming_msg)
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/salesgptapi.py", line 56, in do
+    sales_agent.step()
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/logger.py", line 34, in wrapper
+    result = func(*args, **kwargs)  # Function execution
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/agents.py", line 112, in step
+    self._call(inputs={})
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/agents.py", line 236, in _call
+    ai_message = self.sales_agent_executor.run(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 512, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 312, in __call__
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 306, in __call__
+    self._call(inputs, run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1312, in _call
+    next_step_output = self._take_next_step(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1038, in _take_next_step
+    [
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1038, in <listcomp>
+    [
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1066, in _iter_next_step
+    output = self.agent.plan(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 531, in plan
+    output = self.llm_chain.run(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 512, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 312, in __call__
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 306, in __call__
+    self._call(inputs, run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/llm.py", line 103, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/llm.py", line 115, in generate
+    return self.llm.generate_prompt(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 481, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 370, in generate
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 360, in generate
+    self._generate_with_cache(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 514, in _generate_with_cache
+    return self._generate(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 307, in _generate
+    response = self.completion_with_retry(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 240, in completion_with_retry
+    return _completion_with_retry(**kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 314, in iter
+    return fut.result()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 238, in _completion_with_retry
+    return self.client.completion(**kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 1369, in wrapper
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 1298, in wrapper
+    result = original_function(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 1424, in completion
+    raise exception_type(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 4634, in exception_type
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 3738, in exception_type
+    raise AuthenticationError(
+litellm.exceptions.AuthenticationError: OpenAIException - Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0zQSJ***************************************k69i. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+werkzeug 2024-01-15 23:57:43,601 - INFO - 127.0.0.1 - - [15/Jan/2024 23:57:43] "[35m[1mPOST /bot HTTP/1.1[0m" 500 -
+werkzeug 2024-01-15 23:58:44,467 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-15 23:58:44,468 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-15 23:59:26,182 - INFO - Running from_llm: --- 0.00023365020751953125 seconds ---
+salesgpt.logger 2024-01-15 23:59:26,183 - INFO - Running from_llm: --- 0.0004355907440185547 seconds ---
+salesgpt.logger 2024-01-15 23:59:26,198 - INFO - Running from_llm: --- 0.015855073928833008 seconds ---
+salesgpt.logger 2024-01-15 23:59:26,198 - INFO - Running seed_agent: --- 1.0251998901367188e-05 seconds ---
+httpx 2024-01-15 23:59:26,716 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+app 2024-01-15 23:59:26,728 - ERROR - Exception on /bot [POST]
+Traceback (most recent call last):
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 596, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 572, in completion
+    response = openai_chat_completions.completion(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 252, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 247, in completion
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/llms/openai.py", line 221, in completion
+    response = openai_client.chat.completions.create(**data) # type: ignore
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_utils/_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/resources/chat/completions.py", line 643, in create
+    return self._post(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 1112, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 859, in request
+    return self._request(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/openai/_base_client.py", line 949, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0zQSJ***************************************k69i. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/juanrengifo/Desktop/salesGPTplus/app.py", line 24, in bot
+    name, reply = sales_api.do(conversation_history, incoming_msg)
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/salesgptapi.py", line 56, in do
+    sales_agent.step()
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/logger.py", line 34, in wrapper
+    result = func(*args, **kwargs)  # Function execution
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/agents.py", line 112, in step
+    self._call(inputs={})
+  File "/home/juanrengifo/Desktop/salesGPTplus/salesgpt/agents.py", line 236, in _call
+    ai_message = self.sales_agent_executor.run(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 512, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 312, in __call__
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 306, in __call__
+    self._call(inputs, run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1312, in _call
+    next_step_output = self._take_next_step(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1038, in _take_next_step
+    [
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1038, in <listcomp>
+    [
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 1066, in _iter_next_step
+    output = self.agent.plan(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/agents/agent.py", line 531, in plan
+    output = self.llm_chain.run(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 512, in run
+    return self(kwargs, callbacks=callbacks, tags=tags, metadata=metadata)[
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 312, in __call__
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/base.py", line 306, in __call__
+    self._call(inputs, run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/llm.py", line 103, in _call
+    response = self.generate([inputs], run_manager=run_manager)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chains/llm.py", line 115, in generate
+    return self.llm.generate_prompt(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 481, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 370, in generate
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 360, in generate
+    self._generate_with_cache(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 514, in _generate_with_cache
+    return self._generate(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 307, in _generate
+    response = self.completion_with_retry(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 240, in completion_with_retry
+    return _completion_with_retry(**kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 314, in iter
+    return fut.result()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/langchain/chat_models/litellm.py", line 238, in _completion_with_retry
+    return self.client.completion(**kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 1369, in wrapper
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 1298, in wrapper
+    result = original_function(*args, **kwargs)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/main.py", line 1424, in completion
+    raise exception_type(
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 4634, in exception_type
+    raise e
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/litellm/utils.py", line 3738, in exception_type
+    raise AuthenticationError(
+litellm.exceptions.AuthenticationError: OpenAIException - Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0zQSJ***************************************k69i. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+werkzeug 2024-01-15 23:59:26,746 - INFO - 127.0.0.1 - - [15/Jan/2024 23:59:26] "[35m[1mPOST /bot HTTP/1.1[0m" 500 -
+werkzeug 2024-01-16 00:00:00,126 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-16 00:00:00,126 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-16 00:00:25,270 - INFO - Running from_llm: --- 0.00032138824462890625 seconds ---
+salesgpt.logger 2024-01-16 00:00:25,271 - INFO - Running from_llm: --- 0.0003597736358642578 seconds ---
+salesgpt.logger 2024-01-16 00:00:25,284 - INFO - Running from_llm: --- 0.014618635177612305 seconds ---
+salesgpt.logger 2024-01-16 00:00:25,285 - INFO - Running seed_agent: --- 9.5367431640625e-06 seconds ---
+httpx 2024-01-16 00:00:27,899 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:00:27,914 - INFO - Running step: --- 2.629380464553833 seconds ---
+werkzeug 2024-01-16 00:00:27,922 - INFO - 127.0.0.1 - - [16/Jan/2024 00:00:27] "POST /bot HTTP/1.1" 200 -
+werkzeug 2024-01-16 00:03:15,852 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-16 00:03:15,852 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-16 00:03:47,601 - INFO - Running from_llm: --- 0.00012993812561035156 seconds ---
+salesgpt.logger 2024-01-16 00:03:47,601 - INFO - Running from_llm: --- 0.00016236305236816406 seconds ---
+salesgpt.logger 2024-01-16 00:03:47,610 - INFO - Running from_llm: --- 0.009887218475341797 seconds ---
+salesgpt.logger 2024-01-16 00:03:47,611 - INFO - Running seed_agent: --- 1.0967254638671875e-05 seconds ---
+httpx 2024-01-16 00:03:50,351 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:03:50,359 - INFO - Running step: --- 2.7479963302612305 seconds ---
+werkzeug 2024-01-16 00:03:50,361 - INFO - 127.0.0.1 - - [16/Jan/2024 00:03:50] "POST /bot HTTP/1.1" 200 -
+salesgpt.logger 2024-01-16 00:03:58,355 - INFO - Running from_llm: --- 0.00012373924255371094 seconds ---
+salesgpt.logger 2024-01-16 00:03:58,356 - INFO - Running from_llm: --- 0.0002562999725341797 seconds ---
+salesgpt.logger 2024-01-16 00:03:58,365 - INFO - Running from_llm: --- 0.010006189346313477 seconds ---
+salesgpt.logger 2024-01-16 00:03:58,365 - INFO - Running seed_agent: --- 2.7179718017578125e-05 seconds ---
+httpx 2024-01-16 00:04:05,065 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:04:05,076 - INFO - Running step: --- 6.71059775352478 seconds ---
+werkzeug 2024-01-16 00:04:05,078 - INFO - 127.0.0.1 - - [16/Jan/2024 00:04:05] "POST /bot HTTP/1.1" 200 -
+salesgpt.logger 2024-01-16 00:04:17,093 - INFO - Running from_llm: --- 0.00015354156494140625 seconds ---
+salesgpt.logger 2024-01-16 00:04:17,094 - INFO - Running from_llm: --- 0.00016927719116210938 seconds ---
+salesgpt.logger 2024-01-16 00:04:17,097 - INFO - Running from_llm: --- 0.004003047943115234 seconds ---
+salesgpt.logger 2024-01-16 00:04:17,097 - INFO - Running seed_agent: --- 1.1682510375976562e-05 seconds ---
+httpx 2024-01-16 00:04:20,086 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-16 00:04:20,768 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-16 00:04:33,668 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:04:33,671 - INFO - Running step: --- 16.57345414161682 seconds ---
+werkzeug 2024-01-16 00:04:33,671 - INFO - 127.0.0.1 - - [16/Jan/2024 00:04:33] "POST /bot HTTP/1.1" 200 -
+salesgpt.logger 2024-01-16 00:05:17,255 - INFO - Running from_llm: --- 0.000370025634765625 seconds ---
+salesgpt.logger 2024-01-16 00:05:17,256 - INFO - Running from_llm: --- 0.0004611015319824219 seconds ---
+salesgpt.logger 2024-01-16 00:05:17,266 - INFO - Running from_llm: --- 0.011209726333618164 seconds ---
+app 2024-01-16 00:05:17,267 - ERROR - Exception on /bot [POST]
+Traceback (most recent call last):
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/juanrengifo/anaconda3/envs/salesGPT/lib/python3.10/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/juanrengifo/Desktop/salesGPTplus/app.py", line 23, in bot
+    name, reply = response.get("name"), response.get("reply")
+AttributeError: 'str' object has no attribute 'get'
+werkzeug 2024-01-16 00:05:17,269 - INFO - 127.0.0.1 - - [16/Jan/2024 00:05:17] "[35m[1mPOST /bot HTTP/1.1[0m" 500 -
+werkzeug 2024-01-16 00:07:46,722 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-16 00:07:46,722 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-16 00:08:16,323 - INFO - Running from_llm: --- 0.0004317760467529297 seconds ---
+salesgpt.logger 2024-01-16 00:08:16,324 - INFO - Running from_llm: --- 0.00033545494079589844 seconds ---
+salesgpt.logger 2024-01-16 00:08:16,339 - INFO - Running from_llm: --- 0.01649761199951172 seconds ---
+salesgpt.logger 2024-01-16 00:08:16,340 - INFO - Running seed_agent: --- 9.5367431640625e-06 seconds ---
+httpx 2024-01-16 00:08:20,801 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:08:20,806 - INFO - Running step: --- 4.466299533843994 seconds ---
+werkzeug 2024-01-16 00:08:20,808 - INFO - 127.0.0.1 - - [16/Jan/2024 00:08:20] "POST /bot HTTP/1.1" 200 -
+werkzeug 2024-01-16 00:09:30,334 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-16 00:09:30,335 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-16 00:09:52,362 - INFO - Running from_llm: --- 0.0002808570861816406 seconds ---
+salesgpt.logger 2024-01-16 00:09:52,362 - INFO - Running from_llm: --- 0.0002422332763671875 seconds ---
+salesgpt.logger 2024-01-16 00:09:52,372 - INFO - Running from_llm: --- 0.01080632209777832 seconds ---
+salesgpt.logger 2024-01-16 00:09:52,373 - INFO - Running seed_agent: --- 4.100799560546875e-05 seconds ---
+httpx 2024-01-16 00:09:58,084 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:09:58,089 - INFO - Running step: --- 5.716267347335815 seconds ---
+werkzeug 2024-01-16 00:09:58,091 - INFO - 127.0.0.1 - - [16/Jan/2024 00:09:58] "POST /bot HTTP/1.1" 200 -
+werkzeug 2024-01-16 00:11:12,119 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-16 00:11:12,119 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-16 00:11:41,135 - INFO - Running from_llm: --- 0.00038170814514160156 seconds ---
+salesgpt.logger 2024-01-16 00:11:41,135 - INFO - Running from_llm: --- 0.0002789497375488281 seconds ---
+salesgpt.logger 2024-01-16 00:11:41,149 - INFO - Running from_llm: --- 0.014191389083862305 seconds ---
+salesgpt.logger 2024-01-16 00:11:41,149 - INFO - Running seed_agent: --- 1.049041748046875e-05 seconds ---
+httpx 2024-01-16 00:11:45,826 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:11:45,831 - INFO - Running step: --- 4.682036399841309 seconds ---
+werkzeug 2024-01-16 00:11:45,833 - INFO - 127.0.0.1 - - [16/Jan/2024 00:11:45] "POST /bot HTTP/1.1" 200 -
+werkzeug 2024-01-16 00:12:51,753 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-16 00:12:51,753 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-16 00:13:16,680 - INFO - Running from_llm: --- 0.0001647472381591797 seconds ---
+salesgpt.logger 2024-01-16 00:13:16,680 - INFO - Running from_llm: --- 0.00014829635620117188 seconds ---
+salesgpt.logger 2024-01-16 00:13:16,690 - INFO - Running from_llm: --- 0.01044917106628418 seconds ---
+salesgpt.logger 2024-01-16 00:13:16,690 - INFO - Running seed_agent: --- 8.821487426757812e-06 seconds ---
+httpx 2024-01-16 00:13:21,327 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:13:21,343 - INFO - Running step: --- 4.652930974960327 seconds ---
+werkzeug 2024-01-16 00:13:21,351 - INFO - 127.0.0.1 - - [16/Jan/2024 00:13:21] "POST /bot HTTP/1.1" 200 -
+werkzeug 2024-01-16 00:15:25,014 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-16 00:15:25,014 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-16 00:15:48,940 - INFO - Running from_llm: --- 0.0003113746643066406 seconds ---
+salesgpt.logger 2024-01-16 00:15:48,940 - INFO - Running from_llm: --- 0.0002465248107910156 seconds ---
+salesgpt.logger 2024-01-16 00:15:48,956 - INFO - Running from_llm: --- 0.0162508487701416 seconds ---
+salesgpt.logger 2024-01-16 00:15:48,956 - INFO - Running seed_agent: --- 2.7894973754882812e-05 seconds ---
+httpx 2024-01-16 00:15:51,674 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:15:51,679 - INFO - Running step: --- 2.7225358486175537 seconds ---
+werkzeug 2024-01-16 00:15:51,681 - INFO - 127.0.0.1 - - [16/Jan/2024 00:15:51] "POST /bot HTTP/1.1" 200 -
+werkzeug 2024-01-16 00:17:56,626 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-16 00:17:56,626 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-16 00:18:24,981 - INFO - Running from_llm: --- 0.00017595291137695312 seconds ---
+salesgpt.logger 2024-01-16 00:18:24,982 - INFO - Running from_llm: --- 0.0001361370086669922 seconds ---
+salesgpt.logger 2024-01-16 00:18:24,991 - INFO - Running from_llm: --- 0.01028752326965332 seconds ---
+salesgpt.logger 2024-01-16 00:18:24,991 - INFO - Running seed_agent: --- 1.1444091796875e-05 seconds ---
+httpx 2024-01-16 00:18:28,859 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:18:28,864 - INFO - Running step: --- 3.872485399246216 seconds ---
+werkzeug 2024-01-16 00:18:28,866 - INFO - 127.0.0.1 - - [16/Jan/2024 00:18:28] "POST /bot HTTP/1.1" 200 -
+werkzeug 2024-01-16 00:19:17,288 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-16 00:19:17,289 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-16 00:19:40,288 - INFO - Running from_llm: --- 0.0001773834228515625 seconds ---
+salesgpt.logger 2024-01-16 00:19:40,288 - INFO - Running from_llm: --- 0.00024199485778808594 seconds ---
+salesgpt.logger 2024-01-16 00:19:40,297 - INFO - Running from_llm: --- 0.010068893432617188 seconds ---
+salesgpt.logger 2024-01-16 00:19:40,298 - INFO - Running seed_agent: --- 9.059906005859375e-06 seconds ---
+httpx 2024-01-16 00:19:45,651 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:19:45,658 - INFO - Running step: --- 5.3605499267578125 seconds ---
+werkzeug 2024-01-16 00:19:45,660 - INFO - 127.0.0.1 - - [16/Jan/2024 00:19:45] "POST /bot HTTP/1.1" 200 -
+werkzeug 2024-01-16 00:21:26,933 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-16 00:21:26,933 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-16 00:21:29,916 - INFO - Running from_llm: --- 0.00023221969604492188 seconds ---
+salesgpt.logger 2024-01-16 00:21:29,917 - INFO - Running from_llm: --- 0.00021457672119140625 seconds ---
+salesgpt.logger 2024-01-16 00:21:29,930 - INFO - Running from_llm: --- 0.013855457305908203 seconds ---
+salesgpt.logger 2024-01-16 00:21:29,930 - INFO - Running seed_agent: --- 1.5974044799804688e-05 seconds ---
+httpx 2024-01-16 00:21:34,208 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:21:34,219 - INFO - Running step: --- 4.289069414138794 seconds ---
+werkzeug 2024-01-16 00:21:34,224 - INFO - 127.0.0.1 - - [16/Jan/2024 00:21:34] "POST /bot HTTP/1.1" 200 -
+salesgpt.logger 2024-01-16 00:21:48,995 - INFO - Running from_llm: --- 0.00020456314086914062 seconds ---
+salesgpt.logger 2024-01-16 00:21:48,996 - INFO - Running from_llm: --- 0.00011157989501953125 seconds ---
+salesgpt.logger 2024-01-16 00:21:49,006 - INFO - Running from_llm: --- 0.010347843170166016 seconds ---
+salesgpt.logger 2024-01-16 00:21:49,006 - INFO - Running seed_agent: --- 3.075599670410156e-05 seconds ---
+httpx 2024-01-16 00:21:56,126 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:21:56,132 - INFO - Running step: --- 7.126199007034302 seconds ---
+werkzeug 2024-01-16 00:21:56,133 - INFO - 127.0.0.1 - - [16/Jan/2024 00:21:56] "POST /bot HTTP/1.1" 200 -
+salesgpt.logger 2024-01-16 00:22:20,584 - INFO - Running from_llm: --- 0.00038313865661621094 seconds ---
+salesgpt.logger 2024-01-16 00:22:20,585 - INFO - Running from_llm: --- 0.0004115104675292969 seconds ---
+salesgpt.logger 2024-01-16 00:22:20,595 - INFO - Running from_llm: --- 0.011635303497314453 seconds ---
+salesgpt.logger 2024-01-16 00:22:20,596 - INFO - Running seed_agent: --- 4.839897155761719e-05 seconds ---
+httpx 2024-01-16 00:22:23,431 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-16 00:22:23,937 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-16 00:22:36,125 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:22:36,133 - INFO - Running step: --- 15.536747455596924 seconds ---
+werkzeug 2024-01-16 00:22:36,133 - INFO - 127.0.0.1 - - [16/Jan/2024 00:22:36] "POST /bot HTTP/1.1" 200 -
+salesgpt.logger 2024-01-16 00:22:44,462 - INFO - Running from_llm: --- 0.00014019012451171875 seconds ---
+salesgpt.logger 2024-01-16 00:22:44,462 - INFO - Running from_llm: --- 0.00011610984802246094 seconds ---
+salesgpt.logger 2024-01-16 00:22:44,465 - INFO - Running from_llm: --- 0.0037682056427001953 seconds ---
+werkzeug 2024-01-16 00:22:44,466 - INFO - 127.0.0.1 - - [16/Jan/2024 00:22:44] "POST /bot HTTP/1.1" 200 -
+salesgpt.logger 2024-01-16 00:22:51,624 - INFO - Running from_llm: --- 0.0001327991485595703 seconds ---
+salesgpt.logger 2024-01-16 00:22:51,625 - INFO - Running from_llm: --- 9.441375732421875e-05 seconds ---
+salesgpt.logger 2024-01-16 00:22:51,628 - INFO - Running from_llm: --- 0.0037021636962890625 seconds ---
+werkzeug 2024-01-16 00:22:51,628 - INFO - 127.0.0.1 - - [16/Jan/2024 00:22:51] "POST /bot HTTP/1.1" 200 -
+werkzeug 2024-01-16 00:26:45,187 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-16 00:26:45,188 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-16 00:26:50,666 - INFO - Running from_llm: --- 0.0001964569091796875 seconds ---
+salesgpt.logger 2024-01-16 00:26:50,666 - INFO - Running from_llm: --- 0.00025177001953125 seconds ---
+salesgpt.logger 2024-01-16 00:26:50,678 - INFO - Running from_llm: --- 0.012336254119873047 seconds ---
+salesgpt.logger 2024-01-16 00:26:50,678 - INFO - Running seed_agent: --- 1.2636184692382812e-05 seconds ---
+httpx 2024-01-16 00:26:53,014 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:26:53,021 - INFO - Running step: --- 2.3430898189544678 seconds ---
+werkzeug 2024-01-16 00:26:53,023 - INFO - 127.0.0.1 - - [16/Jan/2024 00:26:53] "POST /bot HTTP/1.1" 200 -
+salesgpt.logger 2024-01-16 00:26:56,981 - INFO - Running from_llm: --- 0.00023865699768066406 seconds ---
+salesgpt.logger 2024-01-16 00:26:56,982 - INFO - Running from_llm: --- 0.0002493858337402344 seconds ---
+salesgpt.logger 2024-01-16 00:26:56,991 - INFO - Running from_llm: --- 0.010303974151611328 seconds ---
+salesgpt.logger 2024-01-16 00:26:56,992 - INFO - Running seed_agent: --- 2.8848648071289062e-05 seconds ---
+httpx 2024-01-16 00:27:02,498 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:27:02,503 - INFO - Running step: --- 5.5110085010528564 seconds ---
+werkzeug 2024-01-16 00:27:02,503 - INFO - 127.0.0.1 - - [16/Jan/2024 00:27:02] "POST /bot HTTP/1.1" 200 -
+salesgpt.logger 2024-01-16 00:27:09,422 - INFO - Running from_llm: --- 0.000152587890625 seconds ---
+salesgpt.logger 2024-01-16 00:27:09,422 - INFO - Running from_llm: --- 0.00014257431030273438 seconds ---
+salesgpt.logger 2024-01-16 00:27:09,426 - INFO - Running from_llm: --- 0.004335880279541016 seconds ---
+salesgpt.logger 2024-01-16 00:27:09,426 - INFO - Running seed_agent: --- 1.4066696166992188e-05 seconds ---
+httpx 2024-01-16 00:27:15,502 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:27:15,518 - INFO - Running step: --- 6.09123158454895 seconds ---
+werkzeug 2024-01-16 00:27:15,519 - INFO - 127.0.0.1 - - [16/Jan/2024 00:27:15] "POST /bot HTTP/1.1" 200 -
+salesgpt.logger 2024-01-16 00:27:28,195 - INFO - Running from_llm: --- 0.00016760826110839844 seconds ---
+salesgpt.logger 2024-01-16 00:27:28,195 - INFO - Running from_llm: --- 0.00019669532775878906 seconds ---
+salesgpt.logger 2024-01-16 00:27:28,200 - INFO - Running from_llm: --- 0.00482630729675293 seconds ---
+werkzeug 2024-01-16 00:27:28,200 - INFO - 127.0.0.1 - - [16/Jan/2024 00:27:28] "POST /bot HTTP/1.1" 200 -
+werkzeug 2024-01-16 00:29:29,588 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug 2024-01-16 00:29:29,588 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-16 00:29:33,556 - INFO - Running from_llm: --- 0.0001227855682373047 seconds ---
+salesgpt.logger 2024-01-16 00:29:33,557 - INFO - Running from_llm: --- 0.00013566017150878906 seconds ---
+salesgpt.logger 2024-01-16 00:29:33,566 - INFO - Running from_llm: --- 0.010150671005249023 seconds ---
+salesgpt.logger 2024-01-16 00:29:33,567 - INFO - Running seed_agent: --- 9.775161743164062e-06 seconds ---
+httpx 2024-01-16 00:29:36,095 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:29:36,107 - INFO - Running step: --- 2.5406506061553955 seconds ---
+werkzeug 2024-01-16 00:29:36,114 - INFO - 127.0.0.1 - - [16/Jan/2024 00:29:36] "POST /bot HTTP/1.1" 200 -
+salesgpt.logger 2024-01-16 00:29:53,150 - INFO - Running from_llm: --- 0.0002079010009765625 seconds ---
+salesgpt.logger 2024-01-16 00:29:53,150 - INFO - Running from_llm: --- 0.0002646446228027344 seconds ---
+salesgpt.logger 2024-01-16 00:29:53,164 - INFO - Running from_llm: --- 0.014748096466064453 seconds ---
+salesgpt.logger 2024-01-16 00:29:53,165 - INFO - Running seed_agent: --- 1.3589859008789062e-05 seconds ---
+httpx 2024-01-16 00:29:55,554 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-16 00:29:55,952 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-16 00:30:05,794 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:30:05,804 - INFO - Running step: --- 12.639667749404907 seconds ---
+werkzeug 2024-01-16 00:30:05,806 - INFO - 127.0.0.1 - - [16/Jan/2024 00:30:05] "POST /bot HTTP/1.1" 200 -
+salesgpt.logger 2024-01-16 00:30:20,959 - INFO - Running from_llm: --- 0.0003948211669921875 seconds ---
+salesgpt.logger 2024-01-16 00:30:20,960 - INFO - Running from_llm: --- 0.00039315223693847656 seconds ---
+salesgpt.logger 2024-01-16 00:30:20,967 - INFO - Running from_llm: --- 0.008804559707641602 seconds ---
+salesgpt.logger 2024-01-16 00:30:20,968 - INFO - Running seed_agent: --- 3.147125244140625e-05 seconds ---
+httpx 2024-01-16 00:30:24,433 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-16 00:30:25,044 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-16 00:30:32,622 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-16 00:30:32,629 - INFO - Running step: --- 11.66095495223999 seconds ---
+werkzeug 2024-01-16 00:30:32,629 - INFO - 127.0.0.1 - - [16/Jan/2024 00:30:32] "POST /bot HTTP/1.1" 200 -

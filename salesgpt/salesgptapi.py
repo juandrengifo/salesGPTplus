@@ -10,7 +10,7 @@ class SalesGPTAPI:
     USE_TOOLS = True  # Set to True if using tools
     FAISS_INDEX_PATH = "salesgpt/embeddings.index"  # Path to the FAISS index
 
-    def __init__(self, config_path: str, verbose: bool = False, max_num_turns: int = 10):
+    def __init__(self, config_path: str, verbose: bool = False, max_num_turns: int = 100):
         print("vwgwgagagagaegagae")
         self.config_path = config_path
         self.verbose = verbose
@@ -45,7 +45,7 @@ class SalesGPTAPI:
         current_turns = len(conversation_history) + 1
         if current_turns >= self.max_num_turns:
             print("Maximum number of turns reached - ending the conversation.")
-            return "<END_OF_>"
+            return {"name": "Agent", "reply": "<END_OF_CALL>"}
 
         sales_agent.seed_agent()
         sales_agent.conversation_history = conversation_history
