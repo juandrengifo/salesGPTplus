@@ -2,15 +2,13 @@ import os
 from typing import List
 
 import uvicorn
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
+# Correct the import path as per your project structure
 from salesgpt.salesgptapi import SalesGPTAPI
 
 app = FastAPI()
-
-GPT_MODEL = "gpt-3.5-turbo-0613"
-# GPT_MODEL_16K = "gpt-3.5-turbo-16k-0613"
 
 
 @app.get("/")
@@ -25,23 +23,20 @@ class MessageList(BaseModel):
 
 @app.post("/chat")
 async def chat_with_sales_agent(req: MessageList):
-    sales_api = SalesGPTAPI(
-        config_path="examples/example_agent_setup.json", verbose=True
-    )
-    name, reply = sales_api.do(req.conversation_history, req.human_say)
-    res = {"name": name, "say": reply}
-    return res
+    sales_api = SalesGPTAPI(config_path="")
+    response = sales_api.do(req.conversation_history, req.human_say)
+
+    # Use the response directly
+    return response
 
 
 def _set_env():
-    with open(".env", "r") as f:
-        env_file = f.readlines()
-    envs_dict = {
-        key.strip("'"): value.strip("\n")
-        for key, value in [(i.split("=")) for i in env_file]
-    }
-    os.environ["OPENAI_API_KEY"] = envs_dict["OPENAI_API_KEY"]
-
+    # Load environment variables from .env file
+    if os.path.exists(".env"):
+        with open(".env", "r") as f:
+            for line in f:
+                key, value = line.strip().split('=', 1)
+                os.environ[key] = value
 
 if __name__ == "__main__":
     _set_env()

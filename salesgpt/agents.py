@@ -288,7 +288,7 @@ Desarrollamos ideas perspicaces y las convertimos en realidades impactantes. Nos
         
         # Initialize tools if specified
         if "use_tools" in kwargs and (kwargs["use_tools"] == "True" or kwargs["use_tools"]):
-            path_to_faiss_index = kwargs.get("product_catalog", "path_to_default_faiss_index")
+            path_to_faiss_index = kwargs.get("product_catalog", "salesgpt/embeddings.index")
             faiss_index, embeddings_model = setup_knowledge_base(path_to_faiss_index)
             tools = get_tools(faiss_index, embeddings_model)
 

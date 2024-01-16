@@ -14,11 +14,12 @@ df = pd.read_excel(excel_file_path)
 print(df.columns)
 df['combined_text'] = df['MARCA'] + " " + df['MODELO / VEHICULO']
 
-# Function to get embeddings from OpenAI
 def get_embedding(text, model="text-embedding-ada-002"):
-    text = text.replace("\n", " ")
+    # Ensure the text is a string
+    text = str(text).replace("\n", " ")
     response = client.embeddings.create(input=[text], model=model)
     return np.array(response.data[0].embedding)
+
 
 # Generate embeddings for the combined text
 embeddings = np.array([get_embedding(text) for text in df['combined_text']])
