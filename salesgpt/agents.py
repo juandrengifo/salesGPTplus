@@ -1,6 +1,9 @@
 from copy import deepcopy
 from typing import Any, Callable, Dict, List, Union
 
+import faiss
+from langchain.embeddings.openai import OpenAIEmbeddings
+
 from langchain.agents import AgentExecutor, LLMSingleActionAgent
 from langchain.chains import LLMChain, RetrievalQA
 from langchain.chains.base import Chain
@@ -33,7 +36,6 @@ def _create_retry_decorator(llm: Any) -> Callable[[Any], Any]:
 
 class SalesGPT(Chain):
     """Controller model for the Sales Agent."""
-
     conversation_history: List[str] = []
     conversation_stage_id: str = "1"
     current_conversation_stage: str = CONVERSATION_STAGES.get("1")
@@ -270,88 +272,56 @@ Desarrollamos ideas perspicaces y las convertimos en realidades impactantes. Nos
     @classmethod
     @time_logger
     def from_llm(cls, llm: ChatLiteLLM, verbose: bool = False, **kwargs) -> "SalesGPT":
-        """Initialize the SalesGPT Controller."""
         stage_analyzer_chain = StageAnalyzerChain.from_llm(llm, verbose=verbose)
-        if (
-            "use_custom_prompt" in kwargs.keys()
-            and kwargs["use_custom_prompt"] == "True"
-        ):
+        
+        # Use custom prompt logic if specified
+        if "use_custom_prompt" in kwargs and kwargs["use_custom_prompt"] == "True":
             use_custom_prompt = deepcopy(kwargs["use_custom_prompt"])
             custom_prompt = deepcopy(kwargs["custom_prompt"])
-
-            # clean up
             del kwargs["use_custom_prompt"]
             del kwargs["custom_prompt"]
-
             sales_conversation_utterance_chain = SalesConversationChain.from_llm(
-                llm,
-                verbose=verbose,
-                use_custom_prompt=use_custom_prompt,
-                custom_prompt=custom_prompt,
+                llm, verbose=verbose, use_custom_prompt=use_custom_prompt, custom_prompt=custom_prompt
             )
-
         else:
-            sales_conversation_utterance_chain = SalesConversationChain.from_llm(
-                llm, verbose=verbose
-            )
-
-        if "use_tools" in kwargs.keys() and (
-            kwargs["use_tools"] == "True" or kwargs["use_tools"] == True
-        ):
-            # set up agent with tools
-            product_catalog = kwargs["product_catalog"]
-            knowledge_base = setup_knowledge_base(product_catalog)
-            tools = get_tools(knowledge_base)
+            sales_conversation_utterance_chain = SalesConversationChain.from_llm(llm, verbose=verbose)
+        
+        # Initialize tools if specified
+        if "use_tools" in kwargs and (kwargs["use_tools"] == "True" or kwargs["use_tools"]):
+            path_to_faiss_index = kwargs.get("product_catalog", "path_to_default_faiss_index")
+            faiss_index, embeddings_model = setup_knowledge_base(path_to_faiss_index)
+            tools = get_tools(faiss_index, embeddings_model)
 
             prompt = CustomPromptTemplateForTools(
                 template=SALES_AGENT_TOOLS_PROMPT,
                 tools_getter=lambda x: tools,
-                # This omits the `agent_scratchpad`, `tools`, and `tool_names` variables because those are generated dynamically
-                # This includes the `intermediate_steps` variable because that is needed
                 input_variables=[
-                    "input",
-                    "intermediate_steps",
-                    "salesperson_name",
-                    "salesperson_role",
-                    "company_name",
-                    "company_business",
-                    "company_values",
-                    "conversation_purpose",
-                    "conversation_type",
-                    "conversation_history",
+                    "input", "intermediate_steps", "salesperson_name", "salesperson_role",
+                    "company_name", "company_business", "company_values", "conversation_purpose",
+                    "conversation_type", "conversation_history",
                 ],
             )
             llm_chain = LLMChain(llm=llm, prompt=prompt, verbose=verbose)
-
             tool_names = [tool.name for tool in tools]
-
-            # WARNING: this output parser is NOT reliable yet
-            ## It makes assumptions about output from LLM which can break and throw an error
             output_parser = SalesConvoOutputParser(ai_prefix=kwargs["salesperson_name"])
-
             sales_agent_with_tools = LLMSingleActionAgent(
                 llm_chain=llm_chain,
                 output_parser=output_parser,
                 stop=["\nObservation:"],
                 allowed_tools=tool_names,
             )
-
-            print("Toolssssssss", tools)
-
             sales_agent_executor = AgentExecutor.from_agent_and_tools(
                 agent=sales_agent_with_tools, tools=tools, verbose=verbose
             )
-            print("aaaaaaaaaaaaaa")
         else:
             sales_agent_executor = None
-            knowledge_base = None
 
+        # Removed the knowledge_base attribute
         return cls(
             stage_analyzer_chain=stage_analyzer_chain,
             sales_conversation_utterance_chain=sales_conversation_utterance_chain,
             sales_agent_executor=sales_agent_executor,
-            knowledge_base=knowledge_base,
             model_name=llm.model,
             verbose=verbose,
-            **kwargs,
+            **kwargs
         )

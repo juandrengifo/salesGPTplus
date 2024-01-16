@@ -1037,3 +1037,252 @@ chromadb.segment.impl.vector.local_hnsw 2024-01-14 19:25:40,698 - WARNING - Numb
 httpx 2024-01-14 19:25:43,801 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
 httpx 2024-01-14 19:25:52,690 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 salesgpt.logger 2024-01-14 19:25:52,695 - INFO - Running step: --- 14.963581800460815 seconds ---
+faiss.loader 2024-01-15 12:42:30,124 - INFO - Loading faiss with AVX2 support.
+faiss.loader 2024-01-15 12:42:30,135 - INFO - Successfully loaded faiss with AVX2 support.
+salesgpt.logger 2024-01-15 12:42:30,207 - INFO - Running from_llm: --- 9.1552734375e-05 seconds ---
+salesgpt.logger 2024-01-15 12:42:30,207 - INFO - Running from_llm: --- 0.00016617774963378906 seconds ---
+faiss.loader 2024-01-15 12:46:27,590 - INFO - Loading faiss with AVX2 support.
+faiss.loader 2024-01-15 12:46:27,608 - INFO - Successfully loaded faiss with AVX2 support.
+salesgpt.logger 2024-01-15 12:46:27,681 - INFO - Running from_llm: --- 0.00012183189392089844 seconds ---
+salesgpt.logger 2024-01-15 12:46:27,681 - INFO - Running from_llm: --- 0.0001697540283203125 seconds ---
+faiss.loader 2024-01-15 12:47:14,969 - INFO - Loading faiss with AVX2 support.
+faiss.loader 2024-01-15 12:47:14,980 - INFO - Successfully loaded faiss with AVX2 support.
+salesgpt.logger 2024-01-15 12:47:15,051 - INFO - Running from_llm: --- 9.059906005859375e-05 seconds ---
+salesgpt.logger 2024-01-15 12:47:15,051 - INFO - Running from_llm: --- 0.0001735687255859375 seconds ---
+faiss.loader 2024-01-15 12:48:44,307 - INFO - Loading faiss with AVX2 support.
+faiss.loader 2024-01-15 12:48:44,320 - INFO - Successfully loaded faiss with AVX2 support.
+salesgpt.logger 2024-01-15 12:48:44,391 - INFO - Running from_llm: --- 9.34600830078125e-05 seconds ---
+salesgpt.logger 2024-01-15 12:48:44,392 - INFO - Running from_llm: --- 0.0001876354217529297 seconds ---
+faiss.loader 2024-01-15 14:18:31,252 - INFO - Loading faiss with AVX2 support.
+faiss.loader 2024-01-15 14:18:31,264 - INFO - Successfully loaded faiss with AVX2 support.
+salesgpt.logger 2024-01-15 14:18:31,338 - INFO - Running from_llm: --- 0.00018525123596191406 seconds ---
+salesgpt.logger 2024-01-15 14:18:31,338 - INFO - Running from_llm: --- 0.00012373924255371094 seconds ---
+faiss.loader 2024-01-15 14:27:31,771 - INFO - Loading faiss with AVX2 support.
+faiss.loader 2024-01-15 14:27:31,781 - INFO - Successfully loaded faiss with AVX2 support.
+salesgpt.logger 2024-01-15 14:27:31,852 - INFO - Running from_llm: --- 9.226799011230469e-05 seconds ---
+salesgpt.logger 2024-01-15 14:27:31,852 - INFO - Running from_llm: --- 0.00012922286987304688 seconds ---
+salesgpt.logger 2024-01-15 14:34:11,341 - INFO - Running from_llm: --- 0.00010991096496582031 seconds ---
+salesgpt.logger 2024-01-15 14:34:11,342 - INFO - Running from_llm: --- 0.00018858909606933594 seconds ---
+salesgpt.logger 2024-01-15 14:41:42,291 - INFO - Running from_llm: --- 8.511543273925781e-05 seconds ---
+salesgpt.logger 2024-01-15 14:41:42,292 - INFO - Running from_llm: --- 0.0001697540283203125 seconds ---
+salesgpt.logger 2024-01-15 14:45:22,526 - INFO - Running from_llm: --- 0.00010418891906738281 seconds ---
+salesgpt.logger 2024-01-15 14:45:22,526 - INFO - Running from_llm: --- 0.0001571178436279297 seconds ---
+salesgpt.logger 2024-01-15 14:45:22,681 - INFO - Running from_llm: --- 0.15535569190979004 seconds ---
+salesgpt.logger 2024-01-15 14:45:22,681 - INFO - Running seed_agent: --- 3.24249267578125e-05 seconds ---
+httpx 2024-01-15 14:45:23,486 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:45:23,491 - INFO - Running determine_conversation_stage: --- 0.8093082904815674 seconds ---
+httpx 2024-01-15 14:45:27,515 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:45:27,518 - INFO - Running step: --- 4.026907205581665 seconds ---
+httpx 2024-01-15 14:45:34,646 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:45:34,648 - INFO - Running determine_conversation_stage: --- 1.0769217014312744 seconds ---
+httpx 2024-01-15 14:45:42,727 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:45:42,740 - INFO - Running step: --- 8.091752767562866 seconds ---
+httpx 2024-01-15 14:45:55,694 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:45:55,699 - INFO - Running determine_conversation_stage: --- 0.8432619571685791 seconds ---
+httpx 2024-01-15 14:45:57,711 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:50:06,260 - INFO - Running from_llm: --- 0.00019407272338867188 seconds ---
+salesgpt.logger 2024-01-15 14:50:06,261 - INFO - Running from_llm: --- 0.0001780986785888672 seconds ---
+salesgpt.logger 2024-01-15 14:50:06,388 - INFO - Running from_llm: --- 0.12767696380615234 seconds ---
+salesgpt.logger 2024-01-15 14:50:06,388 - INFO - Running seed_agent: --- 2.8133392333984375e-05 seconds ---
+httpx 2024-01-15 14:50:07,239 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:50:07,244 - INFO - Running determine_conversation_stage: --- 0.8557252883911133 seconds ---
+httpx 2024-01-15 14:50:15,431 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:50:15,436 - INFO - Running step: --- 8.192273378372192 seconds ---
+httpx 2024-01-15 14:50:33,585 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:50:33,590 - INFO - Running determine_conversation_stage: --- 0.7689864635467529 seconds ---
+httpx 2024-01-15 14:50:35,705 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:53:56,569 - INFO - Running from_llm: --- 9.131431579589844e-05 seconds ---
+salesgpt.logger 2024-01-15 14:53:56,570 - INFO - Running from_llm: --- 0.00022268295288085938 seconds ---
+salesgpt.logger 2024-01-15 14:53:56,689 - INFO - Running from_llm: --- 0.12018585205078125 seconds ---
+salesgpt.logger 2024-01-15 14:53:56,690 - INFO - Running seed_agent: --- 2.0742416381835938e-05 seconds ---
+httpx 2024-01-15 14:53:57,335 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:53:57,341 - INFO - Running determine_conversation_stage: --- 0.651442289352417 seconds ---
+httpx 2024-01-15 14:54:01,428 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:54:01,433 - INFO - Running step: --- 4.091411113739014 seconds ---
+httpx 2024-01-15 14:54:06,523 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:54:06,528 - INFO - Running determine_conversation_stage: --- 0.8477096557617188 seconds ---
+httpx 2024-01-15 14:54:09,164 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:56:44,473 - INFO - Running from_llm: --- 0.00015854835510253906 seconds ---
+salesgpt.logger 2024-01-15 14:56:44,473 - INFO - Running from_llm: --- 0.00020384788513183594 seconds ---
+salesgpt.logger 2024-01-15 14:56:44,634 - INFO - Running from_llm: --- 0.16141533851623535 seconds ---
+salesgpt.logger 2024-01-15 14:56:44,634 - INFO - Running seed_agent: --- 9.5367431640625e-06 seconds ---
+httpx 2024-01-15 14:56:45,511 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:56:45,524 - INFO - Running determine_conversation_stage: --- 0.8899085521697998 seconds ---
+httpx 2024-01-15 14:56:50,097 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:56:50,108 - INFO - Running step: --- 4.583863973617554 seconds ---
+httpx 2024-01-15 14:57:06,159 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 14:57:06,164 - INFO - Running determine_conversation_stage: --- 1.1637487411499023 seconds ---
+httpx 2024-01-15 14:57:09,334 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 15:00:21,608 - INFO - Running from_llm: --- 9.036064147949219e-05 seconds ---
+salesgpt.logger 2024-01-15 15:00:21,608 - INFO - Running from_llm: --- 0.0001857280731201172 seconds ---
+salesgpt.logger 2024-01-15 15:00:21,618 - INFO - Running from_llm: --- 0.010051488876342773 seconds ---
+salesgpt.logger 2024-01-15 15:00:21,618 - INFO - Running seed_agent: --- 2.6464462280273438e-05 seconds ---
+httpx 2024-01-15 15:00:22,770 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 15:00:22,775 - INFO - Running determine_conversation_stage: --- 1.1569476127624512 seconds ---
+httpx 2024-01-15 15:00:31,562 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 15:00:31,572 - INFO - Running step: --- 8.7967848777771 seconds ---
+httpx 2024-01-15 15:00:36,421 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 15:00:36,424 - INFO - Running determine_conversation_stage: --- 0.6234934329986572 seconds ---
+httpx 2024-01-15 15:00:41,938 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 15:00:42,311 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 15:03:17,429 - INFO - Running from_llm: --- 9.1552734375e-05 seconds ---
+salesgpt.logger 2024-01-15 15:03:17,429 - INFO - Running from_llm: --- 0.00018143653869628906 seconds ---
+salesgpt.logger 2024-01-15 15:03:17,438 - INFO - Running from_llm: --- 0.009493589401245117 seconds ---
+salesgpt.logger 2024-01-15 15:03:17,438 - INFO - Running seed_agent: --- 2.6226043701171875e-05 seconds ---
+httpx 2024-01-15 15:03:18,028 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 15:03:18,033 - INFO - Running determine_conversation_stage: --- 0.5946071147918701 seconds ---
+httpx 2024-01-15 15:03:21,202 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 15:03:21,213 - INFO - Running step: --- 3.179363965988159 seconds ---
+httpx 2024-01-15 15:03:23,453 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 15:03:23,463 - INFO - Running determine_conversation_stage: --- 0.6789791584014893 seconds ---
+httpx 2024-01-15 15:03:26,280 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 15:03:26,563 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 15:03:38,047 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 15:03:38,052 - INFO - Running step: --- 14.588650941848755 seconds ---
+httpx 2024-01-15 16:14:36,543 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:14:36,546 - INFO - Running determine_conversation_stage: --- 1.5714924335479736 seconds ---
+httpx 2024-01-15 16:14:42,277 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:14:42,283 - INFO - Running step: --- 5.736631155014038 seconds ---
+httpx 2024-01-15 16:20:42,989 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:20:42,994 - INFO - Running determine_conversation_stage: --- 1.5167756080627441 seconds ---
+httpx 2024-01-15 16:20:53,909 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:20:53,914 - INFO - Running step: --- 10.919145584106445 seconds ---
+httpx 2024-01-15 16:21:22,362 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:21:22,374 - INFO - Running determine_conversation_stage: --- 10.975834131240845 seconds ---
+httpx 2024-01-15 16:21:26,767 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:21:27,498 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:21:41,299 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:21:41,335 - INFO - Running step: --- 18.96146249771118 seconds ---
+httpx 2024-01-15 16:22:37,331 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:22:37,334 - INFO - Running determine_conversation_stage: --- 2.5418930053710938 seconds ---
+httpx 2024-01-15 16:22:41,202 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:22:41,764 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:22:52,753 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:22:52,759 - INFO - Running step: --- 15.424332618713379 seconds ---
+salesgpt.logger 2024-01-15 16:26:47,300 - INFO - Running from_llm: --- 9.250640869140625e-05 seconds ---
+salesgpt.logger 2024-01-15 16:26:47,301 - INFO - Running from_llm: --- 0.00015687942504882812 seconds ---
+salesgpt.logger 2024-01-15 16:26:47,309 - INFO - Running from_llm: --- 0.009252071380615234 seconds ---
+salesgpt.logger 2024-01-15 16:26:47,310 - INFO - Running seed_agent: --- 2.5272369384765625e-05 seconds ---
+httpx 2024-01-15 16:26:49,112 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:26:49,117 - INFO - Running determine_conversation_stage: --- 1.806875467300415 seconds ---
+httpx 2024-01-15 16:26:53,014 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:26:53,019 - INFO - Running step: --- 3.9022796154022217 seconds ---
+httpx 2024-01-15 16:27:12,666 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:27:12,671 - INFO - Running determine_conversation_stage: --- 1.3975727558135986 seconds ---
+httpx 2024-01-15 16:27:14,519 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:27:15,131 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:27:22,084 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:27:22,089 - INFO - Running step: --- 9.417968034744263 seconds ---
+httpx 2024-01-15 16:27:45,140 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:27:45,150 - INFO - Running determine_conversation_stage: --- 1.7091922760009766 seconds ---
+httpx 2024-01-15 16:27:46,952 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:27:47,751 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:28:05,015 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:28:05,021 - INFO - Running step: --- 19.870216608047485 seconds ---
+httpx 2024-01-15 16:28:17,795 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:28:17,801 - INFO - Running determine_conversation_stage: --- 1.7877788543701172 seconds ---
+httpx 2024-01-15 16:28:22,613 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:28:22,616 - INFO - Running step: --- 4.815221071243286 seconds ---
+httpx 2024-01-15 16:29:56,121 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:29:56,127 - INFO - Running determine_conversation_stage: --- 7.269969701766968 seconds ---
+httpx 2024-01-15 16:30:08,178 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:30:08,641 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:30:19,034 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:30:19,037 - INFO - Running step: --- 22.910157918930054 seconds ---
+httpx 2024-01-15 16:33:54,512 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:33:54,517 - INFO - Running determine_conversation_stage: --- 1.3886008262634277 seconds ---
+httpx 2024-01-15 16:33:58,600 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:34:02,065 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:34:02,578 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:34:13,939 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:34:13,944 - INFO - Running step: --- 19.427152395248413 seconds ---
+httpx 2024-01-15 16:35:20,160 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:35:20,165 - INFO - Running determine_conversation_stage: --- 1.0170714855194092 seconds ---
+httpx 2024-01-15 16:35:23,080 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:35:23,736 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:35:29,124 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:35:29,129 - INFO - Running step: --- 8.964027643203735 seconds ---
+httpx 2024-01-15 16:35:58,604 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:35:58,609 - INFO - Running determine_conversation_stage: --- 5.1379759311676025 seconds ---
+httpx 2024-01-15 16:36:05,666 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:36:15,030 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:36:15,790 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:36:20,302 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:36:20,307 - INFO - Running step: --- 21.698076725006104 seconds ---
+salesgpt.logger 2024-01-15 16:43:57,230 - INFO - Running from_llm: --- 9.059906005859375e-05 seconds ---
+salesgpt.logger 2024-01-15 16:43:57,231 - INFO - Running from_llm: --- 0.00010657310485839844 seconds ---
+salesgpt.logger 2024-01-15 16:43:57,240 - INFO - Running from_llm: --- 0.009455204010009766 seconds ---
+salesgpt.logger 2024-01-15 16:43:57,240 - INFO - Running seed_agent: --- 7.62939453125e-06 seconds ---
+httpx 2024-01-15 16:43:59,055 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:43:59,061 - INFO - Running determine_conversation_stage: --- 1.8207118511199951 seconds ---
+httpx 2024-01-15 16:44:01,509 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:44:01,514 - INFO - Running step: --- 2.4535093307495117 seconds ---
+httpx 2024-01-15 16:44:31,511 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:44:31,516 - INFO - Running determine_conversation_stage: --- 1.0086262226104736 seconds ---
+httpx 2024-01-15 16:44:33,250 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:44:33,819 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:44:43,391 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:44:43,396 - INFO - Running step: --- 11.880151748657227 seconds ---
+httpx 2024-01-15 16:46:36,982 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:46:36,987 - INFO - Running determine_conversation_stage: --- 4.059744834899902 seconds ---
+httpx 2024-01-15 16:46:42,378 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:46:42,915 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:46:52,924 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:46:52,929 - INFO - Running step: --- 15.941908836364746 seconds ---
+httpx 2024-01-15 16:47:32,187 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:47:32,192 - INFO - Running determine_conversation_stage: --- 1.3338172435760498 seconds ---
+httpx 2024-01-15 16:47:35,248 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:47:35,903 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 16:47:51,334 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 16:47:51,345 - INFO - Running step: --- 19.15289807319641 seconds ---
+salesgpt.logger 2024-01-15 20:30:35,852 - INFO - Running from_llm: --- 9.107589721679688e-05 seconds ---
+salesgpt.logger 2024-01-15 20:30:35,853 - INFO - Running from_llm: --- 0.0001556873321533203 seconds ---
+salesgpt.logger 2024-01-15 20:30:35,861 - INFO - Running from_llm: --- 0.009040594100952148 seconds ---
+salesgpt.logger 2024-01-15 20:30:35,861 - INFO - Running seed_agent: --- 2.0742416381835938e-05 seconds ---
+httpx 2024-01-15 20:30:36,833 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 20:30:36,837 - INFO - Running determine_conversation_stage: --- 0.9760756492614746 seconds ---
+httpx 2024-01-15 20:30:40,666 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 20:30:40,676 - INFO - Running step: --- 3.838693141937256 seconds ---
+httpx 2024-01-15 20:30:49,267 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 20:30:49,272 - INFO - Running determine_conversation_stage: --- 1.542644739151001 seconds ---
+httpx 2024-01-15 20:30:51,521 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 20:30:51,929 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 20:31:06,264 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 20:31:06,269 - INFO - Running step: --- 16.99738073348999 seconds ---
+httpx 2024-01-15 20:37:57,613 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 20:37:57,618 - INFO - Running determine_conversation_stage: --- 1.028916358947754 seconds ---
+httpx 2024-01-15 20:38:00,240 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 20:38:00,788 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 20:38:15,637 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 20:38:15,642 - INFO - Running step: --- 18.024113655090332 seconds ---
+httpx 2024-01-15 20:39:55,957 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 20:39:55,962 - INFO - Running determine_conversation_stage: --- 2.3747732639312744 seconds ---
+httpx 2024-01-15 20:40:02,239 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 20:40:02,751 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 20:40:12,434 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 20:40:12,438 - INFO - Running step: --- 16.47600293159485 seconds ---
+salesgpt.logger 2024-01-15 21:21:36,628 - INFO - Running from_llm: --- 0.0001785755157470703 seconds ---
+salesgpt.logger 2024-01-15 21:21:36,628 - INFO - Running from_llm: --- 0.00022554397583007812 seconds ---
+salesgpt.logger 2024-01-15 21:21:36,641 - INFO - Running from_llm: --- 0.01349949836730957 seconds ---
+salesgpt.logger 2024-01-15 21:21:36,641 - INFO - Running seed_agent: --- 2.002716064453125e-05 seconds ---
+httpx 2024-01-15 21:21:37,883 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 21:21:37,900 - INFO - Running determine_conversation_stage: --- 1.2585673332214355 seconds ---
+httpx 2024-01-15 21:21:45,855 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 21:21:45,869 - INFO - Running step: --- 7.9681127071380615 seconds ---
+httpx 2024-01-15 21:21:49,395 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 21:21:49,405 - INFO - Running determine_conversation_stage: --- 0.9806723594665527 seconds ---
+httpx 2024-01-15 21:22:00,394 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 21:22:00,405 - INFO - Running step: --- 10.999263763427734 seconds ---
+httpx 2024-01-15 21:22:16,433 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 21:22:16,438 - INFO - Running determine_conversation_stage: --- 1.0837831497192383 seconds ---
+httpx 2024-01-15 21:22:19,501 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 21:22:20,056 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 21:22:27,740 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 21:22:27,753 - INFO - Running step: --- 11.314685583114624 seconds ---
+httpx 2024-01-15 21:22:52,249 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 21:22:52,258 - INFO - Running determine_conversation_stage: --- 0.9796261787414551 seconds ---
+httpx 2024-01-15 21:22:54,155 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 21:22:57,126 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-15 21:22:57,641 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-15 21:23:05,457 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-15 21:23:05,462 - INFO - Running step: --- 13.203065156936646 seconds ---
