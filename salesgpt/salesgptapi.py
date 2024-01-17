@@ -65,4 +65,3 @@ class SalesGPTAPI:
             print("=" * 10)
             print(f"{sales_agent.salesperson_name}:{reply}")
         return {"name": sales_agent.salesperson_name, "reply": reply}
-

@@ -1,4 +1,5 @@
 import os
+import time
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 from salesgpt.salesgptapi import SalesGPTAPI
@@ -7,38 +8,45 @@ app = Flask(__name__)
 
 conversation_histories = {}
 
+def split_message(message, max_length=50):
+    """Splits a message into chunks of max_length, splitting by punctuation or space."""
+    chunks = []
+    while message:
+        if len(message) <= max_length:
+            chunks.append(message)
+            break
+        split_index = max([message.rfind(punc, 0, max_length + 1) 
+                           for punc in '.?!'])  # Find punctuation
+        if split_index == -1:  # No punctuation found
+            split_index = message.rfind(' ', 0, max_length + 1)  # Find last space
+        if split_index == -1:  # No space found, force split
+            split_index = max_length
+        chunks.append(message[:split_index + 1])
+        message = message[split_index + 1:].strip()
+    return chunks
+
 @app.route('/bot', methods=['POST'])
 def bot():
-    sender = request.values.get('From', '')  # Get sender's phone number
+    sender = request.values.get('From', '')
     incoming_msg = request.values.get('Body', '').lower()
 
-    # Retrieve or initialize conversation history
     conversation_history = conversation_histories.get(sender, [])
-
-    # Initialize the SalesGPT API
     sales_api = SalesGPTAPI(config_path="")
 
-    # Process the incoming message and get the response from SalesGPT
     response = sales_api.do(conversation_history, incoming_msg)
     name, reply = response["name"], response["reply"]
 
-    # Append both user's and agent's responses to the conversation history
     conversation_history.append(f"User: {incoming_msg}")
     conversation_history.append(f"{name}: {reply}")
     conversation_histories[sender] = conversation_history
 
-    # Create a Twilio MessagingResponse
     resp = MessagingResponse()
-    msg = resp.message()
-    msg.body(reply)  # Send only the reply
+    message_chunks = split_message(reply)
+    for chunk in message_chunks:
+        msg = resp.message()
+        msg.body(chunk)
+        time.sleep(1)  # Delay to prevent Twilio limitations
     return str(resp)
-
-
-
-
-
-
-
 
 def _set_env():
     with open(".env", "r") as f:
