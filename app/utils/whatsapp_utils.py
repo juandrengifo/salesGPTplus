@@ -1,13 +1,10 @@
 import logging
-from flask import current_app, jsonify
 import json
 import requests
-
-from salesgpt.salesgptapi import SalesGPTAPI
-
-# from app.services.openai_service import generate_response
 import re
 
+from flask import current_app, jsonify
+from salesgpt.salesgptapi import SalesGPTAPI
 
 # Global dictionary to store conversation histories
 conversation_histories = {}
@@ -16,7 +13,6 @@ def log_http_response(response):
     logging.info(f"Status: {response.status_code}")
     logging.info(f"Content-type: {response.headers.get('content-type')}")
     logging.info(f"Body: {response.text}")
-
 
 def get_text_message_input(recipient, text):
     return json.dumps(
@@ -29,42 +25,23 @@ def get_text_message_input(recipient, text):
         }
     )
 
-
-
 def generate_response(sender, incoming_msg, conversation_history):
-    '''
-    Generates a response to a given message using SalesGPTAPI.
-    Maintains context using conversation histories.
+    sales_api = SalesGPTAPI(config_path="")  # Initialize SalesGPTAPI
 
-    Parameters:
-    sender (str): The ID of the sender (user).
-    incoming_msg (str): The incoming message from the user.
-    conversation_histories (dict): A dictionary maintaining conversation histories keyed by sender.
-
-    Returns:
-    str: The generated response message.
-    '''
-
-    # Initialize SalesGPTAPI
-    sales_api = SalesGPTAPI(config_path="")  # Assuming SalesGPTAPI can handle an empty config_path
-
-    # Generate a response using SalesGPTAPI
     response = sales_api.do(conversation_history, incoming_msg)
     name, reply = response["name"], response["reply"]
 
-    # Update the conversation history
-    conversation_history.append(f"User: {incoming_msg}")
-    conversation_history.append(f"{name}: {reply}")
+    # Split the response into segments based on punctuation marks
+    segments = re.split(r'(?<=[.!?]) +', reply[11:-13])
+
+    # Update the conversation history with segments
+    for segment in segments:
+        conversation_history.append(f"{name}: {segment}")
     conversation_histories[sender] = conversation_history
 
+    return segments
 
-
-    # Return the generated response
-    return reply[11:-13]
-
-
-
-def send_message(data):
+def send_message(recipient, segments):
     headers = {
         "Content-type": "application/json",
         "Authorization": f"Bearer {current_app.config['ACCESS_TOKEN']}",
@@ -72,42 +49,17 @@ def send_message(data):
 
     url = f"https://graph.facebook.com/{current_app.config['VERSION']}/{current_app.config['PHONE_NUMBER_ID']}/messages"
 
-    try:
-        response = requests.post(
-            url, data=data, headers=headers, timeout=10
-        )  # 10 seconds timeout as an example
-        response.raise_for_status()  # Raises an HTTPError if the HTTP request returned an unsuccessful status code
-    except requests.Timeout:
-        logging.error("Timeout occurred while sending message")
-        return jsonify({"status": "error", "message": "Request timed out"}), 408
-    except (
-        requests.RequestException
-    ) as e:  # This will catch any general request exception
-        logging.error(f"Request failed due to: {e}")
-        return jsonify({"status": "error", "message": "Failed to send message"}), 500
-    else:
-        # Process the response as normal
-        log_http_response(response)
-        return response
-
-
-def process_text_for_whatsapp(text):
-    # Remove brackets
-    pattern = r"\【.*?\】"
-    # Substitute the pattern with an empty string
-    text = re.sub(pattern, "", text).strip()
-
-    # Pattern to find double asterisks including the word(s) in between
-    pattern = r"\*\*(.*?)\*\*"
-
-    # Replacement pattern with single asterisks
-    replacement = r"*\1*"
-
-    # Substitute occurrences of the pattern with the replacement
-    whatsapp_style_text = re.sub(pattern, replacement, text)
-
-    return whatsapp_style_text
-
+    for segment in segments:
+        data = get_text_message_input(recipient, segment)
+        try:
+            response = requests.post(url, data=data, headers=headers, timeout=10)
+            response.raise_for_status()
+            log_http_response(response)
+        except requests.Timeout:
+            logging.error("Timeout occurred while sending message segment")
+        except requests.RequestException as e:
+            logging.error(f"Request failed due to: {e}")
+            break  # Stop sending further segments if an error occurs
 
 def process_whatsapp_message(body):
     wa_id = body["entry"][0]["changes"][0]["value"]["contacts"][0]["wa_id"]
@@ -119,18 +71,11 @@ def process_whatsapp_message(body):
     # Retrieve the conversation history for the user
     conversation_history = conversation_histories.get(wa_id, [])
 
-    # Generate a response using the new function
-    response = generate_response(wa_id, message_body, conversation_history)
+    # Generate a response which now returns a list of segments
+    segments = generate_response(wa_id, message_body, conversation_history)
 
-    # Update the conversation history
-    conversation_history.append(f"User: {message_body}")
-    conversation_history.append(f"Bot: {response}")
-    conversation_histories[wa_id] = conversation_history
-
-    # Formatting response and sending message
-    data = get_text_message_input(current_app.config["RECIPIENT_WAID"], response)
-    send_message(data)
-
+    # Send each message segment separately
+    send_message(current_app.config["RECIPIENT_WAID"], segments)
 
 def is_valid_whatsapp_message(body):
     """
