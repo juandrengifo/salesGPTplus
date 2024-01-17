@@ -3976,3 +3976,65 @@ werkzeug 2024-01-17 10:50:42,178 - INFO - [31m[1mWARNING: This is a developmen
  * Running on http://127.0.0.1:5000
 werkzeug 2024-01-17 10:50:42,179 - INFO - [33mPress CTRL+C to quit[0m
 werkzeug 2024-01-17 10:56:11,674 - INFO - 127.0.0.1 - - [17/Jan/2024 10:56:11] "[31m[1mGET /bot?hub.mode=subscribe&hub.challenge=486024006&hub.verify_token=12345 HTTP/1.1[0m" 405 -
+root 2024-01-17 14:58:46,031 - INFO - Flask app started
+werkzeug 2024-01-17 14:58:46,033 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.170.34.139:8000
+werkzeug 2024-01-17 14:58:46,034 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-17 14:59:08,202 - INFO - Running from_llm: --- 0.0001728534698486328 seconds ---
+salesgpt.logger 2024-01-17 14:59:08,202 - INFO - Running from_llm: --- 0.00011801719665527344 seconds ---
+salesgpt.logger 2024-01-17 14:59:08,212 - INFO - Running from_llm: --- 0.009675025939941406 seconds ---
+salesgpt.logger 2024-01-17 14:59:08,212 - INFO - Running seed_agent: --- 1.1444091796875e-05 seconds ---
+httpx 2024-01-17 14:59:13,436 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 14:59:13,441 - INFO - Running step: --- 5.229283571243286 seconds ---
+root 2024-01-17 14:59:13,771 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/EAAo28PhIKfABO51ilBOg3hKKWmcscMFNjzIsmpR45W5qh4xsjUVZBqLZCMEiPbbRJ0wyxxh3dZCXA1zCA3rkiKBXCY9kGrZAcl70243SZCdZCQCQpP0Wh5pZCltn7MAU0RZCoklnwNmAfzU6Ik2sv2Y7EKGdGZCBcffvpyGBkmpNWcOZCixQjhfCsxEEiZCwvklITJOQ1LNxuSlbSTlu9cZD/messages
+werkzeug 2024-01-17 14:59:13,775 - INFO - 127.0.0.1 - - [17/Jan/2024 14:59:13] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 15:02:05,379 - INFO - Flask app started
+werkzeug 2024-01-17 15:02:05,382 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.170.34.139:8000
+werkzeug 2024-01-17 15:02:05,382 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-17 15:02:08,871 - INFO - Running from_llm: --- 0.0001220703125 seconds ---
+salesgpt.logger 2024-01-17 15:02:08,871 - INFO - Running from_llm: --- 0.00018286705017089844 seconds ---
+salesgpt.logger 2024-01-17 15:02:08,881 - INFO - Running from_llm: --- 0.010647773742675781 seconds ---
+salesgpt.logger 2024-01-17 15:02:08,881 - INFO - Running seed_agent: --- 2.7894973754882812e-05 seconds ---
+httpx 2024-01-17 15:02:11,551 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 15:02:11,568 - INFO - Running step: --- 2.6862449645996094 seconds ---
+root 2024-01-17 15:02:12,071 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 15:02:12,074 - INFO - 127.0.0.1 - - [17/Jan/2024 15:02:12] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 15:02:50,369 - INFO - Flask app started
+werkzeug 2024-01-17 15:02:50,373 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.170.34.139:8000
+werkzeug 2024-01-17 15:02:50,373 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-17 15:02:54,240 - INFO - Running from_llm: --- 0.00015616416931152344 seconds ---
+salesgpt.logger 2024-01-17 15:02:54,240 - INFO - Running from_llm: --- 0.0001785755157470703 seconds ---
+salesgpt.logger 2024-01-17 15:02:54,251 - INFO - Running from_llm: --- 0.010948657989501953 seconds ---
+salesgpt.logger 2024-01-17 15:02:54,251 - INFO - Running seed_agent: --- 9.059906005859375e-06 seconds ---
+httpx 2024-01-17 15:02:56,269 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 15:02:56,274 - INFO - Running step: --- 2.0234274864196777 seconds ---
+root 2024-01-17 15:02:57,023 - INFO - Status: 200
+root 2024-01-17 15:02:57,023 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 15:02:57,023 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSODQ5QzA5Q0IwMEUzNkI0QTI2AA=="}]}
+werkzeug 2024-01-17 15:02:57,025 - INFO - 127.0.0.1 - - [17/Jan/2024 15:02:57] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 15:02:57,947 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 15:02:57,948 - INFO - 127.0.0.1 - - [17/Jan/2024 15:02:57] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 15:02:58,300 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 15:02:58,301 - INFO - 127.0.0.1 - - [17/Jan/2024 15:02:58] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 15:03:03,385 - INFO - Running from_llm: --- 0.00010704994201660156 seconds ---
+salesgpt.logger 2024-01-17 15:03:03,386 - INFO - Running from_llm: --- 0.00015687942504882812 seconds ---
+salesgpt.logger 2024-01-17 15:03:03,394 - INFO - Running from_llm: --- 0.009328842163085938 seconds ---
+salesgpt.logger 2024-01-17 15:03:03,395 - INFO - Running seed_agent: --- 1.3828277587890625e-05 seconds ---
+httpx 2024-01-17 15:03:07,982 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 15:03:07,987 - INFO - Running step: --- 4.591880559921265 seconds ---
+root 2024-01-17 15:03:08,495 - INFO - Status: 200
+root 2024-01-17 15:03:08,495 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 15:03:08,496 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMkM3NjY0MUEyQUU2OThBRUM2AA=="}]}
+werkzeug 2024-01-17 15:03:08,499 - INFO - 127.0.0.1 - - [17/Jan/2024 15:03:08] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 15:03:09,320 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 15:03:09,321 - INFO - 127.0.0.1 - - [17/Jan/2024 15:03:09] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 15:03:09,728 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 15:03:09,729 - INFO - 127.0.0.1 - - [17/Jan/2024 15:03:09] "POST /webhook HTTP/1.1" 200 -
