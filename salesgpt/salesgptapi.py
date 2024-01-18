@@ -3,6 +3,7 @@ from langchain.chat_models import ChatLiteLLM
 from salesgpt.agents import SalesGPT
 import faiss
 from salesgpt.tools import setup_knowledge_base, get_tools
+from openai import OpenAI
 
 GPT_MODEL = "gpt-4-1106-preview"
 current_data_index = 0
@@ -43,6 +44,37 @@ class SalesGPTAPI:
         else:
             self.tools = None
 
+    def gpt_fill_customer_info(self, conversation_history, data_fields):
+        client = OpenAI()
+
+        # Construct the system message to set the role of the AI
+        system_message = "You are a virtual assistant. Your task is to analyze the following conversation and extract key information to fill in customer details."
+
+        # Combine the conversation history into a single string
+        conversation_str = "\n".join(f"Human: {msg}" for msg in conversation_history)
+
+        # Create the GPT prompt
+        prompt = [
+            {"role": "system", "content": system_message},
+            {"role": "user", "content": conversation_str}
+        ]
+
+        # Call the OpenAI API
+        completion = client.chat.completions.create(
+            model="gpt-4-1106-preview",
+            messages=prompt
+        )
+
+        
+        # Process the response
+        response = completion.choices[0].message.content.strip()
+
+        print(response)
+        # Assuming the response is formatted as a dictionary, parse it
+        # Note: This parsing depends on the exact format of the GPT response
+
+        return response
+
     def do(self, conversation_history: [str], human_input=None):
         if self.config_path == "":
             print("No agent config specified, using a standard config")
@@ -72,26 +104,15 @@ class SalesGPTAPI:
         if human_input is not None:
             sales_agent.human_step(human_input)
 
+            print(self.current_data_index)
+            print(len(self.data_fields))
+            print("CURRENT")
             if self.info_requested and not self.shift:
                 self.shift = 1
             elif self.info_requested and self.current_data_index < len(self.data_fields):
                 self.customer_info[self.data_fields[self.current_data_index]] = sales_agent.conversation_history[-1]
                 self.current_data_index+=1
-                print("INFO", self.customer_info)
-                print("INDEX", self.current_data_index)
-
-                if all(value for value in self.customer_info.values()):
-                    # Convert the dictionary to a string
-                    self.customer_info["valor_venta"] = "300.000"
-                    self.customer_info["producto"] = self.customer_info["Referencia"]
-                    customer_info_str = "\n".join(f"{key}: {value}" for key, value in self.customer_info.items())
-
-                    # Write the string to a text file
-                    with open('customer_info.txt', 'w') as file:
-                        file.write(customer_info_str)
-
-                    # Optional: Print a message to confirm that the data is saved
-                    print("Customer information saved to customer_info.txt")
+            
                     
 
         sales_agent.step()
@@ -101,8 +122,17 @@ class SalesGPTAPI:
         if len(sales_agent.conversation_history)>1:
             print(sales_agent.conversation_history[-2])
         if "<INFO_REQUESTED>" in sales_agent.conversation_history[-1]:
-            print("ENTRAAAAAA", sales_agent.conversation_history[-1])
-            self.info_requested = True
+                context = " ".join(conversation_history)
+                
+                customer_info = self.gpt_fill_customer_info(context, self.data_fields)
+
+                print(customer_info)
+                # Write the string to a text file
+                with open('customer_info.txt', 'w') as file:
+                    file.write(customer_info)
+
+                # Optional: Print a message to confirm that the data is saved
+                print("Customer information saved to customer_info.txt")
 
         if "<END_OF_CALL>" in sales_agent.conversation_history[-1]:
             print("Sales Agent determined it is time to end the conversation.")
