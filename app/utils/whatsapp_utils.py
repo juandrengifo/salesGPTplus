@@ -9,6 +9,8 @@ from salesgpt.salesgptapi import SalesGPTAPI
 # Global dictionary to store conversation histories
 conversation_histories = {}
 
+sales_api = SalesGPTAPI(config_path="")
+
 def log_http_response(response):
     logging.info(f"Status: {response.status_code}")
     logging.info(f"Content-type: {response.headers.get('content-type')}")
@@ -26,7 +28,8 @@ def get_text_message_input(recipient, text):
     )
 
 def generate_response(sender, incoming_msg, conversation_history):
-    sales_api = SalesGPTAPI(config_path="")  # Initialize SalesGPTAPI
+    # Use the singleton instance of SalesGPTAPI
+    global sales_api 
 
     response = sales_api.do(conversation_history, incoming_msg)
     name, reply = response["name"], response["reply"]

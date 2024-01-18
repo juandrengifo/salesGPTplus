@@ -1,6 +1,13 @@
 from copy import deepcopy
 from typing import Any, Callable, Dict, List, Union
 
+import json
+import os
+
+import logging
+
+logging.basicConfig(level=logging.INFO)
+
 import faiss
 from langchain.embeddings.openai import OpenAIEmbeddings
 
@@ -44,30 +51,11 @@ class SalesGPT(Chain):
     knowledge_base: Union[RetrievalQA, None] = Field(...)
     sales_conversation_utterance_chain: SalesConversationChain = Field(...)
     conversation_stage_dict: Dict = CONVERSATION_STAGES
-    customer_info = {
-        "Tipo_cliente": "",
-        "Tipo_documento": "",
-        "NIT": "",
-        "Nombre": "",
-        "Departamento": "",
-        "Dirección": "",
-        "Barrio": "",
-        "Celular": "",
-        "Correo": "",
-        "Placas": "",
-        "Tipo": "",
-        "Marca": "",
-        "Version": "",
-        "Modelo": "",
-        "Producto": "",
-        "Marca_producto": "",
-        "Referencia": "",
-        "Cantidad": "",
-        "Mayorista": "",
-        "Valor": "",
-        "Medio_pago": ""
-    }
+    # Additional attributes
+    data_fields = ['Tipo_cliente', 'Tipo_documento', 'NIT', 'Nombre', 'Departamento', 'Dirección', 'Barrio', 'Celular', 'Correo', 'Placas', 'Tipo', 'Marca', 'Version', 'Modelo', 'Producto', 'Marca_producto', 'Referencia', 'Cantidad', 'Mayorista', 'Valor', 'Medio_pago']
+    customer_info = {field: '' for field in data_fields}
     info_requested = False
+    current_data_index = 0
 
 
     model_name: str = "gpt-4-1106-preview"
@@ -121,10 +109,29 @@ Desarrollamos ideas perspicaces y las convertimos en realidades impactantes. Nos
 
         print(f"Conversation Stage: {self.current_conversation_stage}")
 
+
+
+    def write_data_to_file(self):
+        filename = "customer_info.txt"
+        with open(filename, 'a') as file:  # Append mode
+            for key, value in self.customer_info.items():
+                file.write(f"{key}: {value}\n")
+            file.write("\n")  # Add a newline to separate entries
+
+    # Override the human_step method
     def human_step(self, human_input):
-        # process human input
+        # Process human input
         human_input = "User: " + human_input + " <END_OF_TURN>"
         self.conversation_history.append(human_input)
+
+        if self.info_requested:
+            self._extract_and_store_data(human_input)
+            if all(self.customer_info.values()):
+                self.write_data_to_file()
+                self.info_requested = False
+
+
+
 
     
 
@@ -254,11 +261,84 @@ Desarrollamos ideas perspicaces y las convertimos en realidades impactantes. Nos
             model=self.model_name,
         )
 
+    def _extract_and_store_data(self, message: str) -> None:
+        """Extracts and stores data from the message."""
+        if "<INFO_REQUESTED>" in message and 0 <= self.current_data_index < len(self.data_fields):
+            current_field = self.data_fields[self.current_data_index]
+            extracted_data = self._parse_data_from_message(message)
+            logging.info(f"Extracted Data: {extracted_data}, Current Index: {self.current_data_index}")
+            if extracted_data:  # Check if valid data is extracted
+                self.customer_info[current_field] = extracted_data
+                self.current_data_index += 1  # Increment only if valid data is extracted
+                logging.info(f"Data Index Incremented to: {self.current_data_index}")
+
+    def _parse_data_from_message(self, message: str) -> str:
+        """Parses specific data from the message based on the field."""
+        # Implement logic to parse specific data from the message
+        # This example extracts everything after the salesperson's name
+        data_start = message.find(":") + 1
+        data = message[data_start:].split("<INFO_REQUESTED>")[0].strip()
+        return data if data else None
+
+    def _handle_apology_message(self):
+        """Handles the scenario when AI issues an apology message."""
+        # Implement your logic for handling apology messages
+        # Example: Send a message to try again or maintain the current index
+        self.conversation_history.append(self.salesperson_name + ": Could you please provide the information again?")
+        # Do not reset the index here
+
     def _call(self, inputs: Dict[str, Any]) -> None:
         """Run one step of the sales agent."""
+        print("INFO_REQUESTED status:", self.info_requested)
 
         # Generate agent's utterance
-        # if use tools
+        ai_message = self._generate_ai_message()
+
+        # Add agent's response to conversation history
+        self.conversation_history.append(ai_message)
+
+        # Extract and store data if information is requested
+        if "<INFO_REQUESTED>" in ai_message:
+            self.info_requested = True
+            self._extract_and_store_data(ai_message)
+        else:
+            self.info_requested = False
+
+        # Reset the index if all fields are filled
+        if all(value for value in self.customer_info.values()):
+            print("HERE?")
+            self._finalize_data_collection()
+
+        # Check for special cases like apology messages
+        if "I apologize" in ai_message:
+            self._handle_apology_message()
+
+        # Print AI message and customer info for debugging
+        self._log_debug_information()
+
+    def _finalize_data_collection(self):
+        """Finalizes data collection and performs necessary actions."""
+        self._write_data_to_file()
+        self._reset_data_collection()
+
+    def _reset_data_collection(self):
+        """Resets data collection for the next conversation."""
+        logging.info("Resetting data collection")
+        self.current_data_index = 0
+        self.customer_info = {field: '' for field in self.data_fields}
+        self.info_requested = False
+
+
+
+    def _log_debug_information(self):
+            return 0
+            print("AI Message:", self.conversation_history[-1])
+            print(f"INFO_REQUESTED status: {self.info_requested}")
+            print(f"Current field index: {self.current_data_index}")
+            print(f"Current customer info: {self.customer_info}")
+
+    def _generate_ai_message(self):
+        """Generates the AI's response based on the current conversation context."""
         if self.use_tools:
             ai_message = self.sales_agent_executor.run(
                 input="",
@@ -272,9 +352,7 @@ Desarrollamos ideas perspicaces y las convertimos en realidades impactantes. Nos
                 conversation_purpose=self.conversation_purpose,
                 conversation_type=self.conversation_type,
             )
-
         else:
-            # else
             ai_message = self.sales_conversation_utterance_chain.run(
                 conversation_stage=self.current_conversation_stage,
                 conversation_history="\n".join(self.conversation_history),
@@ -286,15 +364,32 @@ Desarrollamos ideas perspicaces y las convertimos en realidades impactantes. Nos
                 conversation_purpose=self.conversation_purpose,
                 conversation_type=self.conversation_type,
             )
-
-        # Add agent's response to conversation history
+        
+        # Format AI message and append <END_OF_TURN> if needed
         agent_name = self.salesperson_name
         ai_message = agent_name + ": " + ai_message
         if "<END_OF_TURN>" not in ai_message:
             ai_message += " <END_OF_TURN>"
-        self.conversation_history.append(ai_message)
-        print(ai_message.replace("<END_OF_TURN>", ""))
-        return {}
+        
+        return ai_message
+
+
+    def _handle_apology_message(self):
+        """Handles the scenario when AI issues an apology message."""
+        # Example: Repeat the last question or provide a default response
+        # This is a placeholder; adapt as per your conversation flow
+        last_question = self._get_last_question()
+        if last_question:
+            self.conversation_history.append(self.salesperson_name + ": " + last_question)
+
+    def _get_last_question(self) -> str:
+        """Retrieves the last question asked before the apology message."""
+        # Implement logic to retrieve the last question from conversation history
+        # This is a placeholder implementation
+        for message in reversed(self.conversation_history):
+            if "?" in message:
+                return message.split(":")[-1].strip()
+        return ""
 
     @classmethod
     @time_logger
