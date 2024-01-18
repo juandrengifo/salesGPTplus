@@ -27,18 +27,30 @@ def get_text_message_input(recipient, text):
         }
     )
 
+def parse(reply):
+    reply = reply[11:-13]
+    if '```' in reply:
+        reply = reply[3:-3]
+        
+    reply = reply[48:]
+    return reply
+
+
+
 def generate_response(sender, incoming_msg, conversation_history):
     # Use the singleton instance of SalesGPTAPI
     global sales_api 
 
     response = sales_api.do(conversation_history, incoming_msg)
     name, reply = response["name"], response["reply"]
-
+    reply = parse(reply)
     # Split the response into segments based on punctuation marks
-    segments = re.split(r'(?<=[.!?]) +', reply[11:-13])
+    segments = re.split(r'(?<=[.!?]) +', reply)
 
     # Update the conversation history with segments
     for segment in segments:
+        if len(segment)>2 and segment[-2:]==". ":
+            segment = segment[:-1]
         conversation_history.append(f"{name}: {segment}")
     conversation_histories[sender] = conversation_history
 

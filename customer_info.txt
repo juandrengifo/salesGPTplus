@@ -1,33 +1,12 @@
-Based on the conversation provided, here is the extracted customer information:
+Customer Details:
 
-Customer Name: Juan Rengifo
-
-Product: Batería MAC - 48IST950MC
-
-Product Compatibility: Compatible with vehicle Alfa Romeo XR 2005, with SUPERTOP technology for greater capacity and efficiency.
-
-Installation: Free Shipping, Installation, and System Checks
-
-Payment Method: Credit
-
-Order Quantity: 1 unit
-
-Email: Juan@f.com
-
-Phone Number: 7263535
-
-Vehicle Plate: Bgg655
-
-Payment Preference: Prefers payment via credit
-
-References: References to Energitecas available if needed
-
-Delivery Address: Calle 1, barrio Capri, in the city
-
-Special Instructions: Has selected the larger button option and is in agreement with being referred to a nearby store if necessary.
-
-Agent: Ted Lasso
-
-Confirmation: Agreed to proceed with credit payment. Will be contacted soon for finalization and installation arrangements. Wished a good day with message "<INFO_REQUESTED>"
-
-(This analysis does not guarantee 100% accuracy as certain data had to be inferred from the context and some inputs were incomplete or fragmented.)
+- Name: Andres David Valencia
+- Vehicle: Hyundai Elantra 2012 Sedan
+- Battery: MAC Gold (1 unit)
+- Address: Carrera 209 #32-26, Zona Merica, Cali
+- Email: andres@lidarit.com
+- Phone Number: 3173631848
+- Payment: Preferably in cash upon delivery
+- Additional Notes: None
+- Sales Channel: Aliada store in the city (Information provided for contact and final purchase arrangements)
+- Thank you message from Ted Lasso to customer service number #622
