@@ -44,6 +44,31 @@ class SalesGPT(Chain):
     knowledge_base: Union[RetrievalQA, None] = Field(...)
     sales_conversation_utterance_chain: SalesConversationChain = Field(...)
     conversation_stage_dict: Dict = CONVERSATION_STAGES
+    customer_info = {
+        "Tipo_cliente": "",
+        "Tipo_documento": "",
+        "NIT": "",
+        "Nombre": "",
+        "Departamento": "",
+        "Dirección": "",
+        "Barrio": "",
+        "Celular": "",
+        "Correo": "",
+        "Placas": "",
+        "Tipo": "",
+        "Marca": "",
+        "Version": "",
+        "Modelo": "",
+        "Producto": "",
+        "Marca_producto": "",
+        "Referencia": "",
+        "Cantidad": "",
+        "Mayorista": "",
+        "Valor": "",
+        "Medio_pago": ""
+    }
+    info_requested = False
+
 
     model_name: str = "gpt-4-1106-preview"
 
@@ -100,6 +125,8 @@ Desarrollamos ideas perspicaces y las convertimos en realidades impactantes. Nos
         # process human input
         human_input = "User: " + human_input + " <END_OF_TURN>"
         self.conversation_history.append(human_input)
+
+    
 
     @time_logger
     def step(self, stream: bool = False):

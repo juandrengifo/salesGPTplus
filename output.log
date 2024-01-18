@@ -4102,3 +4102,1313 @@ root 2024-01-17 15:20:21,898 - INFO - Received a WhatsApp status update.
 root 2024-01-17 15:20:21,902 - INFO - Received a WhatsApp status update.
 werkzeug 2024-01-17 15:20:21,902 - INFO - 127.0.0.1 - - [17/Jan/2024 15:20:21] "POST /webhook HTTP/1.1" 200 -
 werkzeug 2024-01-17 15:20:21,904 - INFO - 127.0.0.1 - - [17/Jan/2024 15:20:21] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:30:08,962 - INFO - Flask app started
+werkzeug 2024-01-17 22:30:08,964 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.97:8000
+werkzeug 2024-01-17 22:30:08,965 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-17 22:30:48,872 - INFO - Running from_llm: --- 0.00017905235290527344 seconds ---
+salesgpt.logger 2024-01-17 22:30:48,872 - INFO - Running from_llm: --- 0.0002071857452392578 seconds ---
+salesgpt.logger 2024-01-17 22:30:48,882 - INFO - Running from_llm: --- 0.009915351867675781 seconds ---
+salesgpt.logger 2024-01-17 22:30:48,882 - INFO - Running seed_agent: --- 1.239776611328125e-05 seconds ---
+httpx 2024-01-17 22:30:53,825 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 22:30:53,830 - INFO - Running step: --- 4.948207139968872 seconds ---
+root 2024-01-17 22:30:55,092 - INFO - Status: 200
+root 2024-01-17 22:30:55,092 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:30:55,093 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSOUM0NkMwQUU2QTA1RkYwRTE0AA=="}]}
+root 2024-01-17 22:30:55,744 - INFO - Status: 200
+root 2024-01-17 22:30:55,745 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:30:55,745 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQkFFNEE4OEUxMDVBODEzMzE5AA=="}]}
+root 2024-01-17 22:30:56,141 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:30:56,142 - INFO - 127.0.0.1 - - [17/Jan/2024 22:30:56] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:30:56,228 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:30:56,229 - INFO - 127.0.0.1 - - [17/Jan/2024 22:30:56] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:30:56,378 - INFO - Status: 200
+root 2024-01-17 22:30:56,379 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:30:56,379 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRkJEN0NGMzU3NkI0NzcyN0MzAA=="}]}
+root 2024-01-17 22:30:56,546 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:30:56,547 - INFO - 127.0.0.1 - - [17/Jan/2024 22:30:56] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:30:56,768 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 22:30:56,773 - INFO - 127.0.0.1 - - [17/Jan/2024 22:30:56] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:30:56,972 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:30:56,973 - INFO - 127.0.0.1 - - [17/Jan/2024 22:30:56] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:30:57,382 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:30:57,383 - INFO - 127.0.0.1 - - [17/Jan/2024 22:30:57] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:30:57,386 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:30:57,387 - INFO - 127.0.0.1 - - [17/Jan/2024 22:30:57] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 22:31:07,507 - INFO - Running from_llm: --- 0.00011181831359863281 seconds ---
+salesgpt.logger 2024-01-17 22:31:07,507 - INFO - Running from_llm: --- 0.0001220703125 seconds ---
+salesgpt.logger 2024-01-17 22:31:07,516 - INFO - Running from_llm: --- 0.009404897689819336 seconds ---
+salesgpt.logger 2024-01-17 22:31:07,516 - INFO - Running seed_agent: --- 9.298324584960938e-06 seconds ---
+httpx 2024-01-17 22:31:12,206 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 22:31:12,211 - INFO - Running step: --- 4.694758653640747 seconds ---
+root 2024-01-17 22:31:12,820 - INFO - Status: 200
+root 2024-01-17 22:31:12,820 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:31:12,820 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRDE4QzVFNjIxODRFODhCQTM2AA=="}]}
+root 2024-01-17 22:31:13,437 - INFO - Status: 200
+root 2024-01-17 22:31:13,438 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:31:13,438 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQjQxMzFBMzI4MDE0RkI1MUYyAA=="}]}
+root 2024-01-17 22:31:13,634 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:31:13,634 - INFO - 127.0.0.1 - - [17/Jan/2024 22:31:13] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:31:13,661 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:31:13,662 - INFO - 127.0.0.1 - - [17/Jan/2024 22:31:13] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:31:13,880 - INFO - Status: 200
+root 2024-01-17 22:31:13,881 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:31:13,881 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQTdFOTM2NzUwQTRERTFDNEI1AA=="}]}
+root 2024-01-17 22:31:13,904 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:31:13,905 - INFO - 127.0.0.1 - - [17/Jan/2024 22:31:13] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:31:14,058 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:31:14,059 - INFO - 127.0.0.1 - - [17/Jan/2024 22:31:14] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:31:14,358 - INFO - Status: 200
+root 2024-01-17 22:31:14,359 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:31:14,359 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNDJFN0Q5QUMxRUJEMUVGODYyAA=="}]}
+root 2024-01-17 22:31:14,560 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:31:14,561 - INFO - 127.0.0.1 - - [17/Jan/2024 22:31:14] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:31:14,614 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 22:31:14,620 - INFO - 127.0.0.1 - - [17/Jan/2024 22:31:14] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:31:14,750 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:31:14,750 - INFO - 127.0.0.1 - - [17/Jan/2024 22:31:14] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:31:15,127 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:31:15,128 - INFO - 127.0.0.1 - - [17/Jan/2024 22:31:15] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:31:15,483 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:31:15,484 - INFO - 127.0.0.1 - - [17/Jan/2024 22:31:15] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 22:33:09,155 - INFO - Running from_llm: --- 0.00012922286987304688 seconds ---
+salesgpt.logger 2024-01-17 22:33:09,155 - INFO - Running from_llm: --- 0.00014328956604003906 seconds ---
+salesgpt.logger 2024-01-17 22:33:09,164 - INFO - Running from_llm: --- 0.009717941284179688 seconds ---
+salesgpt.logger 2024-01-17 22:33:09,165 - INFO - Running seed_agent: --- 1.2874603271484375e-05 seconds ---
+httpx 2024-01-17 22:33:13,203 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-17 22:33:13,835 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-17 22:33:24,504 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 22:33:24,509 - INFO - Running step: --- 15.344802856445312 seconds ---
+root 2024-01-17 22:33:25,055 - INFO - Status: 200
+root 2024-01-17 22:33:25,055 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:33:25,055 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMzY4QTVBNDI2MzIyNTFBQ0UxAA=="}]}
+root 2024-01-17 22:33:25,550 - INFO - Status: 200
+root 2024-01-17 22:33:25,551 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:33:25,551 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNkM0QUExNDUzNzVFMkZCNUY3AA=="}]}
+root 2024-01-17 22:33:25,688 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:33:25,689 - INFO - 127.0.0.1 - - [17/Jan/2024 22:33:25] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:33:26,142 - INFO - Status: 200
+root 2024-01-17 22:33:26,142 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:33:26,143 - INFO - Received a WhatsApp status update.
+root 2024-01-17 22:33:26,143 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSOTREQTMxOTAwNEExODI0QTI5AA=="}]}
+werkzeug 2024-01-17 22:33:26,144 - INFO - 127.0.0.1 - - [17/Jan/2024 22:33:26] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:33:26,339 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:33:26,340 - INFO - 127.0.0.1 - - [17/Jan/2024 22:33:26] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:33:26,527 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:33:26,528 - INFO - 127.0.0.1 - - [17/Jan/2024 22:33:26] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:33:26,566 - INFO - Status: 200
+root 2024-01-17 22:33:26,567 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:33:26,567 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMTg4NjA0MzE5Q0ZEMzY1RTY4AA=="}]}
+root 2024-01-17 22:33:26,743 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:33:26,744 - INFO - 127.0.0.1 - - [17/Jan/2024 22:33:26] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:33:26,938 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:33:26,940 - INFO - 127.0.0.1 - - [17/Jan/2024 22:33:26] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:33:27,004 - INFO - Status: 200
+root 2024-01-17 22:33:27,005 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:33:27,006 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQjIwRkIyQUJDMTlENTNEMTdGAA=="}]}
+werkzeug 2024-01-17 22:33:27,010 - INFO - 127.0.0.1 - - [17/Jan/2024 22:33:27] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:33:27,372 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:33:27,374 - INFO - 127.0.0.1 - - [17/Jan/2024 22:33:27] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:33:27,680 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:33:27,681 - INFO - 127.0.0.1 - - [17/Jan/2024 22:33:27] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:33:27,987 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:33:27,988 - INFO - 127.0.0.1 - - [17/Jan/2024 22:33:27] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:33:28,497 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:33:28,498 - INFO - 127.0.0.1 - - [17/Jan/2024 22:33:28] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 22:34:09,157 - INFO - Running from_llm: --- 0.00020170211791992188 seconds ---
+salesgpt.logger 2024-01-17 22:34:09,158 - INFO - Running from_llm: --- 0.0002117156982421875 seconds ---
+salesgpt.logger 2024-01-17 22:34:09,161 - INFO - Running from_llm: --- 0.004248857498168945 seconds ---
+salesgpt.logger 2024-01-17 22:34:09,161 - INFO - Running seed_agent: --- 2.9087066650390625e-05 seconds ---
+httpx 2024-01-17 22:34:30,449 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 22:34:30,454 - INFO - Running step: --- 21.292242765426636 seconds ---
+root 2024-01-17 22:34:31,002 - INFO - Status: 200
+root 2024-01-17 22:34:31,003 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:34:31,003 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRjZCMDVFMDlGQTMyQzU4N0JGAA=="}]}
+werkzeug 2024-01-17 22:34:31,007 - INFO - 127.0.0.1 - - [17/Jan/2024 22:34:31] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:34:31,799 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:34:31,800 - INFO - 127.0.0.1 - - [17/Jan/2024 22:34:31] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:34:31,895 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:34:31,896 - INFO - 127.0.0.1 - - [17/Jan/2024 22:34:31] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 22:34:52,574 - INFO - Running from_llm: --- 0.0001850128173828125 seconds ---
+salesgpt.logger 2024-01-17 22:34:52,574 - INFO - Running from_llm: --- 0.0002148151397705078 seconds ---
+salesgpt.logger 2024-01-17 22:34:52,578 - INFO - Running from_llm: --- 0.0043904781341552734 seconds ---
+salesgpt.logger 2024-01-17 22:34:52,578 - INFO - Running seed_agent: --- 4.220008850097656e-05 seconds ---
+httpx 2024-01-17 22:35:01,989 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 22:35:01,994 - INFO - Running step: --- 9.41575837135315 seconds ---
+root 2024-01-17 22:35:02,530 - INFO - Status: 200
+root 2024-01-17 22:35:02,531 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:35:02,531 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRjEwRTNCQTY5MDY5QTBDQTlDAA=="}]}
+root 2024-01-17 22:35:03,422 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:35:03,424 - INFO - 127.0.0.1 - - [17/Jan/2024 22:35:03] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:35:03,456 - INFO - Status: 200
+root 2024-01-17 22:35:03,457 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:35:03,457 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRUY2MjExNkIzMTlDRTZERTNBAA=="}]}
+root 2024-01-17 22:35:03,514 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:35:03,515 - INFO - 127.0.0.1 - - [17/Jan/2024 22:35:03] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:35:03,710 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 22:35:03,715 - INFO - 127.0.0.1 - - [17/Jan/2024 22:35:03] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:35:04,241 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:35:04,242 - INFO - 127.0.0.1 - - [17/Jan/2024 22:35:04] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:35:04,548 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:35:04,549 - INFO - 127.0.0.1 - - [17/Jan/2024 22:35:04] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:44:26,595 - INFO - Flask app started
+werkzeug 2024-01-17 22:44:26,598 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.97:8000
+werkzeug 2024-01-17 22:44:26,598 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-17 22:44:35,547 - INFO - Running from_llm: --- 0.00014972686767578125 seconds ---
+salesgpt.logger 2024-01-17 22:44:35,547 - INFO - Running from_llm: --- 0.00013303756713867188 seconds ---
+salesgpt.logger 2024-01-17 22:44:35,557 - INFO - Running from_llm: --- 0.0102386474609375 seconds ---
+salesgpt.logger 2024-01-17 22:44:35,557 - INFO - Running seed_agent: --- 3.24249267578125e-05 seconds ---
+httpx 2024-01-17 22:44:40,436 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 22:44:40,440 - INFO - Running step: --- 4.883238077163696 seconds ---
+root 2024-01-17 22:44:41,356 - INFO - Status: 200
+root 2024-01-17 22:44:41,356 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:44:41,356 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRjFBQzJGQTNGRjgyMDQ2QjQwAA=="}]}
+root 2024-01-17 22:44:42,073 - INFO - Status: 200
+root 2024-01-17 22:44:42,074 - INFO - Received a WhatsApp status update.
+root 2024-01-17 22:44:42,074 - INFO - Content-type: application/json; charset=UTF-8
+werkzeug 2024-01-17 22:44:42,075 - INFO - 127.0.0.1 - - [17/Jan/2024 22:44:42] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:44:42,075 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRDE5OUI1QTRBNzIyMURCRTRDAA=="}]}
+root 2024-01-17 22:44:42,194 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:44:42,194 - INFO - 127.0.0.1 - - [17/Jan/2024 22:44:42] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:44:42,587 - INFO - Status: 200
+root 2024-01-17 22:44:42,588 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:44:42,588 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMTkxMzFFMDcxMEZEN0M2RjBGAA=="}]}
+root 2024-01-17 22:44:42,611 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:44:42,612 - INFO - 127.0.0.1 - - [17/Jan/2024 22:44:42] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:44:42,996 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:44:42,998 - INFO - 127.0.0.1 - - [17/Jan/2024 22:44:42] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:44:43,051 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 22:44:43,052 - INFO - 127.0.0.1 - - [17/Jan/2024 22:44:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:44:43,303 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:44:43,304 - INFO - 127.0.0.1 - - [17/Jan/2024 22:44:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:44:43,815 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:44:43,816 - INFO - 127.0.0.1 - - [17/Jan/2024 22:44:43] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 22:44:58,787 - INFO - Running from_llm: --- 0.00011944770812988281 seconds ---
+salesgpt.logger 2024-01-17 22:44:58,787 - INFO - Running from_llm: --- 0.0002338886260986328 seconds ---
+salesgpt.logger 2024-01-17 22:44:58,797 - INFO - Running from_llm: --- 0.009920597076416016 seconds ---
+salesgpt.logger 2024-01-17 22:44:58,797 - INFO - Running seed_agent: --- 1.2636184692382812e-05 seconds ---
+httpx 2024-01-17 22:45:02,246 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-17 22:45:02,861 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-17 22:45:14,160 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 22:45:14,165 - INFO - Running step: --- 15.368364810943604 seconds ---
+root 2024-01-17 22:45:14,738 - INFO - Status: 200
+root 2024-01-17 22:45:14,738 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:45:14,738 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNUIxOUE4NDc3MTk4MzgwOUUzAA=="}]}
+root 2024-01-17 22:45:15,265 - INFO - Status: 200
+root 2024-01-17 22:45:15,266 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:45:15,266 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNDcyMjExN0REOUJGNENDQTlEAA=="}]}
+root 2024-01-17 22:45:15,424 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:45:15,424 - INFO - 127.0.0.1 - - [17/Jan/2024 22:45:15] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:45:15,765 - INFO - Status: 200
+root 2024-01-17 22:45:15,766 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:45:15,766 - INFO - Received a WhatsApp status update.
+root 2024-01-17 22:45:15,766 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQjk1QzBCNjA5NEIxRUVGNzU1AA=="}]}
+werkzeug 2024-01-17 22:45:15,767 - INFO - 127.0.0.1 - - [17/Jan/2024 22:45:15] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:45:15,953 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:45:15,954 - INFO - 127.0.0.1 - - [17/Jan/2024 22:45:15] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:45:16,379 - INFO - Status: 200
+root 2024-01-17 22:45:16,379 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:45:16,380 - INFO - Received a WhatsApp status update.
+root 2024-01-17 22:45:16,380 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSN0FDRTFBQTc4RTBFQ0Q1MzY0AA=="}]}
+werkzeug 2024-01-17 22:45:16,381 - INFO - 127.0.0.1 - - [17/Jan/2024 22:45:16] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:45:16,394 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:45:16,394 - INFO - 127.0.0.1 - - [17/Jan/2024 22:45:16] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:45:16,994 - INFO - Status: 200
+root 2024-01-17 22:45:16,995 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:45:16,996 - INFO - Received a WhatsApp status update.
+root 2024-01-17 22:45:16,996 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRDQ5NzNEQzA1NTBCRDgwNDBFAA=="}]}
+werkzeug 2024-01-17 22:45:16,996 - INFO - 127.0.0.1 - - [17/Jan/2024 22:45:16] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:45:16,997 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:45:16,998 - INFO - 127.0.0.1 - - [17/Jan/2024 22:45:16] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:45:17,002 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:45:17,002 - INFO - 127.0.0.1 - - [17/Jan/2024 22:45:17] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:45:17,505 - INFO - Status: 200
+root 2024-01-17 22:45:17,506 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:45:17,506 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNzFCMEYzRkQwNzFBNkUxQjA0AA=="}]}
+root 2024-01-17 22:45:17,528 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:45:17,529 - INFO - 127.0.0.1 - - [17/Jan/2024 22:45:17] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:45:17,759 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 22:45:17,764 - INFO - 127.0.0.1 - - [17/Jan/2024 22:45:17] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:45:18,171 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:45:18,171 - INFO - 127.0.0.1 - - [17/Jan/2024 22:45:18] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:45:18,172 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:45:18,173 - INFO - 127.0.0.1 - - [17/Jan/2024 22:45:18] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:45:18,420 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:45:18,421 - INFO - 127.0.0.1 - - [17/Jan/2024 22:45:18] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 22:46:12,303 - INFO - Running from_llm: --- 0.00010752677917480469 seconds ---
+salesgpt.logger 2024-01-17 22:46:12,303 - INFO - Running from_llm: --- 0.00018095970153808594 seconds ---
+salesgpt.logger 2024-01-17 22:46:12,312 - INFO - Running from_llm: --- 0.009543180465698242 seconds ---
+salesgpt.logger 2024-01-17 22:46:12,312 - INFO - Running seed_agent: --- 8.821487426757812e-06 seconds ---
+httpx 2024-01-17 22:46:23,963 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 22:46:23,970 - INFO - Running step: --- 11.657301187515259 seconds ---
+root 2024-01-17 22:46:24,480 - INFO - Status: 200
+root 2024-01-17 22:46:24,480 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:46:24,480 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMjBCMjBDQzc1NTY4MTgzRUNCAA=="}]}
+root 2024-01-17 22:46:24,985 - INFO - Status: 200
+root 2024-01-17 22:46:24,986 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:46:24,986 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSM0M5M0JBM0U1NEExRjcyRDAxAA=="}]}
+root 2024-01-17 22:46:25,292 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:46:25,293 - INFO - 127.0.0.1 - - [17/Jan/2024 22:46:25] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:46:25,411 - INFO - Status: 200
+root 2024-01-17 22:46:25,412 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:46:25,412 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQzMzQjgwOEJCN0RDRUQ5MEVGAA=="}]}
+root 2024-01-17 22:46:25,418 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:46:25,419 - INFO - 127.0.0.1 - - [17/Jan/2024 22:46:25] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:46:25,597 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:46:25,599 - INFO - 127.0.0.1 - - [17/Jan/2024 22:46:25] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:46:25,736 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:46:25,736 - INFO - 127.0.0.1 - - [17/Jan/2024 22:46:25] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:46:25,945 - INFO - Status: 200
+root 2024-01-17 22:46:25,945 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:46:25,945 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRTgzNzYxQkFBMjJEMzA5MjEzAA=="}]}
+root 2024-01-17 22:46:26,053 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:46:26,054 - INFO - 127.0.0.1 - - [17/Jan/2024 22:46:26] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:46:26,429 - INFO - Status: 200
+root 2024-01-17 22:46:26,430 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:46:26,430 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMjBGM0YzREUwMjE0M0FCRDYwAA=="}]}
+root 2024-01-17 22:46:26,682 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 22:46:26,685 - INFO - 127.0.0.1 - - [17/Jan/2024 22:46:26] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:46:26,745 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:46:26,746 - INFO - 127.0.0.1 - - [17/Jan/2024 22:46:26] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:46:26,934 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:46:26,935 - INFO - 127.0.0.1 - - [17/Jan/2024 22:46:26] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:46:27,068 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:46:27,069 - INFO - 127.0.0.1 - - [17/Jan/2024 22:46:27] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:46:27,248 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:46:27,249 - INFO - 127.0.0.1 - - [17/Jan/2024 22:46:27] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:46:27,545 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:46:27,546 - INFO - 127.0.0.1 - - [17/Jan/2024 22:46:27] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 22:46:47,518 - INFO - Running from_llm: --- 0.00011754035949707031 seconds ---
+salesgpt.logger 2024-01-17 22:46:47,518 - INFO - Running from_llm: --- 0.00012612342834472656 seconds ---
+salesgpt.logger 2024-01-17 22:46:47,528 - INFO - Running from_llm: --- 0.009966850280761719 seconds ---
+salesgpt.logger 2024-01-17 22:46:47,528 - INFO - Running seed_agent: --- 2.8848648071289062e-05 seconds ---
+httpx 2024-01-17 22:47:09,834 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 22:47:09,840 - INFO - Running step: --- 22.311694860458374 seconds ---
+root 2024-01-17 22:47:10,446 - INFO - Status: 200
+root 2024-01-17 22:47:10,446 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:47:10,446 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQzU5MjQxMEM2NkZBRDBEOEYzAA=="}]}
+root 2024-01-17 22:47:10,847 - INFO - Status: 200
+root 2024-01-17 22:47:10,848 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:47:10,848 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSOEY2NkRDMjc1MjhEOThDODMzAA=="}]}
+root 2024-01-17 22:47:11,014 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:47:11,015 - INFO - 127.0.0.1 - - [17/Jan/2024 22:47:11] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:47:11,372 - INFO - Status: 200
+root 2024-01-17 22:47:11,373 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 22:47:11,374 - INFO - Received a WhatsApp status update.
+root 2024-01-17 22:47:11,374 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQTEyNEYyMDYyQjVBM0E3QTcxAA=="}]}
+werkzeug 2024-01-17 22:47:11,374 - INFO - 127.0.0.1 - - [17/Jan/2024 22:47:11] "POST /webhook HTTP/1.1" 200 -
+werkzeug 2024-01-17 22:47:11,376 - INFO - 127.0.0.1 - - [17/Jan/2024 22:47:11] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:47:11,678 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:47:11,678 - INFO - 127.0.0.1 - - [17/Jan/2024 22:47:11] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:47:11,822 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:47:11,823 - INFO - 127.0.0.1 - - [17/Jan/2024 22:47:11] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:47:12,030 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:47:12,031 - INFO - 127.0.0.1 - - [17/Jan/2024 22:47:12] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 22:47:12,292 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 22:47:12,293 - INFO - 127.0.0.1 - - [17/Jan/2024 22:47:12] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:12:25,969 - INFO - Flask app started
+werkzeug 2024-01-17 23:12:25,971 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.97:8000
+werkzeug 2024-01-17 23:12:25,971 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-17 23:12:45,363 - INFO - Running from_llm: --- 0.00012159347534179688 seconds ---
+salesgpt.logger 2024-01-17 23:12:45,364 - INFO - Running from_llm: --- 0.00019598007202148438 seconds ---
+salesgpt.logger 2024-01-17 23:12:45,373 - INFO - Running from_llm: --- 0.009914636611938477 seconds ---
+salesgpt.logger 2024-01-17 23:12:45,373 - INFO - Running seed_agent: --- 8.821487426757812e-06 seconds ---
+httpx 2024-01-17 23:12:48,170 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:12:48,174 - INFO - Running step: --- 2.8009746074676514 seconds ---
+root 2024-01-17 23:12:49,029 - INFO - Status: 200
+root 2024-01-17 23:12:49,029 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:12:49,029 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQTM4QUVFMkJCQjBEMTA5MENBAA=="}]}
+root 2024-01-17 23:12:49,646 - INFO - Status: 200
+root 2024-01-17 23:12:49,650 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:12:49,650 - INFO - Content-type: application/json; charset=UTF-8
+werkzeug 2024-01-17 23:12:49,651 - INFO - 127.0.0.1 - - [17/Jan/2024 23:12:49] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:12:49,652 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSN0Q5MDBCNTVEM0NDQjFEMkZDAA=="}]}
+root 2024-01-17 23:12:50,181 - INFO - Status: 200
+root 2024-01-17 23:12:50,183 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:12:50,183 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:12:50,184 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMjU0MUU4MkMxQkRGNDZBOUI0AA=="}]}
+werkzeug 2024-01-17 23:12:50,184 - INFO - 127.0.0.1 - - [17/Jan/2024 23:12:50] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:12:50,271 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:12:50,272 - INFO - 127.0.0.1 - - [17/Jan/2024 23:12:50] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:12:50,426 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:12:50,430 - INFO - 127.0.0.1 - - [17/Jan/2024 23:12:50] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:12:50,569 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:12:50,570 - INFO - 127.0.0.1 - - [17/Jan/2024 23:12:50] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:12:50,976 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:12:50,977 - INFO - 127.0.0.1 - - [17/Jan/2024 23:12:50] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:12:51,214 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:12:51,215 - INFO - 127.0.0.1 - - [17/Jan/2024 23:12:51] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:13:11,774 - INFO - Running from_llm: --- 0.00021719932556152344 seconds ---
+salesgpt.logger 2024-01-17 23:13:11,775 - INFO - Running from_llm: --- 0.00012755393981933594 seconds ---
+salesgpt.logger 2024-01-17 23:13:11,783 - INFO - Running from_llm: --- 0.00922083854675293 seconds ---
+salesgpt.logger 2024-01-17 23:13:11,783 - INFO - Running seed_agent: --- 8.821487426757812e-06 seconds ---
+httpx 2024-01-17 23:13:13,811 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-17 23:13:14,428 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-17 23:13:27,533 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:13:27,539 - INFO - Running step: --- 15.755123853683472 seconds ---
+root 2024-01-17 23:13:28,146 - INFO - Status: 200
+root 2024-01-17 23:13:28,146 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:13:28,147 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMjhGM0Q2NjhFN0YzRjM2RkI1AA=="}]}
+root 2024-01-17 23:13:28,582 - INFO - Status: 200
+root 2024-01-17 23:13:28,583 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:13:28,584 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRjk5QjJFQzFFNDQ0MEJBMzU4AA=="}]}
+root 2024-01-17 23:13:28,967 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:13:28,968 - INFO - 127.0.0.1 - - [17/Jan/2024 23:13:28] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:13:29,066 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:13:29,067 - INFO - 127.0.0.1 - - [17/Jan/2024 23:13:29] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:13:29,129 - INFO - Status: 200
+root 2024-01-17 23:13:29,130 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:13:29,131 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNjJEOUY0RUM3MzQxMTc4QkFEAA=="}]}
+root 2024-01-17 23:13:29,322 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:13:29,323 - INFO - 127.0.0.1 - - [17/Jan/2024 23:13:29] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:13:29,685 - INFO - Status: 200
+root 2024-01-17 23:13:29,688 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:13:29,689 - INFO - Content-type: application/json; charset=UTF-8
+werkzeug 2024-01-17 23:13:29,690 - INFO - 127.0.0.1 - - [17/Jan/2024 23:13:29] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:13:29,690 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSN0ZGMTU3NzI3RkM4OTBBNUQxAA=="}]}
+root 2024-01-17 23:13:29,778 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:13:29,778 - INFO - 127.0.0.1 - - [17/Jan/2024 23:13:29] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:13:30,197 - INFO - Status: 200
+root 2024-01-17 23:13:30,198 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:13:30,199 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNUFENTI4RjU0NUM4QTMzNjM3AA=="}]}
+root 2024-01-17 23:13:30,199 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:13:30,200 - INFO - 127.0.0.1 - - [17/Jan/2024 23:13:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:13:30,323 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:13:30,324 - INFO - 127.0.0.1 - - [17/Jan/2024 23:13:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:13:30,443 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:13:30,448 - INFO - 127.0.0.1 - - [17/Jan/2024 23:13:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:13:31,015 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:13:31,017 - INFO - 127.0.0.1 - - [17/Jan/2024 23:13:31] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:13:31,019 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:13:31,021 - INFO - 127.0.0.1 - - [17/Jan/2024 23:13:31] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:13:31,104 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:13:31,105 - INFO - 127.0.0.1 - - [17/Jan/2024 23:13:31] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:13:49,458 - INFO - Running from_llm: --- 0.00011873245239257812 seconds ---
+salesgpt.logger 2024-01-17 23:13:49,458 - INFO - Running from_llm: --- 0.00019741058349609375 seconds ---
+salesgpt.logger 2024-01-17 23:13:49,468 - INFO - Running from_llm: --- 0.009812593460083008 seconds ---
+salesgpt.logger 2024-01-17 23:13:49,468 - INFO - Running seed_agent: --- 1.1205673217773438e-05 seconds ---
+httpx 2024-01-17 23:14:01,552 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:14:01,557 - INFO - Running step: --- 12.088747024536133 seconds ---
+root 2024-01-17 23:14:02,143 - INFO - Status: 200
+root 2024-01-17 23:14:02,144 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:14:02,144 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSREM2NDc3RjY4RkVEM0YyMTRBAA=="}]}
+root 2024-01-17 23:14:02,761 - INFO - Status: 200
+root 2024-01-17 23:14:02,762 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:14:02,762 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQ0IwNDA0NTE2N0I4N0Q1M0NFAA=="}]}
+root 2024-01-17 23:14:02,763 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:14:02,763 - INFO - 127.0.0.1 - - [17/Jan/2024 23:14:02] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:14:03,375 - INFO - Status: 200
+root 2024-01-17 23:14:03,376 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:14:03,377 - INFO - Content-type: application/json; charset=UTF-8
+werkzeug 2024-01-17 23:14:03,377 - INFO - 127.0.0.1 - - [17/Jan/2024 23:14:03] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:14:03,377 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQTY2NkY0RDU4QzQ4RjAxODBBAA=="}]}
+root 2024-01-17 23:14:03,464 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:14:03,464 - INFO - 127.0.0.1 - - [17/Jan/2024 23:14:03] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:14:03,511 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:14:03,512 - INFO - 127.0.0.1 - - [17/Jan/2024 23:14:03] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:14:03,987 - INFO - Status: 200
+root 2024-01-17 23:14:03,988 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:14:03,988 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRDMwNjA1NTlGMTkzRTQzRjU3AA=="}]}
+root 2024-01-17 23:14:03,990 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:14:03,990 - INFO - 127.0.0.1 - - [17/Jan/2024 23:14:03] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:14:04,137 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:14:04,138 - INFO - 127.0.0.1 - - [17/Jan/2024 23:14:04] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:14:04,439 - INFO - Status: 200
+root 2024-01-17 23:14:04,440 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:14:04,441 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNUFBODI2RjlEMDA2RTI1NkFBAA=="}]}
+root 2024-01-17 23:14:04,912 - INFO - Status: 200
+root 2024-01-17 23:14:04,912 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:14:04,913 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:14:04,914 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSOTRFMzc2OTE5M0FCNzFDNERFAA=="}]}
+werkzeug 2024-01-17 23:14:04,914 - INFO - 127.0.0.1 - - [17/Jan/2024 23:14:04] "POST /webhook HTTP/1.1" 200 -
+werkzeug 2024-01-17 23:14:04,915 - INFO - 127.0.0.1 - - [17/Jan/2024 23:14:04] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:14:04,916 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:14:04,917 - INFO - 127.0.0.1 - - [17/Jan/2024 23:14:04] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:14:05,109 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:14:05,110 - INFO - 127.0.0.1 - - [17/Jan/2024 23:14:05] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:14:05,627 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:14:05,628 - INFO - 127.0.0.1 - - [17/Jan/2024 23:14:05] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:14:05,630 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:14:05,632 - INFO - 127.0.0.1 - - [17/Jan/2024 23:14:05] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:14:05,992 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:14:05,993 - INFO - 127.0.0.1 - - [17/Jan/2024 23:14:05] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:16:44,046 - INFO - Flask app started
+werkzeug 2024-01-17 23:16:44,049 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.97:8000
+werkzeug 2024-01-17 23:16:44,049 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-17 23:16:54,596 - INFO - Running from_llm: --- 0.00016617774963378906 seconds ---
+salesgpt.logger 2024-01-17 23:16:54,596 - INFO - Running from_llm: --- 0.0001571178436279297 seconds ---
+salesgpt.logger 2024-01-17 23:16:54,608 - INFO - Running from_llm: --- 0.012247562408447266 seconds ---
+salesgpt.logger 2024-01-17 23:16:54,608 - INFO - Running seed_agent: --- 1.1444091796875e-05 seconds ---
+httpx 2024-01-17 23:16:58,520 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:16:58,526 - INFO - Running step: --- 3.9177474975585938 seconds ---
+root 2024-01-17 23:16:58,959 - INFO - Status: 200
+root 2024-01-17 23:16:58,960 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:16:58,960 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRjU5NkFDRDdDNjJGMDJERUJCAA=="}]}
+root 2024-01-17 23:16:59,500 - INFO - Status: 200
+root 2024-01-17 23:16:59,500 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:16:59,500 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRTA0Rjc4OEQwQkFCM0I5ODI1AA=="}]}
+root 2024-01-17 23:17:00,036 - INFO - Status: 200
+root 2024-01-17 23:17:00,037 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:17:00,038 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:17:00,038 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSOTg3QUU0MTY3MDY3NUY0QTY5AA=="}]}
+werkzeug 2024-01-17 23:17:00,038 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:00] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:17:00,156 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:17:00,156 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:00] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:17:00,270 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:17:00,271 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:00] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:17:00,291 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:17:00,297 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:00] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:17:00,360 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:17:00,361 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:00] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:17:01,039 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:17:01,040 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:01] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:17:01,042 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:17:01,044 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:01] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:17:28,443 - INFO - Running from_llm: --- 0.00010514259338378906 seconds ---
+salesgpt.logger 2024-01-17 23:17:28,444 - INFO - Running from_llm: --- 0.0001957416534423828 seconds ---
+salesgpt.logger 2024-01-17 23:17:28,453 - INFO - Running from_llm: --- 0.009436368942260742 seconds ---
+salesgpt.logger 2024-01-17 23:17:28,453 - INFO - Running seed_agent: --- 9.059906005859375e-06 seconds ---
+httpx 2024-01-17 23:17:31,449 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-17 23:17:32,373 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-17 23:17:41,485 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:17:41,490 - INFO - Running step: --- 13.037020683288574 seconds ---
+root 2024-01-17 23:17:42,099 - INFO - Status: 200
+root 2024-01-17 23:17:42,100 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:17:42,100 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMUYzQUVGNjUwQ0UxRkM4QUNBAA=="}]}
+root 2024-01-17 23:17:42,568 - INFO - Status: 200
+root 2024-01-17 23:17:42,568 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:17:42,569 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRjU3OENCOTBGMTgwOEI2Q0MxAA=="}]}
+root 2024-01-17 23:17:42,740 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:17:42,741 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:42] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:17:43,126 - INFO - Status: 200
+root 2024-01-17 23:17:43,127 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:17:43,127 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:17:43,128 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSOTdFQkQ3NERCOEJBNjI0OTk0AA=="}]}
+werkzeug 2024-01-17 23:17:43,128 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:17:43,238 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:17:43,238 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:17:43,742 - INFO - Status: 200
+root 2024-01-17 23:17:43,742 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:17:43,743 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSN0JGMEY5ODBDQUUxM0Y1MDQ3AA=="}]}
+root 2024-01-17 23:17:43,743 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:17:43,744 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:17:43,745 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:43] "POST /webhook HTTP/1.1" 200 -
+werkzeug 2024-01-17 23:17:43,746 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:17:43,920 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:17:43,921 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:17:44,015 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:17:44,020 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:44] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:17:44,557 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:17:44,558 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:44] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:17:44,778 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:17:44,779 - INFO - 127.0.0.1 - - [17/Jan/2024 23:17:44] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:18:07,297 - INFO - Running from_llm: --- 0.0001201629638671875 seconds ---
+salesgpt.logger 2024-01-17 23:18:07,297 - INFO - Running from_llm: --- 0.0001728534698486328 seconds ---
+salesgpt.logger 2024-01-17 23:18:07,306 - INFO - Running from_llm: --- 0.009611368179321289 seconds ---
+salesgpt.logger 2024-01-17 23:18:07,307 - INFO - Running seed_agent: --- 1.52587890625e-05 seconds ---
+httpx 2024-01-17 23:18:15,429 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:18:15,435 - INFO - Running step: --- 8.128293991088867 seconds ---
+root 2024-01-17 23:18:15,997 - INFO - Status: 200
+root 2024-01-17 23:18:15,998 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:18:15,998 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQTk0MDM2OTE0ODhDMzA1QzA3AA=="}]}
+root 2024-01-17 23:18:16,500 - INFO - Status: 200
+root 2024-01-17 23:18:16,501 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:18:16,501 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNUMwREIxQzIyRjhFRDZFNEY5AA=="}]}
+root 2024-01-17 23:18:16,628 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:16,628 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:16] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:16,822 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:16,822 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:16] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:16,965 - INFO - Status: 200
+root 2024-01-17 23:18:16,966 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:18:16,966 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQjdDNDI2OEIwODQyM0Q4NTU4AA=="}]}
+root 2024-01-17 23:18:17,142 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:17,143 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:17] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:17,531 - INFO - Status: 200
+root 2024-01-17 23:18:17,531 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:18:17,531 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNEZBQkM4M0YwODFGMzc5ODRBAA=="}]}
+werkzeug 2024-01-17 23:18:17,533 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:17] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:17,572 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:17,573 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:17] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:17,714 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:17,715 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:17] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:17,842 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:17,843 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:17] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:18,351 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:18,352 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:18] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:18,561 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:18,562 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:18] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:18:30,745 - INFO - Running from_llm: --- 0.00015306472778320312 seconds ---
+salesgpt.logger 2024-01-17 23:18:30,746 - INFO - Running from_llm: --- 0.0001671314239501953 seconds ---
+salesgpt.logger 2024-01-17 23:18:30,749 - INFO - Running from_llm: --- 0.0041124820709228516 seconds ---
+salesgpt.logger 2024-01-17 23:18:30,749 - INFO - Running seed_agent: --- 1.239776611328125e-05 seconds ---
+httpx 2024-01-17 23:18:36,930 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:18:36,934 - INFO - Running step: --- 6.184688568115234 seconds ---
+root 2024-01-17 23:18:37,701 - INFO - Status: 200
+root 2024-01-17 23:18:37,702 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:18:37,702 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNTc0QkFGODc4ODlCNjlERjNDAA=="}]}
+root 2024-01-17 23:18:38,219 - INFO - Status: 200
+root 2024-01-17 23:18:38,219 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:18:38,220 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNkIyNzVFOUEzMjc0QTUxNTYzAA=="}]}
+root 2024-01-17 23:18:38,221 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:38,222 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:38] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:38,309 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:38,309 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:38] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:38,463 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:18:38,469 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:38] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:38,787 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:38,788 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:38] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:39,035 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:39,035 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:39] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:18:46,822 - INFO - Running from_llm: --- 0.000164031982421875 seconds ---
+salesgpt.logger 2024-01-17 23:18:46,823 - INFO - Running from_llm: --- 0.00014638900756835938 seconds ---
+salesgpt.logger 2024-01-17 23:18:46,826 - INFO - Running from_llm: --- 0.004122734069824219 seconds ---
+salesgpt.logger 2024-01-17 23:18:46,827 - INFO - Running seed_agent: --- 1.2874603271484375e-05 seconds ---
+httpx 2024-01-17 23:18:50,244 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:18:50,250 - INFO - Running step: --- 3.4234187602996826 seconds ---
+root 2024-01-17 23:18:50,911 - INFO - Status: 200
+root 2024-01-17 23:18:50,911 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:18:50,912 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNTJFMjg0RUM0RjE1NzFFQzgyAA=="}]}
+root 2024-01-17 23:18:51,528 - INFO - Status: 200
+root 2024-01-17 23:18:51,531 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:18:51,532 - INFO - Content-type: application/json; charset=UTF-8
+werkzeug 2024-01-17 23:18:51,537 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:51] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:51,538 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNDc4MThCMTZCNDJGN0U4QzI2AA=="}]}
+root 2024-01-17 23:18:51,780 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:18:51,784 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:51] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:51,797 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:51,798 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:51] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:52,381 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:52,383 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:52] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:18:52,469 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:18:52,470 - INFO - 127.0.0.1 - - [17/Jan/2024 23:18:52] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:19:09,956 - INFO - Running from_llm: --- 0.0001366138458251953 seconds ---
+salesgpt.logger 2024-01-17 23:19:09,956 - INFO - Running from_llm: --- 0.00016999244689941406 seconds ---
+salesgpt.logger 2024-01-17 23:19:09,960 - INFO - Running from_llm: --- 0.004696846008300781 seconds ---
+salesgpt.logger 2024-01-17 23:19:09,960 - INFO - Running seed_agent: --- 1.5735626220703125e-05 seconds ---
+httpx 2024-01-17 23:19:13,735 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:19:13,741 - INFO - Running step: --- 3.780505418777466 seconds ---
+root 2024-01-17 23:19:14,451 - INFO - Status: 200
+root 2024-01-17 23:19:14,451 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:19:14,451 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNTkzMjIxQzJGOTEyQzc3NzlBAA=="}]}
+root 2024-01-17 23:19:15,064 - INFO - Status: 200
+root 2024-01-17 23:19:15,064 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:19:15,064 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNjU0MkFDMDBGODE1RkFDNjdDAA=="}]}
+root 2024-01-17 23:19:15,243 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:19:15,244 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:15] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:19:15,287 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:19:15,292 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:15] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:19:15,333 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:19:15,333 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:15] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:19:15,885 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:19:15,886 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:15] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:19:15,919 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:19:15,919 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:15] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:19:25,481 - INFO - Running from_llm: --- 0.00019311904907226562 seconds ---
+salesgpt.logger 2024-01-17 23:19:25,481 - INFO - Running from_llm: --- 0.00017261505126953125 seconds ---
+salesgpt.logger 2024-01-17 23:19:25,485 - INFO - Running from_llm: --- 0.00476384162902832 seconds ---
+salesgpt.logger 2024-01-17 23:19:25,486 - INFO - Running seed_agent: --- 1.5974044799804688e-05 seconds ---
+httpx 2024-01-17 23:19:29,085 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:19:29,092 - INFO - Running step: --- 3.6064541339874268 seconds ---
+root 2024-01-17 23:19:29,725 - INFO - Status: 200
+root 2024-01-17 23:19:29,726 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:19:29,726 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRTg2MUVFQUJERTkyRDkzODJGAA=="}]}
+root 2024-01-17 23:19:30,418 - INFO - Status: 200
+root 2024-01-17 23:19:30,419 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:19:30,419 - INFO - Content-type: application/json; charset=UTF-8
+werkzeug 2024-01-17 23:19:30,420 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:19:30,420 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMUM2ODQyNDhBNUZFQTYwMEUzAA=="}]}
+root 2024-01-17 23:19:30,552 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:19:30,552 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:19:30,678 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:19:30,683 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:19:31,031 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:19:31,032 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:31] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:19:31,202 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:19:31,203 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:31] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:19:38,198 - INFO - Running from_llm: --- 0.00011920928955078125 seconds ---
+salesgpt.logger 2024-01-17 23:19:38,199 - INFO - Running from_llm: --- 0.00016570091247558594 seconds ---
+salesgpt.logger 2024-01-17 23:19:38,203 - INFO - Running from_llm: --- 0.004331111907958984 seconds ---
+salesgpt.logger 2024-01-17 23:19:38,203 - INFO - Running seed_agent: --- 1.3113021850585938e-05 seconds ---
+httpx 2024-01-17 23:19:41,061 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:19:41,066 - INFO - Running step: --- 2.8628931045532227 seconds ---
+root 2024-01-17 23:19:41,538 - INFO - Status: 200
+root 2024-01-17 23:19:41,539 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:19:41,539 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRjg2MUJFNDU4MkI2RTQ5RjJBAA=="}]}
+root 2024-01-17 23:19:42,214 - INFO - Status: 200
+root 2024-01-17 23:19:42,215 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:19:42,216 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSODk3NDZDMTNBNzIwNUIzMjVEAA=="}]}
+root 2024-01-17 23:19:42,334 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:19:42,334 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:42] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:19:42,465 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:19:42,472 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:42] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:19:42,504 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:19:42,505 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:42] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:19:42,801 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:19:42,802 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:42] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:19:43,508 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:19:43,509 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:43] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:19:54,983 - INFO - Running from_llm: --- 0.00013113021850585938 seconds ---
+salesgpt.logger 2024-01-17 23:19:54,983 - INFO - Running from_llm: --- 0.0001647472381591797 seconds ---
+salesgpt.logger 2024-01-17 23:19:54,987 - INFO - Running from_llm: --- 0.0045948028564453125 seconds ---
+salesgpt.logger 2024-01-17 23:19:54,987 - INFO - Running seed_agent: --- 1.3113021850585938e-05 seconds ---
+httpx 2024-01-17 23:19:58,049 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:19:58,055 - INFO - Running step: --- 3.067909002304077 seconds ---
+root 2024-01-17 23:19:58,763 - INFO - Status: 200
+root 2024-01-17 23:19:58,763 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:19:58,763 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMUI5MDY3MDc2NkIzM0IwNEQwAA=="}]}
+root 2024-01-17 23:19:59,277 - INFO - Status: 200
+root 2024-01-17 23:19:59,278 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:19:59,279 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQ0E0N0Q5OTk5QzNBOEQ4ODI3AA=="}]}
+root 2024-01-17 23:19:59,485 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:19:59,486 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:59] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:19:59,681 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:19:59,682 - INFO - 127.0.0.1 - - [17/Jan/2024 23:19:59] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:00,176 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:00,177 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:00] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:00,212 - INFO - Status: 200
+root 2024-01-17 23:20:00,212 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:20:00,212 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMjUzNzYzQTFBNkU3NjQ3RTUzAA=="}]}
+root 2024-01-17 23:20:00,360 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:00,360 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:00] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:00,810 - INFO - Status: 200
+root 2024-01-17 23:20:00,812 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:20:00,812 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMjQ3OERFNjlCMzI4MUIzRjQ0AA=="}]}
+root 2024-01-17 23:20:00,870 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:00,870 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:00] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:01,071 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:20:01,076 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:01] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:01,261 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:01,262 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:01] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:01,398 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:01,399 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:01] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:01,732 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:01,733 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:01] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:20:29,680 - INFO - Running from_llm: --- 0.0001475811004638672 seconds ---
+salesgpt.logger 2024-01-17 23:20:29,680 - INFO - Running from_llm: --- 0.00014638900756835938 seconds ---
+salesgpt.logger 2024-01-17 23:20:29,684 - INFO - Running from_llm: --- 0.004653215408325195 seconds ---
+salesgpt.logger 2024-01-17 23:20:29,685 - INFO - Running seed_agent: --- 1.1920928955078125e-05 seconds ---
+httpx 2024-01-17 23:20:32,232 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:20:32,237 - INFO - Running step: --- 2.552530527114868 seconds ---
+root 2024-01-17 23:20:32,844 - INFO - Status: 200
+root 2024-01-17 23:20:32,845 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:20:32,845 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQzVDMzJEMjlGNUQ5Q0FERjQ0AA=="}]}
+root 2024-01-17 23:20:33,414 - INFO - Status: 200
+root 2024-01-17 23:20:33,415 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:20:33,415 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMjExRDI5NDgyODBCRTYxNzc0AA=="}]}
+root 2024-01-17 23:20:33,662 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:33,663 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:33] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:33,684 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:20:33,685 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:33] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:33,785 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:33,786 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:33] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:34,281 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:34,282 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:34] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:34,371 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:34,372 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:34] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:20:39,818 - INFO - Running from_llm: --- 0.00011563301086425781 seconds ---
+salesgpt.logger 2024-01-17 23:20:39,818 - INFO - Running from_llm: --- 0.00013017654418945312 seconds ---
+salesgpt.logger 2024-01-17 23:20:39,826 - INFO - Running from_llm: --- 0.008978605270385742 seconds ---
+salesgpt.logger 2024-01-17 23:20:39,827 - INFO - Running seed_agent: --- 8.106231689453125e-06 seconds ---
+httpx 2024-01-17 23:20:45,230 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:20:45,236 - INFO - Running step: --- 5.409311294555664 seconds ---
+root 2024-01-17 23:20:45,741 - INFO - Status: 200
+root 2024-01-17 23:20:45,741 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:20:45,741 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMzM3REYyNEVBN0MxREQzNkJEAA=="}]}
+root 2024-01-17 23:20:46,405 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:46,406 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:46] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:46,478 - INFO - Status: 200
+root 2024-01-17 23:20:46,479 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:20:46,479 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSOTc5RjJBRjg5RUU5MEZCMzg3AA=="}]}
+root 2024-01-17 23:20:46,770 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+root 2024-01-17 23:20:46,773 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:46,778 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:46] "POST /webhook HTTP/1.1" 200 -
+werkzeug 2024-01-17 23:20:46,779 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:46] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:47,661 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:47,661 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:47] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:47,705 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:47,706 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:47] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:20:52,602 - INFO - Running from_llm: --- 0.00011777877807617188 seconds ---
+salesgpt.logger 2024-01-17 23:20:52,602 - INFO - Running from_llm: --- 0.000133514404296875 seconds ---
+salesgpt.logger 2024-01-17 23:20:52,606 - INFO - Running from_llm: --- 0.0044138431549072266 seconds ---
+salesgpt.logger 2024-01-17 23:20:52,607 - INFO - Running seed_agent: --- 1.0967254638671875e-05 seconds ---
+httpx 2024-01-17 23:20:57,329 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:20:57,335 - INFO - Running step: --- 4.728803873062134 seconds ---
+root 2024-01-17 23:20:58,127 - INFO - Status: 200
+root 2024-01-17 23:20:58,127 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:20:58,127 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMTM2ODc2MURDMTU1Qjc1RTlEAA=="}]}
+root 2024-01-17 23:20:58,472 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:58,472 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:58] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:58,625 - INFO - Status: 200
+root 2024-01-17 23:20:58,626 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:20:58,626 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNURGNjNCQUU2QUVCODg3QjkwAA=="}]}
+root 2024-01-17 23:20:58,681 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:58,682 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:58] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:58,903 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:20:58,908 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:58] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:59,466 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:59,468 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:59] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:20:59,570 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:20:59,571 - INFO - 127.0.0.1 - - [17/Jan/2024 23:20:59] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:22:26,684 - INFO - Running from_llm: --- 0.00013017654418945312 seconds ---
+salesgpt.logger 2024-01-17 23:22:26,684 - INFO - Running from_llm: --- 0.0001583099365234375 seconds ---
+salesgpt.logger 2024-01-17 23:22:26,688 - INFO - Running from_llm: --- 0.004679441452026367 seconds ---
+salesgpt.logger 2024-01-17 23:22:26,689 - INFO - Running seed_agent: --- 1.2636184692382812e-05 seconds ---
+httpx 2024-01-17 23:22:31,715 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:22:31,720 - INFO - Running step: --- 5.031674861907959 seconds ---
+root 2024-01-17 23:22:32,410 - INFO - Status: 200
+root 2024-01-17 23:22:32,410 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:22:32,411 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNUU5RjM4MTU4NUJDOTI2Njc4AA=="}]}
+root 2024-01-17 23:22:32,869 - INFO - Status: 200
+root 2024-01-17 23:22:32,870 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:22:32,871 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQzc3RTJCNTZGRDg4RjREOEY2AA=="}]}
+root 2024-01-17 23:22:33,038 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:22:33,039 - INFO - 127.0.0.1 - - [17/Jan/2024 23:22:33] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:22:33,175 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:22:33,180 - INFO - 127.0.0.1 - - [17/Jan/2024 23:22:33] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:22:33,413 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:22:33,415 - INFO - 127.0.0.1 - - [17/Jan/2024 23:22:33] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:22:33,600 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:22:33,600 - INFO - 127.0.0.1 - - [17/Jan/2024 23:22:33] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:22:33,788 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:22:33,789 - INFO - 127.0.0.1 - - [17/Jan/2024 23:22:33] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:35:35,230 - INFO - Flask app started
+werkzeug 2024-01-17 23:35:35,232 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.97:8000
+werkzeug 2024-01-17 23:35:35,232 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-17 23:40:06,183 - INFO - Running from_llm: --- 0.0001895427703857422 seconds ---
+salesgpt.logger 2024-01-17 23:40:06,184 - INFO - Running from_llm: --- 0.00023818016052246094 seconds ---
+salesgpt.logger 2024-01-17 23:40:06,193 - INFO - Running from_llm: --- 0.010118484497070312 seconds ---
+salesgpt.logger 2024-01-17 23:40:06,193 - INFO - Running seed_agent: --- 1.0967254638671875e-05 seconds ---
+httpx 2024-01-17 23:40:14,551 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:40:14,563 - INFO - Running step: --- 8.369415760040283 seconds ---
+root 2024-01-17 23:40:15,296 - INFO - Status: 200
+root 2024-01-17 23:40:15,297 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:40:15,297 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMUJDRDg2M0Q5N0E0RjFFQTRFAA=="}]}
+root 2024-01-17 23:40:15,811 - INFO - Status: 200
+root 2024-01-17 23:40:15,812 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:40:15,812 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQjRGMjUwODFDOUYwRDVBOTlCAA=="}]}
+root 2024-01-17 23:40:15,942 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:15,943 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:15] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:16,310 - INFO - Status: 200
+root 2024-01-17 23:40:16,311 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:40:16,311 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRjRCQjM4Njc3QTlBMUE3NThEAA=="}]}
+root 2024-01-17 23:40:16,565 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:40:16,567 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:16] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:16,579 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:16,580 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:16] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:16,693 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:16,694 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:16] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:16,902 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:16,903 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:16] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:17,028 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:17,029 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:17] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:17,442 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:17,443 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:17] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:40:30,976 - INFO - Running from_llm: --- 0.00014162063598632812 seconds ---
+salesgpt.logger 2024-01-17 23:40:30,976 - INFO - Running from_llm: --- 0.0002307891845703125 seconds ---
+salesgpt.logger 2024-01-17 23:40:30,984 - INFO - Running from_llm: --- 0.009072542190551758 seconds ---
+salesgpt.logger 2024-01-17 23:40:30,985 - INFO - Running seed_agent: --- 2.0503997802734375e-05 seconds ---
+httpx 2024-01-17 23:40:34,664 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-17 23:40:35,105 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-17 23:40:43,114 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:40:43,119 - INFO - Running step: --- 12.134486675262451 seconds ---
+root 2024-01-17 23:40:43,632 - INFO - Status: 200
+root 2024-01-17 23:40:43,632 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:40:43,632 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSOTUzMjQ5NDBBNzg3ODQ4ODQyAA=="}]}
+root 2024-01-17 23:40:44,278 - INFO - Status: 200
+root 2024-01-17 23:40:44,279 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:40:44,286 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNEQyMTkyNjUzODRGRUQwN0RBAA=="}]}
+root 2024-01-17 23:40:44,601 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:44,602 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:44] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:44,698 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:44,699 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:44] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:44,768 - INFO - Status: 200
+root 2024-01-17 23:40:44,769 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:40:44,769 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSN0YzMUE0NDZCRkU5MDIwM0UxAA=="}]}
+root 2024-01-17 23:40:45,092 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:45,093 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:45] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:45,179 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:45,180 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:45] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:45,251 - INFO - Status: 200
+root 2024-01-17 23:40:45,252 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:40:45,252 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSODI1MkI0MEYxNkFCNzUwRDUxAA=="}]}
+root 2024-01-17 23:40:45,373 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:45,373 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:45] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:45,535 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:40:45,541 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:45] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:45,738 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:45,739 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:45] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:45,937 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:45,938 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:45] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:40:46,161 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:40:46,163 - INFO - 127.0.0.1 - - [17/Jan/2024 23:40:46] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:40:53,306 - INFO - Running from_llm: --- 0.00016760826110839844 seconds ---
+salesgpt.logger 2024-01-17 23:40:53,306 - INFO - Running from_llm: --- 0.00019621849060058594 seconds ---
+salesgpt.logger 2024-01-17 23:40:53,316 - INFO - Running from_llm: --- 0.010091066360473633 seconds ---
+salesgpt.logger 2024-01-17 23:40:53,316 - INFO - Running seed_agent: --- 1.0013580322265625e-05 seconds ---
+httpx 2024-01-17 23:41:09,160 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:41:09,165 - INFO - Running step: --- 15.848944664001465 seconds ---
+root 2024-01-17 23:41:09,703 - INFO - Status: 200
+root 2024-01-17 23:41:09,704 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:41:09,704 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSOTk2RjJENkZEOUU2MDYyQjJDAA=="}]}
+root 2024-01-17 23:41:10,270 - INFO - Status: 200
+root 2024-01-17 23:41:10,272 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:41:10,272 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQ0YwRjA2QUVEMzVDMUYxM0U1AA=="}]}
+root 2024-01-17 23:41:10,381 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:41:10,382 - INFO - 127.0.0.1 - - [17/Jan/2024 23:41:10] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:41:10,903 - INFO - Status: 200
+root 2024-01-17 23:41:10,905 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:41:10,905 - INFO - Content-type: application/json; charset=UTF-8
+werkzeug 2024-01-17 23:41:10,906 - INFO - 127.0.0.1 - - [17/Jan/2024 23:41:10] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:41:10,906 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNTY2RDc1ODlGOUU5RTRGMTQzAA=="}]}
+werkzeug 2024-01-17 23:41:10,907 - INFO - 127.0.0.1 - - [17/Jan/2024 23:41:10] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:41:11,000 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:41:11,001 - INFO - 127.0.0.1 - - [17/Jan/2024 23:41:11] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:41:11,086 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:41:11,087 - INFO - 127.0.0.1 - - [17/Jan/2024 23:41:11] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:41:11,516 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:41:11,517 - INFO - 127.0.0.1 - - [17/Jan/2024 23:41:11] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:41:11,646 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:41:11,647 - INFO - 127.0.0.1 - - [17/Jan/2024 23:41:11] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:42:45,798 - INFO - Flask app started
+werkzeug 2024-01-17 23:42:45,801 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.97:8000
+werkzeug 2024-01-17 23:42:45,801 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-17 23:42:54,907 - INFO - Running from_llm: --- 0.00015354156494140625 seconds ---
+salesgpt.logger 2024-01-17 23:42:54,908 - INFO - Running from_llm: --- 0.00017833709716796875 seconds ---
+salesgpt.logger 2024-01-17 23:42:54,917 - INFO - Running from_llm: --- 0.010027170181274414 seconds ---
+salesgpt.logger 2024-01-17 23:42:54,917 - INFO - Running seed_agent: --- 1.0251998901367188e-05 seconds ---
+httpx 2024-01-17 23:42:57,475 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:42:57,481 - INFO - Running step: --- 2.563258409500122 seconds ---
+root 2024-01-17 23:42:58,012 - INFO - Status: 200
+root 2024-01-17 23:42:58,013 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:42:58,013 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRkJFNUVGRjg1M0FDRTUyMTQ3AA=="}]}
+root 2024-01-17 23:42:58,422 - INFO - Status: 200
+root 2024-01-17 23:42:58,423 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:42:58,424 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSM0U5MjQyREVBQTQ1ODBBRjVFAA=="}]}
+root 2024-01-17 23:42:58,653 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:42:58,654 - INFO - 127.0.0.1 - - [17/Jan/2024 23:42:58] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:42:58,669 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:42:58,674 - INFO - 127.0.0.1 - - [17/Jan/2024 23:42:58] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:42:59,038 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:42:59,039 - INFO - 127.0.0.1 - - [17/Jan/2024 23:42:59] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:42:59,075 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:42:59,076 - INFO - 127.0.0.1 - - [17/Jan/2024 23:42:59] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:42:59,447 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:42:59,448 - INFO - 127.0.0.1 - - [17/Jan/2024 23:42:59] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:43:07,855 - INFO - Running from_llm: --- 0.000118255615234375 seconds ---
+salesgpt.logger 2024-01-17 23:43:07,856 - INFO - Running from_llm: --- 0.0001614093780517578 seconds ---
+salesgpt.logger 2024-01-17 23:43:07,865 - INFO - Running from_llm: --- 0.00941777229309082 seconds ---
+salesgpt.logger 2024-01-17 23:43:07,865 - INFO - Running seed_agent: --- 9.5367431640625e-06 seconds ---
+httpx 2024-01-17 23:43:10,300 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-17 23:43:10,761 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-17 23:43:28,836 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:43:28,842 - INFO - Running step: --- 20.977101802825928 seconds ---
+root 2024-01-17 23:43:29,347 - INFO - Status: 200
+root 2024-01-17 23:43:29,347 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:43:29,348 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRTcxOEJDNzRCMTk5RjUxQjgzAA=="}]}
+root 2024-01-17 23:43:29,964 - INFO - Status: 200
+root 2024-01-17 23:43:29,965 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:43:29,965 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNzA4NDg4NTEzRkU2OTlDRUUzAA=="}]}
+root 2024-01-17 23:43:30,012 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:30,012 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:30,373 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:30,374 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:30,458 - INFO - Status: 200
+root 2024-01-17 23:43:30,459 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:43:30,460 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMTRGREIzMUEyMEIxQjZBQkVCAA=="}]}
+root 2024-01-17 23:43:30,646 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:30,647 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:30,661 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:30,662 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:31,021 - INFO - Status: 200
+root 2024-01-17 23:43:31,022 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:43:31,023 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNUREODNEQzREODc4RDg3QUQyAA=="}]}
+root 2024-01-17 23:43:31,084 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:31,085 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:31] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:31,250 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:43:31,252 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:31] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:31,396 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:31,397 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:31] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:31,910 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:31,911 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:31] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:31,912 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:31,913 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:31] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:43:35,725 - INFO - Running from_llm: --- 0.0001308917999267578 seconds ---
+salesgpt.logger 2024-01-17 23:43:35,725 - INFO - Running from_llm: --- 0.000152587890625 seconds ---
+salesgpt.logger 2024-01-17 23:43:35,735 - INFO - Running from_llm: --- 0.010274410247802734 seconds ---
+salesgpt.logger 2024-01-17 23:43:35,735 - INFO - Running seed_agent: --- 3.0517578125e-05 seconds ---
+httpx 2024-01-17 23:43:41,022 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:43:41,027 - INFO - Running step: --- 5.291990756988525 seconds ---
+root 2024-01-17 23:43:41,635 - INFO - Status: 200
+root 2024-01-17 23:43:41,636 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:43:41,636 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNUU3OUUxOTI4Q0RCQUY0RjExAA=="}]}
+root 2024-01-17 23:43:42,149 - INFO - Status: 200
+root 2024-01-17 23:43:42,150 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:43:42,150 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNTBGMUExMEVDNEUwNThBN0VBAA=="}]}
+root 2024-01-17 23:43:42,173 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:42,174 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:42] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:42,572 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:42,573 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:42] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:42,614 - INFO - Status: 200
+root 2024-01-17 23:43:42,616 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:43:42,616 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMjI3QTI3RTA2NzY1QTIxRjdBAA=="}]}
+root 2024-01-17 23:43:42,809 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:42,810 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:42] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:43,276 - INFO - Status: 200
+root 2024-01-17 23:43:43,277 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:43:43,278 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQjY3NTRBQTFCNjQ3NkQyODJDAA=="}]}
+root 2024-01-17 23:43:43,302 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:43,302 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:43,394 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:43,395 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:43,515 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:43:43,517 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:43,598 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:43,598 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:43,738 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:43,739 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:43,948 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:43,949 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:43] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:43:48,606 - INFO - Running from_llm: --- 0.0001506805419921875 seconds ---
+salesgpt.logger 2024-01-17 23:43:48,607 - INFO - Running from_llm: --- 0.0001900196075439453 seconds ---
+salesgpt.logger 2024-01-17 23:43:48,617 - INFO - Running from_llm: --- 0.010524749755859375 seconds ---
+salesgpt.logger 2024-01-17 23:43:48,617 - INFO - Running seed_agent: --- 1.4781951904296875e-05 seconds ---
+httpx 2024-01-17 23:43:51,877 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:43:51,883 - INFO - Running step: --- 3.2654430866241455 seconds ---
+root 2024-01-17 23:43:52,593 - INFO - Status: 200
+root 2024-01-17 23:43:52,593 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:43:52,593 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNjM3NjU1OEIyRDFENkI1NjYyAA=="}]}
+root 2024-01-17 23:43:53,105 - INFO - Status: 200
+root 2024-01-17 23:43:53,105 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:43:53,105 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMDY0OEYyQjI0ODNGMzZFRkUwAA=="}]}
+root 2024-01-17 23:43:53,328 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:53,329 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:53] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:53,338 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:43:53,343 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:53] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:53,661 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:53,662 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:53] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:53,924 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:53,925 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:53] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:43:54,083 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:43:54,084 - INFO - 127.0.0.1 - - [17/Jan/2024 23:43:54] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:08,479 - INFO - Flask app started
+werkzeug 2024-01-17 23:47:08,481 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.97:8000
+werkzeug 2024-01-17 23:47:08,481 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-17 23:47:11,981 - INFO - Running from_llm: --- 0.00012040138244628906 seconds ---
+salesgpt.logger 2024-01-17 23:47:11,982 - INFO - Running from_llm: --- 0.0001857280731201172 seconds ---
+salesgpt.logger 2024-01-17 23:47:11,991 - INFO - Running from_llm: --- 0.00994563102722168 seconds ---
+salesgpt.logger 2024-01-17 23:47:11,991 - INFO - Running seed_agent: --- 9.059906005859375e-06 seconds ---
+httpx 2024-01-17 23:47:15,997 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:47:16,003 - INFO - Running step: --- 4.012074708938599 seconds ---
+root 2024-01-17 23:47:16,472 - INFO - Status: 200
+root 2024-01-17 23:47:16,472 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:47:16,472 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMDI3NDc0NUZGREY0OTAxOUVFAA=="}]}
+root 2024-01-17 23:47:17,091 - INFO - Status: 200
+root 2024-01-17 23:47:17,092 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:47:17,092 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMzcwRUM1MEQ3MjAzREVDRUY4AA=="}]}
+root 2024-01-17 23:47:17,237 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:17,237 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:17] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:17,421 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:17,422 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:17] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:17,556 - INFO - Status: 200
+root 2024-01-17 23:47:17,557 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:47:17,557 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMkMxNkVGMTgzRUJGNEI0NzI5AA=="}]}
+root 2024-01-17 23:47:17,591 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:17,592 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:17] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:17,843 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:17,844 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:17] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:17,998 - INFO - Status: 200
+root 2024-01-17 23:47:17,999 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:47:17,999 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMkQ5RjlCQjEzQ0I5QTlBOEE0AA=="}]}
+root 2024-01-17 23:47:18,217 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:47:18,222 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:18] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:18,282 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:18,283 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:18] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:18,523 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:18,524 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:18] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:18,647 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:18,648 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:18] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:19,036 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:19,036 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:19] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:47:28,160 - INFO - Running from_llm: --- 0.00010824203491210938 seconds ---
+salesgpt.logger 2024-01-17 23:47:28,160 - INFO - Running from_llm: --- 0.00016379356384277344 seconds ---
+salesgpt.logger 2024-01-17 23:47:28,169 - INFO - Running from_llm: --- 0.00951075553894043 seconds ---
+salesgpt.logger 2024-01-17 23:47:28,169 - INFO - Running seed_agent: --- 8.344650268554688e-06 seconds ---
+httpx 2024-01-17 23:47:31,015 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-17 23:47:31,409 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-17 23:47:41,571 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:47:41,576 - INFO - Running step: --- 13.406875610351562 seconds ---
+root 2024-01-17 23:47:42,074 - INFO - Status: 200
+root 2024-01-17 23:47:42,075 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:47:42,075 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNDExNUU1QkQ1RUUwQTVFNkZGAA=="}]}
+root 2024-01-17 23:47:42,557 - INFO - Status: 200
+root 2024-01-17 23:47:42,557 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:47:42,557 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMTQ3NDM2NDBGNEE4MDg4MjI3AA=="}]}
+root 2024-01-17 23:47:42,892 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:42,893 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:42] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:42,968 - INFO - Status: 200
+root 2024-01-17 23:47:42,969 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:47:42,969 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMkM1RTc1RjNDQjAyQTlBNjYyAA=="}]}
+root 2024-01-17 23:47:43,009 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:43,011 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:43,475 - INFO - Status: 200
+root 2024-01-17 23:47:43,476 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:47:43,476 - INFO - Content-type: application/json; charset=UTF-8
+werkzeug 2024-01-17 23:47:43,477 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:43,477 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMjRGMTlCMjY3QjA1MzFFMDZFAA=="}]}
+root 2024-01-17 23:47:43,479 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:43,479 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:43,772 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:43,773 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:43,882 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:43,883 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:43] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:43,948 - INFO - Status: 200
+root 2024-01-17 23:47:43,949 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:47:43,949 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMzI5NkY0Q0ZEMjgyRDk0MThGAA=="}]}
+root 2024-01-17 23:47:44,204 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:47:44,209 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:44] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:44,316 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:44,317 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:44] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:44,463 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:44,464 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:44] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:44,622 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:44,623 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:44] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:47:44,860 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:47:44,861 - INFO - 127.0.0.1 - - [17/Jan/2024 23:47:44] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:47:58,671 - INFO - Running from_llm: --- 0.00011849403381347656 seconds ---
+salesgpt.logger 2024-01-17 23:47:58,671 - INFO - Running from_llm: --- 0.0001621246337890625 seconds ---
+salesgpt.logger 2024-01-17 23:47:58,681 - INFO - Running from_llm: --- 0.010525226593017578 seconds ---
+salesgpt.logger 2024-01-17 23:47:58,681 - INFO - Running seed_agent: --- 1.049041748046875e-05 seconds ---
+httpx 2024-01-17 23:48:05,217 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:48:05,223 - INFO - Running step: --- 6.541440963745117 seconds ---
+root 2024-01-17 23:48:05,832 - INFO - Status: 200
+root 2024-01-17 23:48:05,832 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:48:05,832 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMjhGNjgwMEQxNkZERkQ2NTAwAA=="}]}
+root 2024-01-17 23:48:06,276 - INFO - Status: 200
+root 2024-01-17 23:48:06,277 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:48:06,277 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQzhCMjdDOTdDRUNBNzlENjQxAA=="}]}
+root 2024-01-17 23:48:06,553 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:06,554 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:06] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:06,707 - INFO - Status: 200
+root 2024-01-17 23:48:06,708 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:48:06,709 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMDE1RUNCRTYxRTZGODJDMUYwAA=="}]}
+root 2024-01-17 23:48:06,716 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:06,718 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:06] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:06,903 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:06,904 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:06] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:07,268 - INFO - Status: 200
+root 2024-01-17 23:48:07,270 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:48:07,270 - INFO - Content-type: application/json; charset=UTF-8
+werkzeug 2024-01-17 23:48:07,271 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:07] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:07,271 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRDMyQkZERUI3REQxQ0RFOTRDAA=="}]}
+root 2024-01-17 23:48:07,526 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:07,527 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:07] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:07,715 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:07,716 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:07] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:07,723 - INFO - Status: 200
+root 2024-01-17 23:48:07,724 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:48:07,724 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSOUYwNkRERDBCMjQ3MDlBODkwAA=="}]}
+root 2024-01-17 23:48:07,856 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:07,856 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:07] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:07,973 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:48:07,978 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:07] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:08,176 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:08,177 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:08] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:08,366 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:08,367 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:08] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:08,610 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:08,611 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:08] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:48:13,826 - INFO - Running from_llm: --- 0.00011873245239257812 seconds ---
+salesgpt.logger 2024-01-17 23:48:13,826 - INFO - Running from_llm: --- 0.0001976490020751953 seconds ---
+salesgpt.logger 2024-01-17 23:48:13,830 - INFO - Running from_llm: --- 0.004216194152832031 seconds ---
+salesgpt.logger 2024-01-17 23:48:13,830 - INFO - Running seed_agent: --- 1.1682510375976562e-05 seconds ---
+httpx 2024-01-17 23:48:16,789 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:48:16,795 - INFO - Running step: --- 2.965378761291504 seconds ---
+root 2024-01-17 23:48:17,300 - INFO - Status: 200
+root 2024-01-17 23:48:17,300 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:48:17,301 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRTc3ODI4OUQ3NDNENDVBQzBGAA=="}]}
+root 2024-01-17 23:48:17,725 - INFO - Status: 200
+root 2024-01-17 23:48:17,726 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:48:17,726 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRjI4OTJEQjg5M0Q3ODczRkQ3AA=="}]}
+root 2024-01-17 23:48:18,121 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:18,122 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:18] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:18,148 - INFO - Status: 200
+root 2024-01-17 23:48:18,149 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:48:18,150 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNUZGODY3RUZCRDFFRkIxRUU5AA=="}]}
+root 2024-01-17 23:48:18,183 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:18,185 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:18] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:18,400 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:48:18,402 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:18] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:18,428 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:18,428 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:18] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:18,734 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:18,735 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:18] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:19,042 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:19,043 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:19] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:19,175 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:19,176 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:19] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:48:24,168 - INFO - Running from_llm: --- 0.00011563301086425781 seconds ---
+salesgpt.logger 2024-01-17 23:48:24,168 - INFO - Running from_llm: --- 0.00014734268188476562 seconds ---
+salesgpt.logger 2024-01-17 23:48:24,172 - INFO - Running from_llm: --- 0.004042148590087891 seconds ---
+salesgpt.logger 2024-01-17 23:48:24,172 - INFO - Running seed_agent: --- 9.298324584960938e-06 seconds ---
+httpx 2024-01-17 23:48:28,975 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:48:28,980 - INFO - Running step: --- 4.808002710342407 seconds ---
+root 2024-01-17 23:48:29,542 - INFO - Status: 200
+root 2024-01-17 23:48:29,543 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:48:29,543 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMTM5RTMxMjJBMUU3NURFNzUxAA=="}]}
+root 2024-01-17 23:48:30,025 - INFO - Status: 200
+root 2024-01-17 23:48:30,026 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:48:30,026 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNTM5MTAwRkE1M0UzRDFCOEFGAA=="}]}
+root 2024-01-17 23:48:30,163 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:30,164 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:30,290 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:48:30,295 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:30,465 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:30,466 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:30,717 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:30,718 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:30] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:48:31,115 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:48:31,116 - INFO - 127.0.0.1 - - [17/Jan/2024 23:48:31] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:12,333 - INFO - Flask app started
+werkzeug 2024-01-17 23:51:12,335 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.97:8000
+werkzeug 2024-01-17 23:51:12,335 - INFO - [33mPress CTRL+C to quit[0m
+salesgpt.logger 2024-01-17 23:51:16,287 - INFO - Running from_llm: --- 0.000156402587890625 seconds ---
+salesgpt.logger 2024-01-17 23:51:16,288 - INFO - Running from_llm: --- 0.00022220611572265625 seconds ---
+salesgpt.logger 2024-01-17 23:51:16,298 - INFO - Running from_llm: --- 0.010621309280395508 seconds ---
+salesgpt.logger 2024-01-17 23:51:16,298 - INFO - Running seed_agent: --- 2.6464462280273438e-05 seconds ---
+httpx 2024-01-17 23:51:18,553 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:51:18,558 - INFO - Running step: --- 2.259958028793335 seconds ---
+root 2024-01-17 23:51:19,472 - INFO - Status: 200
+root 2024-01-17 23:51:19,473 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:51:19,473 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRDYzOUVDRURFRDE0REUyQTUyAA=="}]}
+root 2024-01-17 23:51:19,942 - INFO - Status: 200
+root 2024-01-17 23:51:19,943 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:51:19,943 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:51:19,944 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRUY4RURFNTQyMDRCRDY4NzdBAA=="}]}
+werkzeug 2024-01-17 23:51:19,944 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:19] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:20,232 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:20,233 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:20] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:20,372 - INFO - Status: 200
+root 2024-01-17 23:51:20,373 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:51:20,373 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMTg5NDE3MEQ1QzVCNTAxQ0I2AA=="}]}
+root 2024-01-17 23:51:20,623 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:51:20,628 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:20] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:20,670 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:20,671 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:20] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:20,920 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:20,921 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:20] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:21,215 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:21,216 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:21] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:21,253 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:21,254 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:21] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:51:23,322 - INFO - Running from_llm: --- 0.00011944770812988281 seconds ---
+salesgpt.logger 2024-01-17 23:51:23,322 - INFO - Running from_llm: --- 0.00022029876708984375 seconds ---
+salesgpt.logger 2024-01-17 23:51:23,331 - INFO - Running from_llm: --- 0.009023189544677734 seconds ---
+salesgpt.logger 2024-01-17 23:51:23,331 - INFO - Running seed_agent: --- 8.106231689453125e-06 seconds ---
+httpx 2024-01-17 23:51:26,308 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+httpx 2024-01-17 23:51:26,645 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+httpx 2024-01-17 23:51:36,316 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:51:36,322 - INFO - Running step: --- 12.990671634674072 seconds ---
+root 2024-01-17 23:51:36,767 - INFO - Status: 200
+root 2024-01-17 23:51:36,768 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:51:36,768 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMjA4MjU1MDFENEQ3Mjk4NTlEAA=="}]}
+root 2024-01-17 23:51:37,314 - INFO - Status: 200
+root 2024-01-17 23:51:37,315 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:51:37,316 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSOUI4QzAzODEzMEIzMjhFODBFAA=="}]}
+root 2024-01-17 23:51:37,805 - INFO - Status: 200
+root 2024-01-17 23:51:37,807 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:51:37,807 - INFO - Content-type: application/json; charset=UTF-8
+werkzeug 2024-01-17 23:51:37,808 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:37] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:37,808 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQ0M3MTUwRjFBOTE1RDMxQjIyAA=="}]}
+root 2024-01-17 23:51:37,903 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:37,904 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:37] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:38,135 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:38,136 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:38] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:38,296 - INFO - Status: 200
+root 2024-01-17 23:51:38,297 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:51:38,297 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSQzlDQTNEOEJCNjEzMEM3RkNCAA=="}]}
+root 2024-01-17 23:51:38,423 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:38,423 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:38] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:38,548 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:51:38,553 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:38] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:39,034 - INFO - Received a WhatsApp status update.
+root 2024-01-17 23:51:39,036 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:39,037 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:39] "POST /webhook HTTP/1.1" 200 -
+werkzeug 2024-01-17 23:51:39,038 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:39] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:39,442 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:39,443 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:39] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:40,058 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:40,059 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:40] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:51:42,693 - INFO - Running from_llm: --- 0.0003724098205566406 seconds ---
+salesgpt.logger 2024-01-17 23:51:42,694 - INFO - Running from_llm: --- 0.0004143714904785156 seconds ---
+salesgpt.logger 2024-01-17 23:51:42,725 - INFO - Running from_llm: --- 0.032608985900878906 seconds ---
+salesgpt.logger 2024-01-17 23:51:42,726 - INFO - Running seed_agent: --- 1.9311904907226562e-05 seconds ---
+httpx 2024-01-17 23:51:45,791 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:51:45,796 - INFO - Running step: --- 3.069967269897461 seconds ---
+root 2024-01-17 23:51:46,256 - INFO - Status: 200
+root 2024-01-17 23:51:46,256 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:51:46,257 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRjBCRjgzNzFFQjJGNzRCNkY3AA=="}]}
+root 2024-01-17 23:51:46,754 - INFO - Status: 200
+root 2024-01-17 23:51:46,755 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:51:46,756 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSNDVEMjhBQ0ZDOUNERThFQTg5AA=="}]}
+root 2024-01-17 23:51:46,932 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:46,933 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:46] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:47,225 - INFO - Status: 200
+root 2024-01-17 23:51:47,227 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:51:47,227 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSRTFGNzc4MkQ1Mjk0NTI1MTc2AA=="}]}
+root 2024-01-17 23:51:47,419 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:47,420 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:47] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:47,478 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:51:47,484 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:47] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:47,689 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:47,689 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:47] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:47,926 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:47,927 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:47] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:48,020 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:48,020 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:48] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:48,124 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:48,125 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:48] "POST /webhook HTTP/1.1" 200 -
+salesgpt.logger 2024-01-17 23:51:51,430 - INFO - Running from_llm: --- 0.00011658668518066406 seconds ---
+salesgpt.logger 2024-01-17 23:51:51,430 - INFO - Running from_llm: --- 0.00020313262939453125 seconds ---
+salesgpt.logger 2024-01-17 23:51:51,434 - INFO - Running from_llm: --- 0.004637002944946289 seconds ---
+salesgpt.logger 2024-01-17 23:51:51,434 - INFO - Running seed_agent: --- 1.3828277587890625e-05 seconds ---
+httpx 2024-01-17 23:51:57,055 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+salesgpt.logger 2024-01-17 23:51:57,061 - INFO - Running step: --- 5.6265952587127686 seconds ---
+root 2024-01-17 23:51:57,570 - INFO - Status: 200
+root 2024-01-17 23:51:57,571 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:51:57,571 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSMTE4NjBCNzk1QjAyREVBRkM5AA=="}]}
+root 2024-01-17 23:51:58,081 - INFO - Status: 200
+root 2024-01-17 23:51:58,081 - INFO - Content-type: application/json; charset=UTF-8
+root 2024-01-17 23:51:58,081 - INFO - Body: {"messaging_product":"whatsapp","contacts":[{"input":"+573154421268","wa_id":"573154421268"}],"messages":[{"id":"wamid.HBgMNTczMTU0NDIxMjY4FQIAERgSM0RBMjBCNjIwOTQ2QzU1RDNEAA=="}]}
+root 2024-01-17 23:51:58,312 - ERROR - Request failed due to: 400 Client Error: Bad Request for url: https://graph.facebook.com/v18.0/191407440730250/messages
+werkzeug 2024-01-17 23:51:58,317 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:58] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:58,329 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:58,330 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:58] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:58,555 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:58,556 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:58] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:58,650 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:58,651 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:58] "POST /webhook HTTP/1.1" 200 -
+root 2024-01-17 23:51:58,899 - INFO - Received a WhatsApp status update.
+werkzeug 2024-01-17 23:51:58,900 - INFO - 127.0.0.1 - - [17/Jan/2024 23:51:58] "POST /webhook HTTP/1.1" 200 -
