@@ -1,12 +1,25 @@
-Customer Details:
-
-- Name: Andres David Valencia
-- Vehicle: Hyundai Elantra 2012 Sedan
-- Battery: MAC Gold (1 unit)
-- Address: Carrera 209 #32-26, Zona Merica, Cali
-- Email: andres@lidarit.com
-- Phone Number: 3173631848
-- Payment: Preferably in cash upon delivery
-- Additional Notes: None
-- Sales Channel: Aliada store in the city (Information provided for contact and final purchase arrangements)
-- Thank you message from Ted Lasso to customer service number #622
+Registra los siguientes datos del cliente en el formulario de venta de coexito:
+a. Tipo de cliente: Persona natural
+b. Tipo de documento: CC
+c. Número de identificación: 2346687
+d. Nombre del cliente: Ana Pelaez Rengifo
+e. Departamento de entrega: Huila
+f. Ciudad de entrega: No importante
+g. Dirección de entrega: Carrera 85 # 10 - 42
+h. Barrio o sector: La Hacienda
+i. Complemento de la dirección: No importante
+j. Celular: 456456456
+k. Correo electrónico: anapelaez@starmedia.com
+l. Placas del vehículo: PPP-898
+m. Tipo de vehículo: Automóvil
+n. Marca del vehículo: Citroën
+o. Versión del vehículo: C3
+p. Modelo del vehículo: 2022
+q. Producto a comprar: Batería
+r. Marca del producto a comprar: MAC
+s. Referencia a comprar: LN3-M
+t. Cantidad a comprar: 1
+u. SI
+v. Valor de venta (con IVA): 415.310 COP
+w. Medio de pago: Transferencia
+x. Observaciones: Cliente satisfecho y sin observaciones adicionales.

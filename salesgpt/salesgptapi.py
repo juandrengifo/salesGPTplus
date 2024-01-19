@@ -4,6 +4,7 @@ from salesgpt.agents import SalesGPT
 import faiss
 from salesgpt.tools import setup_knowledge_base, get_tools
 from openai import OpenAI
+import subprocess
 
 GPT_MODEL = "gpt-4-1106-preview"
 current_data_index = 0
@@ -48,7 +49,36 @@ class SalesGPTAPI:
         client = OpenAI()
 
         # Construct the system message to set the role of the AI
-        system_message = "You are a virtual assistant. Your task is to analyze the following conversation and extract key information to fill in customer details."
+        system_message = """You are a virtual assistant. Your task is to analyze the following conversation and extract ALL the key information to fill in customer purchase details. Make sure that you recover all these items:
+        Information items list:
+        a. Tipo de cliente: Persona natural o jurídica
+        b. Tipo de documento: CC, NIT o CE
+        c. Número de identificación:
+        d. Nombre del cliente:
+        e. Departamento de entrega:
+        f. Ciudad de entrega: No importante
+        g. Dirección de entrega:
+        h. Barrio o sector:
+        i. Complemento de la dirección: No importante
+        j. Celular:
+        k. Correo electrónico
+        l. Placas del vehículo: Use the context to get it and only confirm ONLY ONCE to the costumer.
+        m. Tipo de vehículo: If he don't know, use your knowledge. If he has said it before, say "Is <info> correct?"
+        n. Marca del vehículo: Use the context to get it and only confirm ONLY ONCE to the costumer.
+        o. Versión del vehículo: 
+        p. Modelo del vehículo: Use the context to get it and only confirm ONLY ONCE to the costumer.
+        q. Producto a comprar: Use the context to get it and only confirm ONLY ONCE to the costumer.
+        r. Marca del producto a comprar: Use the context to get it and only confirm ONLY ONCE to the costumer.
+        s. Referencia a comprar: Use the context to get it and only confirm ONLY ONCE to the costumer. It looks like a serial number
+        t. Cantidad a comprar
+        u. se le debe preguntar al cliente que si en caso de no poder dar cobertura con las Energitecas, tendría algún inconveniente que se lo referenciemos a través de una tienda Aliada de la ciudad, garantizándole que el servicio también será prestado en sus mejores condiciones y calidad del producto. Si el cliente contesta no hay problema, se debe colocar SI
+        v. Valor de venta (con IVA) (All bateries costs 349.000 cop but don't say that to customer). Iva tax is 19 percent of value.
+        w. Medio de pago
+        x. Observaciones.
+
+        And add at the top of the answer as header "Registra los siguientes datos del cliente en el formulario de venta de coexito:. If you after make an exhaustive search in the context don't find any item, write it you with some logical answer."
+    
+    """
 
         # Combine the conversation history into a single string
         conversation_str = "\n".join(f"Human: {msg}" for msg in conversation_history)
@@ -82,7 +112,7 @@ class SalesGPTAPI:
                 self.llm,
                 use_tools=self.USE_TOOLS,
                 tools=self.tools,
-                salesperson_name="Ted Lasso",
+                salesperson_name="VictorIA",
                 verbose=self.verbose,
                 index=current_data_index
             )
@@ -118,7 +148,6 @@ class SalesGPTAPI:
         sales_agent.step()
 
 
-        print("JUEPUTA", sales_agent.conversation_history[-1])
         if len(sales_agent.conversation_history)>1:
             print(sales_agent.conversation_history[-2])
         if "<INFO_REQUESTED>" in sales_agent.conversation_history[-1]:
@@ -133,6 +162,10 @@ class SalesGPTAPI:
 
                 # Optional: Print a message to confirm that the data is saved
                 print("Customer information saved to customer_info.txt")
+
+                print("Starting form filling.")
+                subprocess.run(['python', "/home/juanrengifo/Desktop/RPAi/run_assistant.py"])
+                
 
         if "<END_OF_CALL>" in sales_agent.conversation_history[-1]:
             print("Sales Agent determined it is time to end the conversation.")

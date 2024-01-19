@@ -49,9 +49,9 @@ curl --location 'http://127.0.0.1:8000/chat' \
 --data '{
     "human_say": "my pain always pain, so I cannot sleep well",
     "conversation_history": [
-        "Ted Lasso: Hey, good morning! How are you? <END_OF_TURN>",
+        "VictorIA: Hey, good morning! How are you? <END_OF_TURN>",
         "User: hi, how are you? why calling? <END_OF_TURN>",
-        "Ted Lasso: Hi there! I'\''m Ted Lasso from Sleep Haven. I'\''m calling to see if you'\''re looking to achieve better sleep by purchasing a premium mattress. How have you been sleeping lately? <END_OF_TURN>"
+        "VictorIA: Hi there! I'\''m VictorIA from Sleep Haven. I'\''m calling to see if you'\''re looking to achieve better sleep by purchasing a premium mattress. How have you been sleeping lately? <END_OF_TURN>"
     ]
 }'
 ```

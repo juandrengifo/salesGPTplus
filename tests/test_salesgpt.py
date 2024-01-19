@@ -27,7 +27,7 @@ class TestSalesGPT:
             llm,
             verbose=False,
             use_tools=False,
-            salesperson_name="Ted Lasso",
+            salesperson_name="VictorIA",
             salesperson_role="Sales Representative",
             company_name="Sleep Haven",
             company_business="""Sleep Haven 
@@ -63,7 +63,7 @@ class TestSalesGPT:
             verbose=False,
             use_tools="True",
             product_catalog=f"{data_dir}/sample_product_catalog.txt",
-            salesperson_name="Ted Lasso",
+            salesperson_name="VictorIA",
             salesperson_role="Sales Representative",
             company_name="Sleep Haven",
             company_business="""Sleep Haven 
@@ -95,7 +95,7 @@ class TestSalesGPT:
         sales_agent = SalesGPT.from_llm(
             llm,
             verbose=False,
-            salesperson_name="Ted Lasso",
+            salesperson_name="VictorIA",
             salesperson_role="Sales Representative",
             company_name="Sleep Haven",
             company_business="""Sleep Haven 
@@ -130,7 +130,7 @@ class TestSalesGPT:
         sales_agent = SalesGPT.from_llm(
             llm,
             verbose=False,
-            salesperson_name="Ted Lasso",
+            salesperson_name="VictorIA",
             salesperson_role="Sales Representative",
             company_name="Sleep Haven",
             company_business="""Sleep Haven 
@@ -169,7 +169,7 @@ class TestSalesGPT:
             verbose=False,
             use_tools="True",
             product_catalog="tests/test_data/sample_product_catalog.txt",
-            salesperson_name="Ted Lasso",
+            salesperson_name="VictorIA",
             salesperson_role="Sales Representative",
             company_name="Sleep Haven",
             company_business="""Sleep Haven
@@ -190,7 +190,7 @@ class TestSalesGPT:
             verbose=False,
             use_tools=True,
             product_catalog="tests/test_data/sample_product_catalog.txt",
-            salesperson_name="Ted Lasso",
+            salesperson_name="VictorIA",
             salesperson_role="Sales Representative",
             company_name="Sleep Haven",
             company_business="""Sleep Haven

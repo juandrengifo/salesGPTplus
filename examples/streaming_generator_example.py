@@ -12,7 +12,7 @@ llm = ChatLiteLLM(temperature=0.9, model_name="gpt-3.5-turbo-0613")
 sales_agent = SalesGPT.from_llm(
     llm,
     verbose=False,
-    salesperson_name="Ted Lasso",
+    salesperson_name="VictorIA",
     salesperson_role="Sales Representative",
     company_name="Sleep Haven",
     company_business="""Sleep Haven 

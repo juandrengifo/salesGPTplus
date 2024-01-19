@@ -32,7 +32,13 @@ def parse(reply):
     if '```' in reply:
         reply = reply[3:-3]
         
-    reply = reply[48:]
+    if "Action:" in reply:
+        return ""
+    
+    if "tool? No" in reply and "hought" not in reply:
+        reply = reply[38:]
+    if "hought" in reply:
+        reply = reply[45:]
     return reply
 
 
@@ -47,14 +53,16 @@ def generate_response(sender, incoming_msg, conversation_history):
     # Split the response into segments based on punctuation marks
     segments = re.split(r'(?<=[.!?]) +', reply)
 
+    _segments = []
+
     # Update the conversation history with segments
     for segment in segments:
-        if len(segment)>2 and segment[-2:]==". ":
-            segment = segment[:-1]
+        if not (segment == "<INFO_REQUESTED>" or segment == " <INFO_REQUESTED>" or segment=="<INFO_REQUESTED> "):
+            _segments.append(segment) 
         conversation_history.append(f"{name}: {segment}")
     conversation_histories[sender] = conversation_history
 
-    return segments
+    return _segments
 
 def send_message(recipient, segments):
     headers = {

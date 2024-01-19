@@ -102,7 +102,7 @@ llm = ChatLiteLLM(temperature=0.4, model_name="gpt-3.5-turbo")
                             
 sales_agent = SalesGPT.from_llm(llm, use_tools=True, verbose=False,
                             product_catalog = "examples/sample_product_catalog.txt",
-                            salesperson_name="Ted Lasso",
+                            salesperson_name="VictorIA",
                             salesperson_role="Sales Representative",
                             company_name="Sleep Haven",
                             company_business='''Sleep Haven 
@@ -140,7 +140,7 @@ sales_agent.step()
 > Introduction: Start the conversation by introducing yourself and your company. 
 
 > Thought: Do I need to use a tool? No <br>
-> Ted Lasso: Hello, my name is Ted Lasso and I'm calling on behalf of Sleep Haven. We are a premium mattress company that provides customers with the most comfortable and supportive sleeping experience possible. I was wondering if you would be interested in learning more about our products and how they can improve your sleep?
+> VictorIA: Hello, my name is VictorIA and I'm calling on behalf of Sleep Haven. We are a premium mattress company that provides customers with the most comfortable and supportive sleeping experience possible. I was wondering if you would be interested in learning more about our products and how they can improve your sleep?
 
 > User: Yea, sure
 
@@ -148,7 +148,7 @@ sales_agent.step()
 > Value proposition: Briefly explain how your product/service can benefit the prospect. 
 
 > Thought: Do I need to use a tool? No <br>
-> Ted Lasso: Great to hear that! Our mattresses are specially designed to contour to your body shape, providing the perfect level of support and comfort for a better night's sleep. Plus, they're made with high-quality materials that are built to last. Would you like to hear more about our different mattress options?
+> VictorIA: Great to hear that! Our mattresses are specially designed to contour to your body shape, providing the perfect level of support and comfort for a better night's sleep. Plus, they're made with high-quality materials that are built to last. Would you like to hear more about our different mattress options?
 
 > User:  What pricing do you have for your mattresses?
 
@@ -156,7 +156,7 @@ sales_agent.step()
 > Action: ProductSearch<br>
 > ActionInput pricing for mattresses<br>
 > Observation: Sleep Haven offers three mattresses: the Classic Harmony Spring Mattress for $1,299, the Plush Serenity Bamboo Mattress for $2,599, and the Luxury Cloud-Comfort Memory Foam Mattress for $999. The sizes available vary by mattress.<br>
-> Ted Lasso: Sleep Haven offers three mattresses at different price points. The Classic Harmony Spring Mattress is priced at $1,299, the Plush Serenity Bamboo Mattress is priced at $2,599, and the Luxury Cloud-Comfort Memory Foam Mattress is priced at $999. The prices may vary depending on the size you choose. Would you like more information about the specific sizes and features of each mattress? 
+> VictorIA: Sleep Haven offers three mattresses at different price points. The Classic Harmony Spring Mattress is priced at $1,299, the Plush Serenity Bamboo Mattress is priced at $2,599, and the Luxury Cloud-Comfort Memory Foam Mattress is priced at $999. The prices may vary depending on the size you choose. Would you like more information about the specific sizes and features of each mattress? 
 
 
 

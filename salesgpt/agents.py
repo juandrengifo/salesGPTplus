@@ -61,7 +61,7 @@ class SalesGPT(Chain):
     model_name: str = "gpt-4-1106-preview"
 
     use_tools: bool = False
-    salesperson_name: str = "Ted Lasso"
+    salesperson_name: str = "VictorIA"
     salesperson_role: str = "Agente representante de ventas"
     company_name: str = "Baterias Mac"
     company_business: str = """Baterías MAC es una marca de Clarios, el mayor fabricante de baterías para automóviles del mundo. Actualmente, el fabricante líder a nivel global suministra aproximadamente 150 millones de baterías cada año a fabricantes de automóviles y distribuidores del mercado de recambio. Su completa gama de baterías, con tecnología de plomo – ácido y de iones de litio, proporciona energía a casi todos los tipos de vehículos, desde los convencionales hasta los vehículos con sistemas Start Stop Avanzado.
